@@ -13,6 +13,7 @@ The FW project has been validated on a mini drone platform with following charac
 - 1S Lipo battery 500-600mAh
 - Overall weight below 70g
 - External Remocon RX module with PWM input (50Hz, 1-2msec Ton)
+
 Tests have been done also with an external ESC configuration (please checkHW User Manual of the board  documentation for HW modifications needed to the circuit to bypass the DC motor driver Mosfet onboard) and FPV250 frame, but not yet extensively.
 
 Known bugs with current release and future implementations in plan:
