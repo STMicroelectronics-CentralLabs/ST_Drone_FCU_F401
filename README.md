@@ -16,8 +16,8 @@ The FW project has been validated on a mini drone platform with following charac
 
 Tests have been done also with an external ESC configuration (please checkHW User Manual of the board  documentation for HW modifications needed to the circuit to bypass the DC motor driver Mosfet onboard) and FPV250 frame, but not yet extensively.
 
-Latest Official version 
------------------------
+Latest Official version (221117)
+--------------------------------
 Known bugs with current release and future implementations in plan:
 - If RF connection is lost DC motors are still rotating according to last value sent by Remocon. To insert a timeout to switch off the motors in case of RF connection lost.
 - BLE communication with external app (at first for Android) under debugging.
@@ -27,9 +27,9 @@ Known bugs with current release and future implementations in plan:
 
 
 
-Beta version with BLE remocon feature 
+Beta version with BLE remocon feature (301117)
 (app for Android devices)
---------------------------------------
+----------------------------------------------
 New features:
 - BLE remocon or external remocon selectable by #define in rc.h- with BLE remocon motors switched OFF if connection is lost
 Known bugs or features to be added in future releases:
