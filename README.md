@@ -16,9 +16,26 @@ The FW project has been validated on a mini drone platform with following charac
 
 Tests have been done also with an external ESC configuration (please checkHW User Manual of the board  documentation for HW modifications needed to the circuit to bypass the DC motor driver Mosfet onboard) and FPV250 frame, but not yet extensively.
 
+Latest Official version 
+-----------------------
 Known bugs with current release and future implementations in plan:
 - If RF connection is lost DC motors are still rotating according to last value sent by Remocon. To insert a timeout to switch off the motors in case of RF connection lost.
 - BLE communication with external app (at first for Android) under debugging.
 - USB Virtual COM not yet implemented
 - Sensor calibration must be performed at each power on of the FCU board. In future implementation the sensor calibration offset value should be stored in Flash.
 - Pressure sensor and Magnetometer (for e-Compass) data can be read in actual release, but they are not used in the stabilization algorithm of the drone. In future implementations altitude control and RTH (Return To Home) features may be added.
+
+
+
+Beta version with BLE remocon feature 
+(app for Android devices)
+--------------------------------------
+New features:
+- BLE remocon or external remocon selectable by #define in rc.h- with BLE remocon motors switched OFF if connection is lost
+Known bugs or features to be added in future releases:
+- BLE connectivity still under debugging, not yet extensively tested
+- Android app not yet extensively tested
+- Data from FCU sensors to Android app not yet implemented
+- Information of motors armed to Android app not yet implemented
+- Only 4 channels (4 joystick channels for flight control, THR, AIL, ELE, RUD) sent via BLE managed by FCU. Other channels to be added.
+
