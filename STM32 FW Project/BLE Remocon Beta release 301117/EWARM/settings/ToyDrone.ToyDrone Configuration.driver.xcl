@@ -1,0 +1,27 @@
+ -B 
+
+"--endian=little" 
+
+"--cpu=Cortex-M4" 
+
+"--fpu=VFPv4_SP" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\ST\STM32F401xC.ddf" 
+
+"--drv_verify_download" 
+
+"--semihosting" 
+
+"--device=STM32F401xC" 
+
+"--drv_interface=SWD" 
+
+"--stlink_reset_strategy=0,0" 
+
+"--drv_swo_clock_setup=0,1,2000000" 
+
+
+
+
