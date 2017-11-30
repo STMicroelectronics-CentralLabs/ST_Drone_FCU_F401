@@ -33,6 +33,7 @@ Beta version with BLE remocon feature (301117)
 New features:
 - BLE remocon or external remocon selectable by #define in rc.h
 - with BLE remocon motors switched OFF if connection is lost
+
 Known bugs or features to be added in future releases:
 - BLE connectivity still under debugging, not yet extensively tested
 - Android app not yet extensively tested
