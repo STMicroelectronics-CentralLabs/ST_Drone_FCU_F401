@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\settings\ToyDrone.ToyDrone Configuration.general.xcl" --backend -f "C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\settings\ToyDrone.ToyDrone Configuration.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\settings\ToyDrone.ToyDrone Configuration.general.xcl" --backend -f "C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\settings\ToyDrone.ToyDrone Configuration.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\settings\ToyDrone.ToyDrone Configuration.general.xcl" "--debug_file=%1" --backend -f "C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\settings\ToyDrone.ToyDrone Configuration.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\settings\ToyDrone.ToyDrone Configuration.general.xcl" "--debug_file=%1" --backend -f "C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\settings\ToyDrone.ToyDrone Configuration.driver.xcl" 
 
 @echo off 
 :end

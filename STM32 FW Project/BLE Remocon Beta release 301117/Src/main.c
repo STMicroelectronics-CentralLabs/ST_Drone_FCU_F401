@@ -475,10 +475,10 @@ int32_t BytesToWrite;
         //if(HCI_ProcessEvent) {
           //HCI_ProcessEvent=0;
           //HCI_Process();
-          gRUD = (joydata[3]-128)*(-12);
-          gTHR = joydata[4]*10;
-          gAIL = (joydata[5]-128)*(-12);
-          gELE = (joydata[6]-128)*12;
+          gRUD = (joydata[3]-128)*(-13);
+          gTHR = joydata[4]*13;
+          gAIL = (joydata[5]-128)*(-13);
+          gELE = (joydata[6]-128)*13;
           if (connected){
             rc_connection_flag = 1;                       /* BLE Remocon connected flag for enabling motor output */
           }
@@ -562,6 +562,8 @@ int32_t BytesToWrite;
     }
   
     /* Added for debug on UART*/
+    /* Remocon ELE, AIL, RUD, THR, AHRS Euler angle x and y axis, Remocon Euler angle x and y axis */
+    PRINTF("%d\t%d\t%d\t%d\t%f\t%f\t%f\t%f\n", gELE, gAIL, gRUD, gTHR, euler_ahrs.thx * 57.3, euler_ahrs.thy * 57.3, euler_rc.thx * 57.3, euler_rc.thy * 57.3);
     /* Remocon ELE, AIL, RUD, THR, Motor1_pwm, AHRS Euler angle x and y axis */
     //PRINTF("%d\t%d\t%d\t%d\t%f\t%f\t%f\t%f\t%f\n", gELE, gAIL, gRUD, gTHR, motor_pwm.motor1_pwm, euler_ahrs.thx * 57.3, euler_ahrs.thy * 57.3, euler_rc.thx * 57.3, euler_rc.thy * 57.3);
     //PRINTF("%d\t%d\t%d\t%d\n", gELE, gAIL, gRUD, gTHR);

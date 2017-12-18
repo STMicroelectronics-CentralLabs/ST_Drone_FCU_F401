@@ -1,94 +1,94 @@
-"C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lis2mdl\LIS2MDL_MAG_driver.c"
+"C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lis2mdl\LIS2MDL_MAG_driver.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\CMSIS\Include
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\CMSIS\Include
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Board
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Board
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lsm6ds33
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lsm6ds33
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lis3mdl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lis3mdl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lps25hb
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lps25hb
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\Common
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\Common
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lsm6dsl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lsm6dsl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lps22hb
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lps22hb
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lsm303agr
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lsm303agr
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\STEVAL_FCU001_V1
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\STEVAL_FCU001_V1
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\lis2mdl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\lis2mdl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BlueNRG
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BlueNRG
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\..\Drivers\BSP\Components\spbtlerf
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\..\Drivers\BSP\Components\spbtlerf
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\STM32F4xx_HAL_Driver\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\STM32F4xx_HAL_Driver\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\CMSIS\Include
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\CMSIS\Include
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Board
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Board
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lsm6ds33
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lsm6ds33
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lis3mdl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lis3mdl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lps25hb
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lps25hb
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\Common
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\Common
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lsm6dsl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lsm6dsl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lps22hb
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lps22hb
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lsm303agr
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lsm303agr
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\STEVAL_FCU001_V1
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\STEVAL_FCU001_V1
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\lis2mdl
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\lis2mdl
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BlueNRG
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BlueNRG
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes
 -I
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\Drivers\BSP\Components\spbtlerf
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\Drivers\BSP\Components\spbtlerf
 -DUSE_HAL_DRIVER=1
 -DSTM32F401xC=1
 -DDEBUG=1

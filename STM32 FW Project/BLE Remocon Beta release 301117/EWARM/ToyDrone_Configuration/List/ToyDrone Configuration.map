@@ -1,230 +1,313 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.3.8902/W32 for ARM                 30/Nov/2017  15:45:41
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 18/Dec/2017  20:22:55
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  
-#        C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Exe\ToyDrone Configuration.out
+#        C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Exe\ToyDrone
+#        Configuration.out
 #    Map file     =  
-#        C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\List\ToyDrone Configuration.map
+#        C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\List\ToyDrone
+#        Configuration.map
 #    Command line =  
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\ahrs.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\basic_math.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\ble_list.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_gap_aci.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_gatt_aci.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_hal_aci.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_itf_template.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_l2cap_aci.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\bluenrg_utils.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\console.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\debug.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\flight_control.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\gp_timer.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\hci.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver_HL.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\main.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\motor.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\osal.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\quaternion.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\rc.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\sensor_data.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\sensor_service.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\SPBTLE_RF.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\startup_stm32f401xc.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_accelero.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_gyro.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_magneto.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_pressure.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_cortex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ramfunc.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_gpio.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_msp.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_spi.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim_ex.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_uart.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_it.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_ll_usb.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\system_stm32f4xx.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\timer.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usb_device.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_cdc.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_cdc_if.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_conf.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_core.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_ctlreq.o"
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_desc.o" "C:\Users\matteo
-#        maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Obj\usbd_ioreq.o" -o
-#        "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\Exe\ToyDrone Configuration.out"
-#        --map "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\ToyDrone_Configuration\List\ToyDrone Configuration.map"
-#        --config "C:\Users\matteo maravita\Desktop\Drone\FW -
-#        Repository\STEVAL-FCU001V1\branches\BLE
-#        remocon\EWARM\stm32f401xc_flash.icf" --semihosting --entry
-#        __iar_program_start --vfe
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\ahrs.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\basic_math.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\ble_list.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_gap_aci.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_gatt_aci.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_hal_aci.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_itf_template.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_l2cap_aci.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\bluenrg_utils.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\console.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\debug.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\flight_control.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\gp_timer.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\hci.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver_HL.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\main.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\motor.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\osal.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\quaternion.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\rc.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\sensor_data.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\sensor_service.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\SPBTLE_RF.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\startup_stm32f401xc.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_accelero.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_gyro.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_magneto.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_pressure.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_cortex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ramfunc.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_gpio.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_msp.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_spi.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim_ex.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_uart.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_it.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_ll_usb.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\system_stm32f4xx.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj\timer.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usb_device.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_cdc.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_cdc_if.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_conf.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_core.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_ctlreq.o"
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_desc.o" "C:\Users\matteo
+#        maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release
+#        301117\EWARM\ToyDrone_Configuration\Obj\usbd_ioreq.o" -o
+#        "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Exe\ToyDrone
+#        Configuration.out" --map "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\ToyDrone_Configuration\List\ToyDrone
+#        Configuration.map" --config "C:\Users\matteo maravita\Desktop\Github
+#        repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE
+#        Remocon Beta release 301117\EWARM\stm32f401xc_flash.icf" --semihosting
+#        --entry __iar_program_start --vfe
 #
 ###############################################################################
 
@@ -251,7 +334,7 @@ __SystemLibrary = DLib
   .intvec             ro code  0x08000000    0x194  startup_stm32f401xc.o [1]
                              - 0x08000194    0x194
 
-"P1":                                      0x125b8
+"P1":                                      0x12664
   .text               ro code  0x08000194   0x1e6e  LSM6DSL_ACC_GYRO_driver_HL.o [1]
   .text               ro code  0x08002002     0x1a  xsnprout.o [3]
   .text               ro code  0x0800201c   0x1492  LSM6DSL_ACC_GYRO_driver.o [1]
@@ -300,161 +383,119 @@ __SystemLibrary = DLib
   .text               ro code  0x08009762      0xe  div.o [3]
   .text               ro code  0x08009770      0x2  I64DivZer.o [5]
   .text               ro code  0x08009774     0xe8  DblAdd.o [4]
-  .text               ro code  0x0800985c   0x19e4  main.o [1]
-  .text               ro code  0x0800b240    0x3a8  steval_fcu001_v1_accelero.o [1]
-  .text               ro code  0x0800b5e8    0x1fa  steval_fcu001_v1_gyro.o [1]
-  .text               ro code  0x0800b7e4    0x16e  steval_fcu001_v1_magneto.o [1]
-  .text               ro code  0x0800b954    0x9f4  stm32f4xx_hal_tim.o [1]
-  .text               ro code  0x0800c348    0x69c  flight_control.o [1]
-  .text               ro code  0x0800c9e4    0x136  motor.o [1]
-  .text               ro code  0x0800cb1c     0x4e  FltToDbl.o [4]
-  .text               ro code  0x0800cb6c     0x90  DblToFlt.o [4]
-  .text               ro code  0x0800cbfc    0x48c  ahrs.o [1]
-  .text               ro code  0x0800d088    0x12c  quaternion.o [1]
-  .text               ro code  0x0800d1b4    0x368  stm32f4xx_hal_adc.o [1]
-  .text               ro code  0x0800d51c     0x5e  stm32f4xx_hal_tim_ex.o [1]
-  .text               ro code  0x0800d57a     0x9e  sensor_data.o [1]
-  .text               ro code  0x0800d618    0x200  steval_fcu001_v1_pressure.o [1]
-  .text               ro code  0x0800d818     0xc6  bluenrg_hal_aci.o [1]
-  .text               ro code  0x0800d8e0     0x40  basic_math.o [1]
-  .text               ro code  0x0800d920     0xf4  atan2.o [4]
-  .text               ro code  0x0800da14    0x134  asin.o [4]
-  .text               ro code  0x0800db48    0x402  LPS22HB_Driver.o [1]
-  .text               ro code  0x0800df4a     0x40  xdtest.o [4]
-  .text               ro code  0x0800df90    0x1f0  xatan.o [4]
-  .text               ro code  0x0800e180     0xf0  sqrt.o [4]
-  .text               ro code  0x0800e270      0xc  errno.o [3]
-  .text               ro code  0x0800e27c      0xc  iarEdom.o [5]
-  .text               ro code  0x0800e288      0x2  xtls.o [3]
-  .text               ro code  0x0800e28c    0x968  stm32f4xx_hal_pcd.o [1]
-  .text               ro code  0x0800ebf4    0x958  stm32f4xx_ll_usb.o [1]
-  .text               ro code  0x0800f54c    0x1f4  usbd_conf.o [1]
-  .text               ro code  0x0800f740    0x2e6  usbd_core.o [1]
-  .text               ro code  0x0800fa28    0x604  usbd_ctlreq.o [1]
-  .text               ro code  0x0801002c     0x90  usbd_ioreq.o [1]
-  .text               ro code  0x080100bc    0x920  LSM303AGR_ACC_driver_HL.o [1]
-  .text               ro code  0x080109dc    0x582  LSM303AGR_ACC_driver.o [1]
-  .text               ro code  0x08010f60    0x556  LPS22HB_Driver_HL.o [1]
-  .text               ro code  0x080114b8    0x3bc  LIS2MDL_MAG_driver_HL.o [1]
-  .text               ro code  0x08011874    0x232  LIS2MDL_MAG_driver.o [1]
-  .rodata             const    0x08011aa8     0x6c  sensor_service.o [1]
-  .text               ro code  0x08011b14     0x6c  system_stm32f4xx.o [1]
-  .text               ro code  0x08011b80     0x6a  stm32f4xx_it.o [1]
-  .text               ro code  0x08011bea     0x2c  copy_init3.o [5]
-  .rodata             const    0x08011c18     0x60  LSM303AGR_ACC_driver.o [1]
-  .rodata             const    0x08011c78     0x60  main.o [1]
-  .text               ro code  0x08011cd8     0x40  zero_init3.o [5]
-  .rodata             const    0x08011d18     0x3c  sensor_service.o [1]
-  .rodata             const    0x08011d54     0x34  main.o [1]
-  .rodata             const    0x08011d88     0x34  main.o [1]
-  .rodata             const    0x08011dbc     0x30  main.o [1]
-  .rodata             const    0x08011dec     0x30  main.o [1]
-  .rodata             const    0x08011e1c     0x30  main.o [1]
-  .rodata             const    0x08011e4c     0x30  sensor_service.o [1]
-  .rodata             const    0x08011e7c     0x30  sensor_service.o [1]
-  .rodata             const    0x08011eac     0x2c  main.o [1]
-  .rodata             const    0x08011ed8     0x2c  main.o [1]
-  .rodata             const    0x08011f04     0x2c  main.o [1]
-  .rodata             const    0x08011f30     0x2c  main.o [1]
-  .rodata             const    0x08011f5c     0x2c  main.o [1]
-  .rodata             const    0x08011f88     0x2c  main.o [1]
-  .rodata             const    0x08011fb4     0x28  main.o [1]
-  .rodata             const    0x08011fdc     0x28  main.o [1]
-  .rodata             const    0x08012004     0x28  main.o [1]
-  .text               ro code  0x0801202c     0x28  data_init.o [5]
-  .rodata             const    0x08012054     0x24  main.o [1]
-  .rodata             const    0x08012078     0x24  main.o [1]
-  .rodata             const    0x0801209c     0x24  sensor_service.o [1]
-  .rodata             const    0x080120c0     0x24  sensor_service.o [1]
-  .text               ro code  0x080120e4     0x22  fpinit_M.o [4]
-  .iar.init_table     const    0x08012108     0x24  - Linker created -
-  .rodata             const    0x0801212c     0x20  main.o [1]
-  .rodata             const    0x0801214c     0x20  main.o [1]
-  .rodata             const    0x0801216c     0x20  main.o [1]
-  .rodata             const    0x0801218c     0x20  main.o [1]
-  .rodata             const    0x080121ac     0x20  sensor_service.o [1]
-  .rodata             const    0x080121cc     0x20  sensor_service.o [1]
-  .rodata             const    0x080121ec     0x1c  main.o [1]
-  .rodata             const    0x08012208     0x1c  main.o [1]
-  .rodata             const    0x08012224     0x1c  sensor_service.o [1]
-  .rodata             const    0x08012240     0x1c  sensor_service.o [1]
-  .rodata             const    0x0801225c     0x1c  sensor_service.o [1]
-  .text               ro code  0x08012278     0x1a  cmain.o [5]
-  .text               ro code  0x08012292      0x4  low_level_init.o [3]
-  .text               ro code  0x08012296      0x4  exit.o [3]
-  .text               ro code  0x0801229c      0xa  cexit.o [5]
-  .text               ro code  0x080122a8     0x14  exit.o [6]
-  .rodata             const    0x080122bc     0x18  main.o [1]
-  .rodata             const    0x080122d4     0x18  sensor_service.o [1]
-  .rodata             const    0x080122ec     0x14  main.o [1]
-  .rodata             const    0x08012300     0x14  sensor_service.o [1]
-  .rodata             const    0x08012314     0x10  sensor_service.o [1]
-  .rodata             const    0x08012324     0x10  sensor_service.o [1]
-  .rodata             const    0x08012334     0x10  stm32f4xx_hal_rcc.o [1]
-  .text               ro code  0x08012344     0x10  startup_stm32f401xc.o [1]
-  .rodata             const    0x08012354      0xc  sensor_service.o [1]
-  .rodata             const    0x08012360      0xc  sensor_service.o [1]
-  .rodata             const    0x0801236c      0xc  sensor_service.o [1]
-  .rodata             const    0x08012378      0xc  sensor_service.o [1]
-  .rodata             const    0x08012384      0xc  sensor_service.o [1]
-  .text               ro code  0x08012390      0xc  cstartup_M.o [5]
-  .rodata             const    0x0801239c      0x8  main.o [1]
-  .rodata             const    0x080123a4      0x8  sensor_service.o [1]
-  .rodata             const    0x080123ac      0x8  sensor_service.o [1]
-  .rodata             const    0x080123b4      0x8  sensor_service.o [1]
-  .rodata             const    0x080123bc      0x8  sensor_service.o [1]
-  .rodata             const    0x080123c4      0x8  sensor_service.o [1]
-  .rodata             const    0x080123cc      0x8  SPBTLE_RF.o [1]
-  .rodata             const    0x080123d4      0x8  SPBTLE_RF.o [1]
-  .rodata             const    0x080123dc      0x8  SPBTLE_RF.o [1]
-  .rodata             const    0x080123e4      0x8  steval_fcu001_v1.o [1]
-  .rodata             const    0x080123ec      0x4  LSM303AGR_ACC_driver_HL.o [1]
-  .rodata             const    0x080123f0      0x4  rc.o [1]
-  .rodata             const    0x080123f4      0x4  rc.o [1]
-  .rodata             const    0x080123f8      0x4  rc.o [1]
-  .text               ro code  0x080123fc      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012400      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012404      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012408      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801240c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012410      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012414      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012418      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801241c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012420      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012424      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012428      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801242c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012430      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012434      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012438      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801243c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012440      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012444      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012448      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801244c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012450      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012454      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012458      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801245c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012460      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012464      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012468      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801246c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012470      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012474      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012478      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801247c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012480      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012484      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012488      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801248c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012490      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012494      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x08012498      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x0801249c      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x080124a0      0x4  startup_stm32f401xc.o [1]
-  .text               ro code  0x080124a4      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0800985c   0x1a74  main.o [1]
+  .text               ro code  0x0800b2d0    0x3a8  steval_fcu001_v1_accelero.o [1]
+  .text               ro code  0x0800b678    0x1fa  steval_fcu001_v1_gyro.o [1]
+  .text               ro code  0x0800b874    0x16e  steval_fcu001_v1_magneto.o [1]
+  .text               ro code  0x0800b9e4    0x9f4  stm32f4xx_hal_tim.o [1]
+  .text               ro code  0x0800c3d8    0x69c  flight_control.o [1]
+  .text               ro code  0x0800ca74    0x136  motor.o [1]
+  .text               ro code  0x0800cbac     0x4e  FltToDbl.o [4]
+  .text               ro code  0x0800cbfc     0x90  DblToFlt.o [4]
+  .text               ro code  0x0800cc8c    0x48c  ahrs.o [1]
+  .text               ro code  0x0800d118    0x12c  quaternion.o [1]
+  .text               ro code  0x0800d244    0x368  stm32f4xx_hal_adc.o [1]
+  .text               ro code  0x0800d5ac     0x5e  stm32f4xx_hal_tim_ex.o [1]
+  .text               ro code  0x0800d60a     0x9e  sensor_data.o [1]
+  .text               ro code  0x0800d6a8    0x200  steval_fcu001_v1_pressure.o [1]
+  .text               ro code  0x0800d8a8     0xc6  bluenrg_hal_aci.o [1]
+  .text               ro code  0x0800d970     0x40  basic_math.o [1]
+  .text               ro code  0x0800d9b0     0xf4  atan2.o [4]
+  .text               ro code  0x0800daa4    0x134  asin.o [4]
+  .text               ro code  0x0800dbd8    0x402  LPS22HB_Driver.o [1]
+  .text               ro code  0x0800dfda     0x40  xdtest.o [4]
+  .text               ro code  0x0800e020    0x1f0  xatan.o [4]
+  .text               ro code  0x0800e210     0xf0  sqrt.o [4]
+  .text               ro code  0x0800e300      0xc  errno.o [3]
+  .text               ro code  0x0800e30c      0xc  iarEdom.o [5]
+  .text               ro code  0x0800e318      0x2  xtls.o [3]
+  .text               ro code  0x0800e31c    0x968  stm32f4xx_hal_pcd.o [1]
+  .text               ro code  0x0800ec84    0x958  stm32f4xx_ll_usb.o [1]
+  .text               ro code  0x0800f5dc    0x1f4  usbd_conf.o [1]
+  .text               ro code  0x0800f7d0    0x2e6  usbd_core.o [1]
+  .text               ro code  0x0800fab8    0x604  usbd_ctlreq.o [1]
+  .text               ro code  0x080100bc     0x90  usbd_ioreq.o [1]
+  .text               ro code  0x0801014c    0x920  LSM303AGR_ACC_driver_HL.o [1]
+  .text               ro code  0x08010a6c    0x582  LSM303AGR_ACC_driver.o [1]
+  .text               ro code  0x08010ff0    0x556  LPS22HB_Driver_HL.o [1]
+  .text               ro code  0x08011548    0x3bc  LIS2MDL_MAG_driver_HL.o [1]
+  .text               ro code  0x08011904    0x232  LIS2MDL_MAG_driver.o [1]
+  .rodata             const    0x08011b38     0x6c  sensor_service.o [1]
+  .text               ro code  0x08011ba4     0x6c  system_stm32f4xx.o [1]
+  .text               ro code  0x08011c10     0x6a  stm32f4xx_it.o [1]
+  .text               ro code  0x08011c7a     0x2c  copy_init3.o [5]
+  .rodata             const    0x08011ca8     0x60  LSM303AGR_ACC_driver.o [1]
+  .rodata             const    0x08011d08     0x60  main.o [1]
+  .text               ro code  0x08011d68     0x40  zero_init3.o [5]
+  .rodata             const    0x08011da8     0x3c  sensor_service.o [1]
+  .rodata             const    0x08011de4     0x34  main.o [1]
+  .rodata             const    0x08011e18     0x34  main.o [1]
+  .rodata             const    0x08011e4c     0x30  main.o [1]
+  .rodata             const    0x08011e7c     0x30  main.o [1]
+  .rodata             const    0x08011eac     0x30  main.o [1]
+  .rodata             const    0x08011edc     0x30  sensor_service.o [1]
+  .rodata             const    0x08011f0c     0x30  sensor_service.o [1]
+  .rodata             const    0x08011f3c     0x2c  main.o [1]
+  .rodata             const    0x08011f68     0x2c  main.o [1]
+  .rodata             const    0x08011f94     0x2c  main.o [1]
+  .rodata             const    0x08011fc0     0x2c  main.o [1]
+  .rodata             const    0x08011fec     0x2c  main.o [1]
+  .rodata             const    0x08012018     0x2c  main.o [1]
+  .rodata             const    0x08012044     0x28  main.o [1]
+  .rodata             const    0x0801206c     0x28  main.o [1]
+  .rodata             const    0x08012094     0x28  main.o [1]
+  .text               ro code  0x080120bc     0x28  data_init.o [5]
+  .rodata             const    0x080120e4     0x24  main.o [1]
+  .rodata             const    0x08012108     0x24  main.o [1]
+  .rodata             const    0x0801212c     0x24  sensor_service.o [1]
+  .rodata             const    0x08012150     0x24  sensor_service.o [1]
+  .text               ro code  0x08012174     0x22  fpinit_M.o [4]
+  .iar.init_table     const    0x08012198     0x24  - Linker created -
+  .rodata             const    0x080121bc     0x20  main.o [1]
+  .rodata             const    0x080121dc     0x20  main.o [1]
+  .rodata             const    0x080121fc     0x20  main.o [1]
+  .rodata             const    0x0801221c     0x20  main.o [1]
+  .rodata             const    0x0801223c     0x20  sensor_service.o [1]
+  .rodata             const    0x0801225c     0x20  sensor_service.o [1]
+  .rodata             const    0x0801227c     0x1c  main.o [1]
+  .rodata             const    0x08012298     0x1c  main.o [1]
+  .rodata             const    0x080122b4     0x1c  main.o [1]
+  .rodata             const    0x080122d0     0x1c  sensor_service.o [1]
+  .rodata             const    0x080122ec     0x1c  sensor_service.o [1]
+  .rodata             const    0x08012308     0x1c  sensor_service.o [1]
+  .text               ro code  0x08012324     0x1a  cmain.o [5]
+  .text               ro code  0x0801233e      0x4  low_level_init.o [3]
+  .text               ro code  0x08012342      0x4  exit.o [3]
+  .text               ro code  0x08012348      0xa  cexit.o [5]
+  .text               ro code  0x08012354     0x14  exit.o [6]
+  .rodata             const    0x08012368     0x18  main.o [1]
+  .rodata             const    0x08012380     0x18  sensor_service.o [1]
+  .rodata             const    0x08012398     0x14  main.o [1]
+  .rodata             const    0x080123ac     0x14  sensor_service.o [1]
+  .rodata             const    0x080123c0     0x10  sensor_service.o [1]
+  .rodata             const    0x080123d0     0x10  sensor_service.o [1]
+  .rodata             const    0x080123e0     0x10  stm32f4xx_hal_rcc.o [1]
+  .text               ro code  0x080123f0     0x10  startup_stm32f401xc.o [1]
+  .rodata             const    0x08012400      0xc  sensor_service.o [1]
+  .rodata             const    0x0801240c      0xc  sensor_service.o [1]
+  .rodata             const    0x08012418      0xc  sensor_service.o [1]
+  .rodata             const    0x08012424      0xc  sensor_service.o [1]
+  .rodata             const    0x08012430      0xc  sensor_service.o [1]
+  .text               ro code  0x0801243c      0xc  cstartup_M.o [5]
+  .rodata             const    0x08012448      0x8  main.o [1]
+  .rodata             const    0x08012450      0x8  sensor_service.o [1]
+  .rodata             const    0x08012458      0x8  sensor_service.o [1]
+  .rodata             const    0x08012460      0x8  sensor_service.o [1]
+  .rodata             const    0x08012468      0x8  sensor_service.o [1]
+  .rodata             const    0x08012470      0x8  sensor_service.o [1]
+  .rodata             const    0x08012478      0x8  SPBTLE_RF.o [1]
+  .rodata             const    0x08012480      0x8  SPBTLE_RF.o [1]
+  .rodata             const    0x08012488      0x8  SPBTLE_RF.o [1]
+  .rodata             const    0x08012490      0x8  steval_fcu001_v1.o [1]
+  .rodata             const    0x08012498      0x4  LSM303AGR_ACC_driver_HL.o [1]
+  .rodata             const    0x0801249c      0x4  rc.o [1]
+  .rodata             const    0x080124a0      0x4  rc.o [1]
+  .rodata             const    0x080124a4      0x4  rc.o [1]
   .text               ro code  0x080124a8      0x4  startup_stm32f401xc.o [1]
   .text               ro code  0x080124ac      0x4  startup_stm32f401xc.o [1]
   .text               ro code  0x080124b0      0x4  startup_stm32f401xc.o [1]
@@ -469,10 +510,53 @@ __SystemLibrary = DLib
   .text               ro code  0x080124d4      0x4  startup_stm32f401xc.o [1]
   .text               ro code  0x080124d8      0x4  startup_stm32f401xc.o [1]
   .text               ro code  0x080124dc      0x4  startup_stm32f401xc.o [1]
-  .rodata             const    0x080124e0      0x0  zero_init3.o [5]
-  .rodata             const    0x080124e0      0x0  copy_init3.o [5]
-  Initializer bytes   const    0x080124e0    0x26c  <for P2 s0>
-                             - 0x0801274c  0x125b8
+  .text               ro code  0x080124e0      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124e4      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124e8      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124ec      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124f0      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124f4      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124f8      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x080124fc      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012500      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012504      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012508      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801250c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012510      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012514      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012518      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801251c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012520      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012524      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012528      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801252c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012530      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012534      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012538      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801253c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012540      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012544      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012548      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801254c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012550      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012554      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012558      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801255c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012560      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012564      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012568      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801256c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012570      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012574      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012578      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x0801257c      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012580      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012584      0x4  startup_stm32f401xc.o [1]
+  .text               ro code  0x08012588      0x4  startup_stm32f401xc.o [1]
+  .rodata             const    0x0801258c      0x0  zero_init3.o [5]
+  .rodata             const    0x0801258c      0x0  copy_init3.o [5]
+  Initializer bytes   const    0x0801258c    0x26c  <for P2 s0>
+                             - 0x080127f8  0x12664
 
 "P2":                                       0x52e8
   P2 s0                        0x20000000    0x26c  <Init block>
@@ -651,7 +735,7 @@ Zero (__iar_zero_init3)
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x26c (100% of destination):
-          0x080124e0   0x26c
+          0x0801258c   0x26c
     1 destination range, total size 0x26a:
           0x20000000   0x26a
 
@@ -663,7 +747,7 @@ Copy (__iar_copy_init3)
 
     Module                        ro code  ro data  rw data
     ------                        -------  -------  -------
-C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\ToyDrone_Configuration\Obj: [1]
+C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj: [1]
     LIS2MDL_MAG_driver.o              562
     LIS2MDL_MAG_driver_HL.o           956       72       72
     LPS22HB_Driver.o                1 026
@@ -685,7 +769,7 @@ C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\
     flight_control.o                1 692                50
     gp_timer.o                         46
     hci.o                           1 164               716
-    main.o                          6 628    1 056    1 789
+    main.o                          6 772    1 084    1 789
     motor.o                           310
     osal.o                             44
     quaternion.o                      300
@@ -719,7 +803,7 @@ C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\
     usbd_ctlreq.o                   1 540                 1
     usbd_ioreq.o                      144
     -------------------------------------------------------
-    Total:                         64 556    2 470    4 831
+    Total:                         64 700    2 498    4 831
 
 command line: [2]
     -------------------------------------------------------
@@ -788,7 +872,7 @@ shb_l.a: [6]
     Gaps                               60        6
     Linker created                              38   16 384
 -----------------------------------------------------------
-    Grand Total:                   73 078    2 518   21 219
+    Grand Total:                   73 222    2 546   21 219
 
 
 *******************************************************************************
@@ -797,13 +881,13 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x08012108          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x0801212c          --   Gb  - Linker created -
-?main                   0x08012279         Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x08012198          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080121bc          --   Gb  - Linker created -
+?main                   0x08012325         Code  Gb  cmain.o [5]
 ACCELERO_Data           0x200010a8   0x10  Data  Lc  steval_fcu001_v1_accelero.o [1]
 ACCELERO_SensorHandle   0x20000fac   0x28  Data  Lc  steval_fcu001_v1_accelero.o [1]
-ADC_Init                0x0800d39f  0x166  Code  Lc  stm32f4xx_hal_adc.o [1]
-APBAHBPrescTable        0x08012334   0x10  Data  Gb  stm32f4xx_hal_rcc.o [1]
+ADC_Init                0x0800d42f  0x166  Code  Lc  stm32f4xx_hal_adc.o [1]
+APBAHBPrescTable        0x080123e0   0x10  Data  Gb  stm32f4xx_hal_rcc.o [1]
 AccEventCharHandle      0x200012cc    0x2  Data  Lc  sensor_service.o [1]
 AccGyroMagCharHandle    0x200012ca    0x2  Data  Lc  sensor_service.o [1]
 Add_ConfigW2ST_Service  0x08005175  0x11a  Code  Gb  sensor_service.o [1]
@@ -812,44 +896,44 @@ Add_ConsoleW2ST_Service
 Add_HWServW2ST_Service  0x080055e3  0x40a  Code  Gb  sensor_service.o [1]
 Attribute_Modified_CB   0x08005eb5  0x1fc  Code  Gb  sensor_service.o [1]
 BNRG_SPI_Init           0x08004385   0x56  Code  Gb  SPBTLE_RF.o [1]
-BSP_ACCELERO_Get_Axes   0x0800b4a5   0x3c  Code  Gb  steval_fcu001_v1_accelero.o [1]
-BSP_ACCELERO_Init       0x0800b241   0x50  Code  Gb  steval_fcu001_v1_accelero.o [1]
-BSP_ACCELERO_Read_Reg   0x0800b557   0x4c  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Get_Axes   0x0800b535   0x3c  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Init       0x0800b2d1   0x50  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Read_Reg   0x0800b5e7   0x4c  Code  Gb  steval_fcu001_v1_accelero.o [1]
 BSP_ACCELERO_Sensor_Enable
-                        0x0800b475   0x30  Code  Gb  steval_fcu001_v1_accelero.o [1]
-BSP_ACCELERO_Set_FS     0x0800b521   0x36  Code  Gb  steval_fcu001_v1_accelero.o [1]
+                        0x0800b505   0x30  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Set_FS     0x0800b5b1   0x36  Code  Gb  steval_fcu001_v1_accelero.o [1]
 BSP_ACCELERO_Set_ODR_Value
-                        0x0800b4e1   0x40  Code  Gb  steval_fcu001_v1_accelero.o [1]
-BSP_ACCELERO_Write_Reg  0x0800b5a3   0x46  Code  Gb  steval_fcu001_v1_accelero.o [1]
-BSP_GYRO_Get_Axes       0x0800b761   0x3c  Code  Gb  steval_fcu001_v1_gyro.o [1]
-BSP_GYRO_Init           0x0800b5e9   0x32  Code  Gb  steval_fcu001_v1_gyro.o [1]
-BSP_GYRO_Sensor_Enable  0x0800b731   0x30  Code  Gb  steval_fcu001_v1_gyro.o [1]
-BSP_GYRO_Write_Reg      0x0800b79d   0x46  Code  Gb  steval_fcu001_v1_gyro.o [1]
+                        0x0800b571   0x40  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Write_Reg  0x0800b633   0x46  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_GYRO_Get_Axes       0x0800b7f1   0x3c  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Init           0x0800b679   0x32  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Sensor_Enable  0x0800b7c1   0x30  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Write_Reg      0x0800b82d   0x46  Code  Gb  steval_fcu001_v1_gyro.o [1]
 BSP_LED_Init            0x080034b9   0x82  Code  Gb  steval_fcu001_v1.o [1]
 BSP_LED_Off             0x0800355d   0x22  Code  Gb  steval_fcu001_v1.o [1]
 BSP_LED_On              0x0800353b   0x22  Code  Gb  steval_fcu001_v1.o [1]
 BSP_LED_Toggle          0x0800357f   0x20  Code  Gb  steval_fcu001_v1.o [1]
 BSP_LIS2MDL_MAGNETO_Init
-                        0x0800b817   0xb6  Code  Lc  steval_fcu001_v1_magneto.o [1]
+                        0x0800b8a7   0xb6  Code  Lc  steval_fcu001_v1_magneto.o [1]
 BSP_LPS22HB_PRESSURE_Init
-                        0x0800d64b  0x132  Code  Lc  steval_fcu001_v1_pressure.o [1]
+                        0x0800d6db  0x132  Code  Lc  steval_fcu001_v1_pressure.o [1]
 BSP_LSM303AGR_ACCELERO_Init
-                        0x0800b397   0xb6  Code  Lc  steval_fcu001_v1_accelero.o [1]
+                        0x0800b427   0xb6  Code  Lc  steval_fcu001_v1_accelero.o [1]
 BSP_LSM6DSL_ACCELERO_Init
-                        0x0800b291  0x106  Code  Lc  steval_fcu001_v1_accelero.o [1]
-BSP_LSM6DSL_GYRO_Init   0x0800b61b  0x102  Code  Lc  steval_fcu001_v1_gyro.o [1]
-BSP_MAGNETO_Init        0x0800b7e5   0x32  Code  Gb  steval_fcu001_v1_magneto.o [1]
+                        0x0800b321  0x106  Code  Lc  steval_fcu001_v1_accelero.o [1]
+BSP_LSM6DSL_GYRO_Init   0x0800b6ab  0x102  Code  Lc  steval_fcu001_v1_gyro.o [1]
+BSP_MAGNETO_Init        0x0800b875   0x32  Code  Gb  steval_fcu001_v1_magneto.o [1]
 BSP_MAGNETO_Sensor_Enable
-                        0x0800b8dd   0x30  Code  Gb  steval_fcu001_v1_magneto.o [1]
-BSP_MAGNETO_Write_Reg   0x0800b90d   0x46  Code  Gb  steval_fcu001_v1_magneto.o [1]
-BSP_PRESSURE_Get_Press  0x0800d7dd   0x3c  Code  Gb  steval_fcu001_v1_pressure.o [1]
-BSP_PRESSURE_Init       0x0800d619   0x32  Code  Gb  steval_fcu001_v1_pressure.o [1]
+                        0x0800b96d   0x30  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_MAGNETO_Write_Reg   0x0800b99d   0x46  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_PRESSURE_Get_Press  0x0800d86d   0x3c  Code  Gb  steval_fcu001_v1_pressure.o [1]
+BSP_PRESSURE_Init       0x0800d6a9   0x32  Code  Gb  steval_fcu001_v1_pressure.o [1]
 BSP_PRESSURE_IsInitialized
-                        0x0800d7c1   0x1c  Code  Gb  steval_fcu001_v1_pressure.o [1]
+                        0x0800d851   0x1c  Code  Gb  steval_fcu001_v1_pressure.o [1]
 BSP_PRESSURE_Sensor_Enable
-                        0x0800d791   0x30  Code  Gb  steval_fcu001_v1_pressure.o [1]
+                        0x0800d821   0x30  Code  Gb  steval_fcu001_v1_pressure.o [1]
 BlueNRG_DataPresent     0x080043ff   0x16  Code  Gb  SPBTLE_RF.o [1]
-BlueNRG_Init            0x0800af15  0x1bc  Code  Gb  main.o [1]
+BlueNRG_Init            0x0800afa5  0x1bc  Code  Gb  main.o [1]
 BlueNRG_RST             0x080043db   0x24  Code  Gb  SPBTLE_RF.o [1]
 BlueNRG_SPI_Read_All    0x08004415   0xca  Code  Gb  SPBTLE_RF.o [1]
 BlueNRG_SPI_Write       0x080044df   0xe8  Code  Gb  SPBTLE_RF.o [1]
@@ -868,28 +952,28 @@ DebugConsoleCommandParsing
                         0x080060dd  0x32e  Code  Lc  sensor_service.o [1]
 DisableHWFeatures       0x08006555    0x2  Code  Lc  sensor_service.o [1]
 Disable_SPI_IRQ         0x08004647    0xa  Code  Gb  SPBTLE_RF.o [1]
-EXTI4_IRQHandler        0x08011be1    0xa  Code  Gb  stm32f4xx_it.o [1]
+EXTI4_IRQHandler        0x08011c71    0xa  Code  Gb  stm32f4xx_it.o [1]
 Enable_SPI_IRQ          0x0800463d    0xa  Code  Gb  SPBTLE_RF.o [1]
 EnvironmentalCharHandle
                         0x200012c8    0x2  Data  Lc  sensor_service.o [1]
 EnvironmentalCharSize   0x20000269    0x1  Data  Lc  sensor_service.o [1]
 Environmental_Update    0x080059ed  0x164  Code  Gb  sensor_service.o [1]
 FlightControlPID_OuterLoop
-                        0x0800c3dd  0x1d4  Code  Gb  flight_control.o [1]
+                        0x0800c46d  0x1d4  Code  Gb  flight_control.o [1]
 FlightControlPID_innerLoop
-                        0x0800c5b1  0x3ca  Code  Gb  flight_control.o [1]
+                        0x0800c641  0x3ca  Code  Gb  flight_control.o [1]
 Fly_origin              0x200011c4    0x8  Data  Gb  main.o [1]
 GAP_ConnectionComplete_CB
                         0x08005ce7   0x5a  Code  Lc  sensor_service.o [1]
 GAP_DisconnectionComplete_CB
                         0x08005d41   0x36  Code  Lc  sensor_service.o [1]
-GPIO_PIN                0x080123e4    0x8  Data  Gb  steval_fcu001_v1.o [1]
+GPIO_PIN                0x08012490    0x8  Data  Gb  steval_fcu001_v1.o [1]
 GPIO_PORT               0x20000250    0x8  Data  Gb  steval_fcu001_v1.o [1]
 GYRO_Data               0x200011d4    0x8  Data  Lc  steval_fcu001_v1_gyro.o [1]
 GYRO_SensorHandle       0x20001018   0x14  Data  Lc  steval_fcu001_v1_gyro.o [1]
 GetTargetEulerAngle     0x0800669d  0x132  Code  Gb  rc.o [1]
-HAL_ADC_ConfigChannel   0x0800d21b  0x184  Code  Gb  stm32f4xx_hal_adc.o [1]
-HAL_ADC_Init            0x0800d1b5   0x66  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_ConfigChannel   0x0800d2ab  0x184  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Init            0x0800d245   0x66  Code  Gb  stm32f4xx_hal_adc.o [1]
 HAL_ADC_MspInit         0x0800469b   0x4c  Code  Gb  stm32f4xx_hal_msp.o [1]
 HAL_DMA_Abort_IT        0x08004a15   0x28  Code  Gb  stm32f4xx_hal_dma.o [1]
 HAL_Delay               0x080049e9   0x1a  Code  Wk  stm32f4xx_hal.o [1]
@@ -912,31 +996,31 @@ HAL_NVIC_SetPriority    0x08004fe9   0x26  Code  Gb  stm32f4xx_hal_cortex.o [1]
 HAL_NVIC_SetPriorityGrouping
                         0x08004fdd    0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
 HAL_PCD_ConnectCallback
-                        0x0800f64d    0xe  Code  Gb  usbd_conf.o [1]
+                        0x0800f6dd    0xe  Code  Gb  usbd_conf.o [1]
 HAL_PCD_DataInStageCallback
-                        0x0800f57f   0x1e  Code  Gb  usbd_conf.o [1]
+                        0x0800f60f   0x1e  Code  Gb  usbd_conf.o [1]
 HAL_PCD_DataOutStageCallback
-                        0x0800f55f   0x20  Code  Gb  usbd_conf.o [1]
+                        0x0800f5ef   0x20  Code  Gb  usbd_conf.o [1]
 HAL_PCD_DisconnectCallback
-                        0x0800f65b    0xe  Code  Gb  usbd_conf.o [1]
-HAL_PCD_EP_ClrStall     0x0800eadb   0x60  Code  Gb  stm32f4xx_hal_pcd.o [1]
-HAL_PCD_EP_Open         0x0800e8cd   0x98  Code  Gb  stm32f4xx_hal_pcd.o [1]
-HAL_PCD_EP_Receive      0x0800e965   0x82  Code  Gb  stm32f4xx_hal_pcd.o [1]
-HAL_PCD_EP_SetStall     0x0800ea67   0x74  Code  Gb  stm32f4xx_hal_pcd.o [1]
-HAL_PCD_EP_Transmit     0x0800e9e7   0x80  Code  Gb  stm32f4xx_hal_pcd.o [1]
-HAL_PCD_IRQHandler      0x0800e28d  0x5e8  Code  Gb  stm32f4xx_hal_pcd.o [1]
+                        0x0800f6eb    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_EP_ClrStall     0x0800eb6b   0x60  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Open         0x0800e95d   0x98  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Receive      0x0800e9f5   0x82  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_SetStall     0x0800eaf7   0x74  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Transmit     0x0800ea77   0x80  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_IRQHandler      0x0800e31d  0x5e8  Code  Gb  stm32f4xx_hal_pcd.o [1]
 HAL_PCD_ISOINIncompleteCallback
-                        0x0800f639   0x14  Code  Gb  usbd_conf.o [1]
+                        0x0800f6c9   0x14  Code  Gb  usbd_conf.o [1]
 HAL_PCD_ISOOUTIncompleteCallback
-                        0x0800f625   0x14  Code  Gb  usbd_conf.o [1]
-HAL_PCD_ResetCallback   0x0800f5ab   0x38  Code  Gb  usbd_conf.o [1]
-HAL_PCD_ResumeCallback  0x0800f617    0xe  Code  Gb  usbd_conf.o [1]
-HAL_PCD_SOFCallback     0x0800f59d    0xe  Code  Gb  usbd_conf.o [1]
-HAL_PCD_SetAddress      0x0800e8a1   0x2c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+                        0x0800f6b5   0x14  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResetCallback   0x0800f63b   0x38  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResumeCallback  0x0800f6a7    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SOFCallback     0x0800f62d    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SetAddress      0x0800e931   0x2c  Code  Gb  stm32f4xx_hal_pcd.o [1]
 HAL_PCD_SetupStageCallback
-                        0x0800f54d   0x12  Code  Gb  usbd_conf.o [1]
+                        0x0800f5dd   0x12  Code  Gb  usbd_conf.o [1]
 HAL_PCD_SuspendCallback
-                        0x0800f5e3   0x34  Code  Gb  usbd_conf.o [1]
+                        0x0800f673   0x34  Code  Gb  usbd_conf.o [1]
 HAL_RCC_ClockConfig     0x08008ad9  0x1bc  Code  Gb  stm32f4xx_hal_rcc.o [1]
 HAL_RCC_GetHCLKFreq     0x08008d3f    0x6  Code  Gb  stm32f4xx_hal_rcc.o [1]
 HAL_RCC_GetPCLK1Freq    0x08008d45   0x26  Code  Gb  stm32f4xx_hal_rcc.o [1]
@@ -957,37 +1041,37 @@ HAL_SYSTICK_Callback    0x080065fd   0x2e  Code  Gb  rc.o [1]
 HAL_SYSTICK_Config      0x0800502b    0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
 HAL_SYSTICK_IRQHandler  0x0800507d    0x8  Code  Gb  stm32f4xx_hal_cortex.o [1]
 HAL_TIMEx_BreakCallback
-                        0x0800d579    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+                        0x0800d609    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
 HAL_TIMEx_CommutationCallback
-                        0x0800d577    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+                        0x0800d607    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
 HAL_TIMEx_MasterConfigSynchronization
-                        0x0800d51d   0x5a  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
-HAL_TIM_Base_Init       0x0800b955   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+                        0x0800d5ad   0x5a  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init       0x0800b9e5   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
 HAL_TIM_Base_MspInit    0x0800481d   0xd4  Code  Gb  stm32f4xx_hal_msp.o [1]
-HAL_TIM_Base_Start_IT   0x0800b98d   0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_Base_Start_IT   0x0800ba1d   0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
 HAL_TIM_ConfigClockSource
-                        0x0800be11  0x11e  Code  Gb  stm32f4xx_hal_tim.o [1]
+                        0x0800bea1  0x11e  Code  Gb  stm32f4xx_hal_tim.o [1]
 HAL_TIM_IC_CaptureCallback
                         0x080065f1    0xc  Code  Gb  rc.o [1]
 HAL_TIM_IC_ConfigChannel
-                        0x0800bc3b   0xd6  Code  Gb  stm32f4xx_hal_tim.o [1]
-HAL_TIM_IC_Init         0x0800ba1b   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
-HAL_TIM_IC_MspInit      0x0800ba53    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
-HAL_TIM_IC_Start_IT     0x0800ba55   0x6c  Code  Gb  stm32f4xx_hal_tim.o [1]
-HAL_TIM_IRQHandler      0x0800bac5  0x176  Code  Gb  stm32f4xx_hal_tim.o [1]
+                        0x0800bccb   0xd6  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_Init         0x0800baab   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_MspInit      0x0800bae3    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_Start_IT     0x0800bae5   0x6c  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IRQHandler      0x0800bb55  0x176  Code  Gb  stm32f4xx_hal_tim.o [1]
 HAL_TIM_OC_DelayElapsedCallback
-                        0x0800bf2f    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
+                        0x0800bfbf    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
 HAL_TIM_PWM_ConfigChannel
-                        0x0800bd11  0x100  Code  Gb  stm32f4xx_hal_tim.o [1]
-HAL_TIM_PWM_Init        0x0800b9ab   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
-HAL_TIM_PWM_MspInit     0x0800b9e3    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
+                        0x0800bda1  0x100  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Init        0x0800ba3b   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_MspInit     0x0800ba73    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
 HAL_TIM_PWM_PulseFinishedCallback
-                        0x0800bf31    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
-HAL_TIM_PWM_Start       0x0800b9e5   0x36  Code  Gb  stm32f4xx_hal_tim.o [1]
+                        0x0800bfc1    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Start       0x0800ba75   0x36  Code  Gb  stm32f4xx_hal_tim.o [1]
 HAL_TIM_PeriodElapsedCallback
-                        0x0800a55d  0x924  Code  Gb  main.o [1]
+                        0x0800a5e9  0x924  Code  Gb  main.o [1]
 HAL_TIM_TriggerCallback
-                        0x0800bf33    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
+                        0x0800bfc3    0x2  Code  Wk  stm32f4xx_hal_tim.o [1]
 HAL_UART_ErrorCallback  0x08007447    0x2  Code  Wk  stm32f4xx_hal_uart.o [1]
 HAL_UART_IRQHandler     0x080072fd  0x146  Code  Gb  stm32f4xx_hal_uart.o [1]
 HAL_UART_Init           0x080071a9   0x76  Code  Gb  stm32f4xx_hal_uart.o [1]
@@ -1007,184 +1091,184 @@ HCI_verify              0x08004a73   0x24  Code  Gb  hci.o [1]
 HWServW2STHandle        0x200012c6    0x2  Data  Lc  sensor_service.o [1]
 Hal_Write_Serial        0x0800434f   0x36  Code  Gb  SPBTLE_RF.o [1]
 Init_BlueNRG_Custom_Services
-                        0x0800b0d1   0x4c  Code  Lc  main.o [1]
+                        0x0800b165   0x4c  Code  Lc  main.o [1]
 LED_Update              0x08005b51   0x72  Code  Gb  sensor_service.o [1]
 LIS2MDLDrv              0x200001c0   0x48  Data  Gb  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Check_WhoAmI    0x080115b1   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_DeInit          0x08011523   0x28  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_Axes        0x080115df   0x82  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_AxesRaw     0x08011661   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_Axes_Raw    0x08011841   0x34  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Check_WhoAmI    0x08011641   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_DeInit          0x080115b3   0x28  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_Axes        0x0801166f   0x82  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_AxesRaw     0x080116f1   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_Axes_Raw    0x080118d1   0x34  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
 LIS2MDL_Get_DRDY_Status
-                        0x08011813   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_FS          0x0801179b    0xa  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_ODR         0x0801169b   0x50  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+                        0x080118a3   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_FS          0x0801182b    0xa  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_ODR         0x0801172b   0x50  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
 LIS2MDL_Get_Sensitivity
-                        0x0801168f    0xc  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Get_WhoAmI      0x08011597   0x1a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Init            0x080114b9   0x6a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+                        0x0801171f    0xc  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_WhoAmI      0x08011627   0x1a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Init            0x08011549   0x6a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
 LIS2MDL_MAG_Get_MagneticOutputs
-                        0x08011a4f   0x58  Code  Gb  LIS2MDL_MAG_driver.o [1]
-LIS2MDL_MAG_R_DataRate  0x08011977   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+                        0x08011adf   0x58  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_R_DataRate  0x08011a07   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
 LIS2MDL_MAG_R_STATUS_bits
-                        0x08011a2d   0x22  Code  Gb  LIS2MDL_MAG_driver.o [1]
+                        0x08011abd   0x22  Code  Gb  LIS2MDL_MAG_driver.o [1]
 LIS2MDL_MAG_R_WhoAmI_Bits
-                        0x080118c1   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
-LIS2MDL_MAG_ReadReg     0x0801189b   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+                        0x08011951   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_ReadReg     0x0801192b   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
 LIS2MDL_MAG_W_BlockDataUpdate
-                        0x080119e5   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
-LIS2MDL_MAG_W_DataRate  0x0801192f   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+                        0x08011a75   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_DataRate  0x080119bf   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
 LIS2MDL_MAG_W_Operating_Mode
-                        0x080118e7   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
-LIS2MDL_MAG_W_SelfTest  0x0801199d   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
-LIS2MDL_MAG_WriteReg    0x08011875   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+                        0x08011977   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_SelfTest  0x08011a2d   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_WriteReg    0x08011905   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
 LIS2MDL_M_0_Data        0x200012a8    0x4  Data  Lc  steval_fcu001_v1_magneto.o [1]
 LIS2MDL_M_0_handle      0x2000124c    0x4  Data  Lc  main.o [1]
-LIS2MDL_Read_Reg        0x080117d1   0x22  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Sensor_Disable  0x08011571   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Sensor_Enable   0x0801154b   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Set_FS          0x080117c5    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Set_FS_Value    0x080117cb    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Set_ODR         0x080116eb   0x52  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Set_ODR_Value   0x0801173d   0x5e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LIS2MDL_Write_Reg       0x080117f3   0x20  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
-LPS22HB_Check_WhoAmI    0x080111fd   0x2e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LIS2MDL_Read_Reg        0x08011861   0x22  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Sensor_Disable  0x08011601   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Sensor_Enable   0x080115db   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_FS          0x08011855    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_FS_Value    0x0801185b    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_ODR         0x0801177b   0x52  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_ODR_Value   0x080117cd   0x5e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Write_Reg       0x08011883   0x20  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LPS22HB_Check_WhoAmI    0x0801128d   0x2e  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_Combo_Data      0x200011ac    0x8  Data  Gb  LPS22HB_Driver_HL.o [1]
-LPS22HB_Get_DataStatus  0x0800de95   0x46  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Get_DeviceID    0x0800dbc9   0x1e  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Get_ODR         0x0801125f   0x66  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Get_Odr         0x0800dc77   0x28  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Get_Press       0x0801122d   0x32  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Get_Pressure    0x0800df21   0x2a  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_DataStatus  0x0800df25   0x46  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_DeviceID    0x0800dc59   0x1e  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_ODR         0x080112ef   0x66  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_Odr         0x0800dd07   0x28  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_Press       0x080112bd   0x32  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_Pressure    0x0800dfb1   0x2a  Code  Gb  LPS22HB_Driver.o [1]
 LPS22HB_Get_RawPressure
-                        0x0800dedb   0x46  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Get_WhoAmI      0x080111e3   0x1a  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Initialize      0x08011145   0x9e  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x0800df6b   0x46  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_WhoAmI      0x08011273   0x1a  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Initialize      0x080111d5   0x9e  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_0_Data        0x200012ac    0x4  Data  Lc  steval_fcu001_v1_pressure.o [1]
 LPS22HB_P_0_handle      0x20001250    0x4  Data  Lc  main.o [1]
-LPS22HB_P_Check_WhoAmI  0x08011031    0xc  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_DeInit        0x08010f8d   0x2a  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Check_WhoAmI  0x080110c1    0xc  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_DeInit        0x0801101d   0x2a  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_Drv           0x20000208   0x34  Data  Gb  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_Get_DRDY_Status
-                        0x08011125   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Get_ODR       0x0801104d   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Get_Press     0x0801103d   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Get_WhoAmI    0x08011021   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Init          0x08010f61   0x2c  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Read_Reg      0x080110e3   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x080111b5   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_ODR       0x080110dd   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_Press     0x080110cd   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_WhoAmI    0x080110b1   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Init          0x08010ff1   0x2c  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Read_Reg      0x08011173   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_Sensor_Disable
-                        0x08010feb   0x36  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x0801107b   0x36  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_Sensor_Enable
-                        0x08010fb7   0x34  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Set_ODR       0x0801105d   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x08011047   0x34  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Set_ODR       0x080110ed   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_P_Set_ODR_Value
-                        0x0801109b   0x48  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_P_Write_Reg     0x08011103   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_ReadReg         0x0800db49   0x40  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Read_Reg        0x08011475   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x0801112b   0x48  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Write_Reg     0x08011193   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_ReadReg         0x0800dbd9   0x40  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Read_Reg        0x08011505   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
 LPS22HB_Set_AutomaticIncrementRegAddress
-                        0x0800ddff   0x4a  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Set_Bdu         0x0800dd31   0x48  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Set_I2C         0x0800de49   0x4c  Code  Gb  LPS22HB_Driver.o [1]
+                        0x0800de8f   0x4a  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_Bdu         0x0800ddc1   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_I2C         0x0800ded9   0x4c  Code  Gb  LPS22HB_Driver.o [1]
 LPS22HB_Set_LowPassFilter
-                        0x0800dc9f   0x4a  Code  Gb  LPS22HB_Driver.o [1]
+                        0x0800dd2f   0x4a  Code  Gb  LPS22HB_Driver.o [1]
 LPS22HB_Set_LowPassFilterCutoff
-                        0x0800dce9   0x48  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Set_ODR_Value_When_Disabled
-                        0x080113ed   0x5e  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Set_ODR_Value_When_Enabled
-                        0x08011369   0x82  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Set_ODR_When_Disabled
-                        0x08011329   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Set_ODR_When_Enabled
-                        0x080112c5   0x64  Code  Lc  LPS22HB_Driver_HL.o [1]
-LPS22HB_Set_Odr         0x0800dc2f   0x48  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Set_PowerMode   0x0800dbe7   0x48  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Set_SpiInterface
                         0x0800dd79   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_ODR_Value_When_Disabled
+                        0x0801147d   0x5e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_Value_When_Enabled
+                        0x080113f9   0x82  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_When_Disabled
+                        0x080113b9   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_When_Enabled
+                        0x08011355   0x64  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_Odr         0x0800dcbf   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_PowerMode   0x0800dc77   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_SpiInterface
+                        0x0800de09   0x48  Code  Gb  LPS22HB_Driver.o [1]
 LPS22HB_SwResetAndMemoryBoot
-                        0x0800ddc1   0x3e  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_WriteReg        0x0800db89   0x40  Code  Gb  LPS22HB_Driver.o [1]
-LPS22HB_Write_Reg       0x08011497   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+                        0x0800de51   0x3e  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_WriteReg        0x0800dc19   0x40  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Write_Reg       0x08011527   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
 LSM303AGR_ACC_Get_Acceleration
-                        0x08010b71  0x174  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010c01  0x174  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_Get_Raw_Acceleration
-                        0x08010b19   0x58  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010ba9   0x58  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_R_FullScale
-                        0x08010af3   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_R_HiRes   0x08010ecb   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010b83   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_HiRes   0x08010f5b   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_R_LOWPWR_EN
-                        0x08010ea5   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_R_ODR     0x08010d35   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010f35   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_ODR     0x08010dc5   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_R_WHO_AM_I
-                        0x08010a3d   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010acd   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_R_XDataAvail
-                        0x08010ef1   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_R_XEN     0x08010da3   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_R_YEN     0x08010e11   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_R_ZEN     0x08010e7f   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_ReadReg   0x08010a0d   0x30  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010f81   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_XEN     0x08010e33   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_YEN     0x08010ea1   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_ZEN     0x08010f0f   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_ReadReg   0x08010a9d   0x30  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_Sensitivity_List
-                        0x08011c18   0x60  Data  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08011ca8   0x60  Data  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_W_BlockDataUpdate
-                        0x08010a63   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010af3   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_W_FifoMode
-                        0x08010f17   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010fa7   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_ACC_W_FullScale
-                        0x08010aab   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_W_ODR     0x08010ced   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_W_XEN     0x08010d5b   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_W_YEN     0x08010dc9   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_W_ZEN     0x08010e37   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
-LSM303AGR_ACC_WriteReg  0x080109dd   0x30  Code  Gb  LSM303AGR_ACC_driver.o [1]
+                        0x08010b3b   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_ODR     0x08010d7d   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_XEN     0x08010deb   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_YEN     0x08010e59   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_ZEN     0x08010ec7   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_WriteReg  0x08010a6d   0x30  Code  Gb  LSM303AGR_ACC_driver.o [1]
 LSM303AGR_X_0_Data      0x200012a4    0x4  Data  Lc  steval_fcu001_v1_accelero.o [1]
 LSM303AGR_X_Check_WhoAmI
-                        0x080101ed   0x2e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_DeInit      0x0801013d   0x30  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x0801027d   0x2e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_DeInit      0x080101cd   0x30  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Drv         0x200000d0   0x50  Data  Gb  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Get_Axes    0x0801021b   0x26  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Axes    0x080102ab   0x26  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_AxesRaw
-                        0x08010241   0x2e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080102d1   0x2e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Axes_Raw
-                        0x08010623   0xa6  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080106b3   0xa6  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Axes_Status
-                        0x080104df   0x6e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x0801056f   0x6e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_DRDY_Status
-                        0x080105ed   0x36  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Get_FS      0x080103e3   0x5a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Get_ODR     0x080102e9   0x88  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x0801067d   0x36  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_FS      0x08010473   0x5a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_ODR     0x08010379   0x88  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Sensitivity
-                        0x0801026f   0x7a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080102ff   0x7a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Sensitivity_HR_Mode
-                        0x0801092b   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080109bb   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Sensitivity_LP_Mode
-                        0x080108db   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x0801096b   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Get_Sensitivity_Normal_Mode
-                        0x0801088b   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Get_WhoAmI  0x080101d3   0x1a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Init        0x080100bd   0x80  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Read_Reg    0x080105ab   0x22  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x0801091b   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_WhoAmI  0x08010263   0x1a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Init        0x0801014d   0x80  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Read_Reg    0x0801063b   0x22  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Sensor_Disable
-                        0x08010199   0x3a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x08010229   0x3a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Sensor_Enable
-                        0x0801016d   0x2c  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080101fd   0x2c  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_Axes_Status
-                        0x0801054d   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Set_FS      0x0801043d   0x44  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080105dd   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_FS      0x080104cd   0x44  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_FS_Value
-                        0x08010481   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Set_ODR     0x08010371   0x34  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x08010511   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR     0x08010401   0x34  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_ODR_Value
-                        0x080103a5   0x3e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x08010435   0x3e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_ODR_Value_When_Disabled
-                        0x08010801   0x8a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x08010891   0x8a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_ODR_Value_When_Enabled
-                        0x0801076d   0x94  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080107fd   0x94  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_ODR_When_Disabled
-                        0x0801071b   0x46  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x080107ab   0x46  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM303AGR_X_Set_ODR_When_Enabled
-                        0x080106c9   0x52  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
-LSM303AGR_X_Write_Reg   0x080105cd   0x20  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+                        0x08010759   0x52  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Write_Reg   0x0801065d   0x20  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
 LSM6DSL_ACC_GYRO_GetRawAccData
                         0x08002145   0x58  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
 LSM6DSL_ACC_GYRO_GetRawGyroData
@@ -1532,12 +1616,12 @@ LedCharHandle           0x200012ce    0x2  Data  Lc  sensor_service.o [1]
 LoadInt                 0x08007ec9   0x6e  Code  Lc  xprintffull_nomb.o [3]
 MAGNETO_Data            0x200011e4    0x8  Data  Lc  steval_fcu001_v1_magneto.o [1]
 MAGNETO_SensorHandle    0x2000102c   0x14  Data  Lc  steval_fcu001_v1_magneto.o [1]
-MX_ADC1_Init            0x0800a1c1   0x82  Code  Lc  main.o [1]
-MX_GPIO_Init            0x0800a3ef   0x88  Code  Lc  main.o [1]
-MX_TIM2_Init            0x0800a243   0x8c  Code  Lc  main.o [1]
-MX_TIM4_Init            0x0800a2d5   0x8c  Code  Lc  main.o [1]
-MX_TIM9_Init            0x0800a361   0x3e  Code  Lc  main.o [1]
-MX_USART1_UART_Init     0x0800a39f   0x50  Code  Lc  main.o [1]
+MX_ADC1_Init            0x0800a251   0x82  Code  Lc  main.o [1]
+MX_GPIO_Init            0x0800a481   0x88  Code  Lc  main.o [1]
+MX_TIM2_Init            0x0800a2d3   0x8c  Code  Lc  main.o [1]
+MX_TIM4_Init            0x0800a35f   0x8c  Code  Lc  main.o [1]
+MX_TIM9_Init            0x0800a3eb   0x3e  Code  Lc  main.o [1]
+MX_USART1_UART_Init     0x0800a429   0x50  Code  Lc  main.o [1]
 MaxCharHandle           0x200012d0    0x2  Data  Lc  sensor_service.o [1]
 NVIC_DisableIRQ         0x08004f35   0x14  Code  Lc  stm32f4xx_hal_cortex.o [1]
 NVIC_EnableIRQ          0x08004f21   0x14  Code  Lc  stm32f4xx_hal_cortex.o [1]
@@ -1547,20 +1631,20 @@ NVIC_GetPriorityGrouping
 NVIC_SetPriority        0x08004f49   0x26  Code  Lc  stm32f4xx_hal_cortex.o [1]
 NVIC_SetPriorityGrouping
                         0x08004ef9   0x1e  Code  Lc  stm32f4xx_hal_cortex.o [1]
-OTG_FS_IRQHandler       0x08011bbf    0xa  Code  Gb  stm32f4xx_it.o [1]
+OTG_FS_IRQHandler       0x08011c4f    0xa  Code  Gb  stm32f4xx_it.o [1]
 Osal_MemCpy             0x08006557   0x16  Code  Gb  osal.o [1]
 Osal_MemSet             0x0800656d   0x16  Code  Gb  osal.o [1]
-PCD_WriteEmptyTxFifo    0x0800eb3b   0xba  Code  Lc  stm32f4xx_hal_pcd.o [1]
-PIDControlInit          0x0800c349   0x94  Code  Gb  flight_control.o [1]
+PCD_WriteEmptyTxFifo    0x0800ebcb   0xba  Code  Lc  stm32f4xx_hal_pcd.o [1]
+PIDControlInit          0x0800c3d9   0x94  Code  Gb  flight_control.o [1]
 PRESSURE_Data           0x200011ec    0x8  Data  Lc  steval_fcu001_v1_pressure.o [1]
 PRESSURE_SensorHandle   0x20001040   0x14  Data  Lc  steval_fcu001_v1_pressure.o [1]
-QuaternionToEuler       0x0800d089  0x12c  Code  Gb  quaternion.o [1]
-ReadSensorRawData       0x0800d57b   0x9e  Code  Gb  sensor_data.o [1]
+QuaternionToEuler       0x0800d119  0x12c  Code  Gb  quaternion.o [1]
+ReadSensorRawData       0x0800d60b   0x9e  Code  Gb  sensor_data.o [1]
 Read_Request_CB         0x08005d8d  0x10e  Code  Gb  sensor_service.o [1]
-Region$$Table$$Base     0x08012108          --   Gb  - Linker created -
-Region$$Table$$Limit    0x0801212c          --   Gb  - Linker created -
-SPI1_IRQHandler         0x08011ba1    0xa  Code  Gb  stm32f4xx_it.o [1]
-SPI2_IRQHandler         0x08011bab    0xa  Code  Gb  stm32f4xx_it.o [1]
+Region$$Table$$Base     0x08012198          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080121bc          --   Gb  - Linker created -
+SPI1_IRQHandler         0x08011c31    0xa  Code  Gb  stm32f4xx_it.o [1]
+SPI2_IRQHandler         0x08011c3b    0xa  Code  Gb  stm32f4xx_it.o [1]
 SPI_CheckFlag_BSY       0x0800430b   0x2c  Code  Lc  stm32f4xx_hal_spi.o [1]
 SPI_DMAAbortOnError     0x08004251   0x16  Code  Lc  stm32f4xx_hal_spi.o [1]
 SPI_Read                0x08003a69  0x140  Code  Gb  steval_fcu001_v1.o [1]
@@ -1591,29 +1675,29 @@ Stderr_Update           0x0800543d   0x82  Code  Gb  sensor_service.o [1]
 Stderr_Update_AfterRead
                         0x08005549   0x32  Code  Lc  sensor_service.o [1]
 SysTick_Config          0x08004fad   0x30  Code  Lc  stm32f4xx_hal_cortex.o [1]
-SysTick_Handler         0x08011b81    0xc  Code  Gb  stm32f4xx_it.o [1]
-SystemClock_Config      0x0800a105   0xbc  Code  Gb  main.o [1]
+SysTick_Handler         0x08011c11    0xc  Code  Gb  stm32f4xx_it.o [1]
+SystemClock_Config      0x0800a191   0xbc  Code  Gb  main.o [1]
 SystemCoreClock         0x20000260    0x4  Data  Gb  system_stm32f4xx.o [1]
-SystemInit              0x08011b15   0x4c  Code  Gb  system_stm32f4xx.o [1]
+SystemInit              0x08011ba5   0x4c  Code  Gb  system_stm32f4xx.o [1]
 TIM1_BRK_TIM9_IRQHandler
-                        0x08011b8d    0xa  Code  Gb  stm32f4xx_it.o [1]
-TIM2_IRQHandler         0x08011b97    0xa  Code  Gb  stm32f4xx_it.o [1]
-TIM_Base_SetConfig      0x0800bf35   0x9a  Code  Gb  stm32f4xx_hal_tim.o [1]
-TIM_CCxChannelCmd       0x0800c0ad   0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
-TIM_ETR_SetConfig       0x0800c32d   0x1c  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_ITRx_SetConfig      0x0800c317   0x16  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_OC1_SetConfig       0x0800c0cb   0x60  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_OC2_SetConfig       0x0800c043   0x6a  Code  Gb  stm32f4xx_hal_tim.o [1]
-TIM_OC3_SetConfig       0x0800c12b   0x68  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_OC4_SetConfig       0x0800c193   0x52  Code  Lc  stm32f4xx_hal_tim.o [1]
+                        0x08011c1d    0xa  Code  Gb  stm32f4xx_it.o [1]
+TIM2_IRQHandler         0x08011c27    0xa  Code  Gb  stm32f4xx_it.o [1]
+TIM_Base_SetConfig      0x0800bfc5   0x9a  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_CCxChannelCmd       0x0800c13d   0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_ETR_SetConfig       0x0800c3bd   0x1c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_ITRx_SetConfig      0x0800c3a7   0x16  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC1_SetConfig       0x0800c15b   0x60  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC2_SetConfig       0x0800c0d3   0x6a  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_OC3_SetConfig       0x0800c1bb   0x68  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC4_SetConfig       0x0800c223   0x52  Code  Lc  stm32f4xx_hal_tim.o [1]
 TIM_TI1_ConfigInputStage
-                        0x0800c205   0x2c  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_TI1_SetConfig       0x0800bfcf   0x74  Code  Gb  stm32f4xx_hal_tim.o [1]
+                        0x0800c295   0x2c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI1_SetConfig       0x0800c05f   0x74  Code  Gb  stm32f4xx_hal_tim.o [1]
 TIM_TI2_ConfigInputStage
-                        0x0800c26f   0x2e  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_TI2_SetConfig       0x0800c231   0x3e  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_TI3_SetConfig       0x0800c29d   0x3c  Code  Lc  stm32f4xx_hal_tim.o [1]
-TIM_TI4_SetConfig       0x0800c2d9   0x3e  Code  Lc  stm32f4xx_hal_tim.o [1]
+                        0x0800c2ff   0x2e  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI2_SetConfig       0x0800c2c1   0x3e  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI3_SetConfig       0x0800c32d   0x3c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI4_SetConfig       0x0800c369   0x3e  Code  Lc  stm32f4xx_hal_tim.o [1]
 TargetBoardFeatures     0x20000f80   0x2c  Data  Gb  sensor_service.o [1]
 TermCharHandle          0x200012d8    0x2  Data  Lc  sensor_service.o [1]
 Term_Update             0x080054bf   0x8a  Code  Gb  sensor_service.o [1]
@@ -1629,72 +1713,72 @@ UART_SetConfig          0x0800761f  0x312  Code  Lc  stm32f4xx_hal_uart.o [1]
 UART_Transmit_IT        0x080074f1   0x6e  Code  Lc  stm32f4xx_hal_uart.o [1]
 UART_WaitOnFlagUntilTimeout
                         0x08007449   0x70  Code  Lc  stm32f4xx_hal_uart.o [1]
-USART1_IRQHandler       0x08011bb5    0xa  Code  Gb  stm32f4xx_it.o [1]
-USBD_ClrClassConfig     0x0800f773   0x18  Code  Gb  usbd_core.o [1]
-USBD_ClrFeature         0x0800ffb3   0x3a  Code  Lc  usbd_ctlreq.o [1]
-USBD_CtlContinueRx      0x0801006f   0x1a  Code  Gb  usbd_ioreq.o [1]
+USART1_IRQHandler       0x08011c45    0xa  Code  Gb  stm32f4xx_it.o [1]
+USBD_ClrClassConfig     0x0800f803   0x18  Code  Gb  usbd_core.o [1]
+USBD_ClrFeature         0x08010043   0x3a  Code  Lc  usbd_ctlreq.o [1]
+USBD_CtlContinueRx      0x080100ff   0x1a  Code  Gb  usbd_ioreq.o [1]
 USBD_CtlContinueSendData
-                        0x08010055   0x1a  Code  Gb  usbd_ioreq.o [1]
-USBD_CtlError           0x08010015   0x18  Code  Gb  usbd_ctlreq.o [1]
-USBD_CtlReceiveStatus   0x080100a3   0x1a  Code  Gb  usbd_ioreq.o [1]
-USBD_CtlSendData        0x0801002d   0x28  Code  Gb  usbd_ioreq.o [1]
-USBD_CtlSendStatus      0x08010089   0x1a  Code  Gb  usbd_ioreq.o [1]
-USBD_GetConfig          0x0800ff05   0x4c  Code  Lc  usbd_ctlreq.o [1]
-USBD_GetDescriptor      0x0800fc61  0x164  Code  Lc  usbd_ctlreq.o [1]
-USBD_GetStatus          0x0800ff51   0x3c  Code  Lc  usbd_ctlreq.o [1]
-USBD_LL_ClearStallEP    0x0800f6a5   0x16  Code  Gb  usbd_conf.o [1]
-USBD_LL_DataInStage     0x0800f883   0xe2  Code  Gb  usbd_core.o [1]
-USBD_LL_DataOutStage    0x0800f7f5   0x8e  Code  Gb  usbd_core.o [1]
-USBD_LL_DevConnected    0x0800fa05    0x6  Code  Gb  usbd_core.o [1]
+                        0x080100e5   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlError           0x080100a5   0x18  Code  Gb  usbd_ctlreq.o [1]
+USBD_CtlReceiveStatus   0x08010133   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendData        0x080100bd   0x28  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendStatus      0x08010119   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_GetConfig          0x0800ff95   0x4c  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetDescriptor      0x0800fcf1  0x164  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetStatus          0x0800ffe1   0x3c  Code  Lc  usbd_ctlreq.o [1]
+USBD_LL_ClearStallEP    0x0800f735   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_DataInStage     0x0800f913   0xe2  Code  Gb  usbd_core.o [1]
+USBD_LL_DataOutStage    0x0800f885   0x8e  Code  Gb  usbd_core.o [1]
+USBD_LL_DevConnected    0x0800fa95    0x6  Code  Gb  usbd_core.o [1]
 USBD_LL_DevDisconnected
-                        0x0800fa0b   0x1c  Code  Gb  usbd_core.o [1]
-USBD_LL_IsStallEP       0x0800f6bb   0x30  Code  Gb  usbd_conf.o [1]
+                        0x0800fa9b   0x1c  Code  Gb  usbd_core.o [1]
+USBD_LL_IsStallEP       0x0800f74b   0x30  Code  Gb  usbd_conf.o [1]
 USBD_LL_IsoINIncomplete
-                        0x0800f9f9    0x6  Code  Gb  usbd_core.o [1]
+                        0x0800fa89    0x6  Code  Gb  usbd_core.o [1]
 USBD_LL_IsoOUTIncomplete
-                        0x0800f9ff    0x6  Code  Gb  usbd_core.o [1]
-USBD_LL_OpenEP          0x0800f66d   0x22  Code  Gb  usbd_conf.o [1]
-USBD_LL_PrepareReceive  0x0800f721   0x20  Code  Gb  usbd_conf.o [1]
-USBD_LL_Reset           0x0800f965   0x46  Code  Gb  usbd_core.o [1]
-USBD_LL_Resume          0x0800f9c7    0xe  Code  Gb  usbd_core.o [1]
-USBD_LL_SOF             0x0800f9d5   0x24  Code  Gb  usbd_core.o [1]
-USBD_LL_SetSpeed        0x0800f9ab    0x8  Code  Gb  usbd_core.o [1]
-USBD_LL_SetUSBAddress   0x0800f6eb   0x16  Code  Gb  usbd_conf.o [1]
-USBD_LL_SetupStage      0x0800f78b   0x6a  Code  Gb  usbd_core.o [1]
-USBD_LL_StallEP         0x0800f68f   0x16  Code  Gb  usbd_conf.o [1]
-USBD_LL_Suspend         0x0800f9b3   0x14  Code  Gb  usbd_core.o [1]
-USBD_LL_Transmit        0x0800f701   0x20  Code  Gb  usbd_conf.o [1]
-USBD_ParseSetupRequest  0x0800ffed   0x28  Code  Gb  usbd_ctlreq.o [1]
-USBD_RunTestMode        0x0800f741    0x6  Code  Gb  usbd_core.o [1]
-USBD_SetAddress         0x0800fdc5   0x60  Code  Lc  usbd_ctlreq.o [1]
-USBD_SetClassConfig     0x0800f747   0x2c  Code  Gb  usbd_core.o [1]
-USBD_SetConfig          0x0800fe25   0xda  Code  Lc  usbd_ctlreq.o [1]
-USBD_SetFeature         0x0800ff8d   0x26  Code  Lc  usbd_ctlreq.o [1]
-USBD_StdDevReq          0x0800fa29   0x7c  Code  Gb  usbd_ctlreq.o [1]
-USBD_StdEPReq           0x0800faf1  0x170  Code  Gb  usbd_ctlreq.o [1]
-USBD_StdItfReq          0x0800faa5   0x4c  Code  Gb  usbd_ctlreq.o [1]
-USB_ActivateEndpoint    0x0800ec67   0xc0  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_ActivateSetup       0x0800f4a9   0x44  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_EP0StartXfer        0x0800f067  0x1ea  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_EP0_OutStart        0x0800f4ed   0x58  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_EPClearStall        0x0800f357   0x96  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_EPSetStall          0x0800f2b9   0x9e  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_EPStartXfer         0x0800ed27  0x340  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_FlushTxFifo         0x0800ebf5   0x24  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_GetDevSpeed         0x0800ec19   0x4e  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_GetMode             0x0800f4a1    0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+                        0x0800fa8f    0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_OpenEP          0x0800f6fd   0x22  Code  Gb  usbd_conf.o [1]
+USBD_LL_PrepareReceive  0x0800f7b1   0x20  Code  Gb  usbd_conf.o [1]
+USBD_LL_Reset           0x0800f9f5   0x46  Code  Gb  usbd_core.o [1]
+USBD_LL_Resume          0x0800fa57    0xe  Code  Gb  usbd_core.o [1]
+USBD_LL_SOF             0x0800fa65   0x24  Code  Gb  usbd_core.o [1]
+USBD_LL_SetSpeed        0x0800fa3b    0x8  Code  Gb  usbd_core.o [1]
+USBD_LL_SetUSBAddress   0x0800f77b   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_SetupStage      0x0800f81b   0x6a  Code  Gb  usbd_core.o [1]
+USBD_LL_StallEP         0x0800f71f   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_Suspend         0x0800fa43   0x14  Code  Gb  usbd_core.o [1]
+USBD_LL_Transmit        0x0800f791   0x20  Code  Gb  usbd_conf.o [1]
+USBD_ParseSetupRequest  0x0801007d   0x28  Code  Gb  usbd_ctlreq.o [1]
+USBD_RunTestMode        0x0800f7d1    0x6  Code  Gb  usbd_core.o [1]
+USBD_SetAddress         0x0800fe55   0x60  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetClassConfig     0x0800f7d7   0x2c  Code  Gb  usbd_core.o [1]
+USBD_SetConfig          0x0800feb5   0xda  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetFeature         0x0801001d   0x26  Code  Lc  usbd_ctlreq.o [1]
+USBD_StdDevReq          0x0800fab9   0x7c  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdEPReq           0x0800fb81  0x170  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdItfReq          0x0800fb35   0x4c  Code  Gb  usbd_ctlreq.o [1]
+USB_ActivateEndpoint    0x0800ecf7   0xc0  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ActivateSetup       0x0800f539   0x44  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0StartXfer        0x0800f0f7  0x1ea  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0_OutStart        0x0800f57d   0x58  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPClearStall        0x0800f3e7   0x96  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPSetStall          0x0800f349   0x9e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPStartXfer         0x0800edb7  0x340  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_FlushTxFifo         0x0800ec85   0x24  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetDevSpeed         0x0800eca9   0x4e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetMode             0x0800f531    0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
 USB_ReadDevAllInEpInterrupt
-                        0x0800f43d   0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
+                        0x0800f4cd   0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
 USB_ReadDevAllOutEpInterrupt
-                        0x0800f427   0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
+                        0x0800f4b7   0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
 USB_ReadDevInEPInterrupt
-                        0x0800f46d   0x34  Code  Gb  stm32f4xx_ll_usb.o [1]
+                        0x0800f4fd   0x34  Code  Gb  stm32f4xx_ll_usb.o [1]
 USB_ReadDevOutEPInterrupt
-                        0x0800f453   0x1a  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_ReadInterrupts      0x0800f419    0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_ReadPacket          0x0800f291   0x28  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_SetDevAddress       0x0800f3ed   0x2c  Code  Gb  stm32f4xx_ll_usb.o [1]
-USB_WritePacket         0x0800f251   0x40  Code  Gb  stm32f4xx_ll_usb.o [1]
+                        0x0800f4e3   0x1a  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadInterrupts      0x0800f4a9    0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadPacket          0x0800f321   0x28  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetDevAddress       0x0800f47d   0x2c  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_WritePacket         0x0800f2e1   0x40  Code  Gb  stm32f4xx_ll_usb.o [1]
 User_Timer_Callback     0x0800715b    0xa  Code  Gb  timer.o [1]
 _GenldFullNoMb          0x0800843f  0x264  Code  Lc  xprintffull_nomb.o [3]
 _LdtobFullNoMb          0x0800803d  0x3fc  Code  Lc  xprintffull_nomb.o [3]
@@ -1705,44 +1789,44 @@ _SNProut                0x08002003   0x1a  Code  Gb  xsnprout.o [3]
 _SProut                 0x080034af    0xa  Code  Gb  xsprout.o [3]
 __aeabi_cdcmple         0x08008fe9         Code  Gb  DblCmpLe.o [4]
 __aeabi_cdrcmple        0x08009019         Code  Gb  DblCmpGe.o [4]
-__aeabi_d2f             0x0800cb6d         Code  Gb  DblToFlt.o [4]
+__aeabi_d2f             0x0800cbfd         Code  Gb  DblToFlt.o [4]
 __aeabi_d2iz            0x08009161         Code  Gb  DblToI32.o [4]
 __aeabi_d2uiz           0x0800918d         Code  Gb  DblToI32.o [4]
 __aeabi_dadd            0x08009775         Code  Gb  DblAdd.o [4]
 __aeabi_ddiv            0x0800950d         Code  Gb  DblDiv.o [4]
 __aeabi_dmul            0x08009369         Code  Gb  DblMul.o [4]
 __aeabi_dsub            0x080091e9         Code  Gb  DblSub.o [4]
-__aeabi_errno_addr      0x0800e271    0x6  Code  Gb  errno.o [3]
-__aeabi_f2d             0x0800cb1d         Code  Gb  FltToDbl.o [4]
+__aeabi_errno_addr      0x0800e301    0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x0800cbad         Code  Gb  FltToDbl.o [4]
 __aeabi_i2d             0x080091b9         Code  Gb  I32ToDbl.o [4]
 __aeabi_ldiv0           0x08009771         Code  Gb  I64DivZer.o [5]
 __aeabi_ldivmod         0x08008e75         Code  Gb  I64DivMod.o [5]
 __aeabi_memset          0x080070a1         Code  Gb  ABImemset.o [5]
 __aeabi_ui2d            0x080091cd         Code  Gb  I32ToDbl.o [4]
 __aeabi_uldivmod        0x08008eb9         Code  Gb  I64DivMod.o [5]
-__cmain                 0x08012279         Code  Gb  cmain.o [5]
-__exit                  0x080122a9   0x14  Code  Gb  exit.o [6]
-__iar_Atan              0x0800df91  0x158  Code  Gb  xatan.o [4]
+__cmain                 0x08012325         Code  Gb  cmain.o [5]
+__exit                  0x08012355   0x14  Code  Gb  exit.o [6]
+__iar_Atan              0x0800e021  0x158  Code  Gb  xatan.o [4]
 __iar_Dnorm             0x08008fa7   0x42  Code  Gb  xdnorm.o [4]
 __iar_Dscale            0x08009049  0x118  Code  Gb  xdscale.o [4]
-__iar_Dtest             0x0800df4b   0x30  Code  Gb  xdtest.o [4]
+__iar_Dtest             0x0800dfdb   0x30  Code  Gb  xdtest.o [4]
 __iar_Errno             0x20000264    0x4  Data  Gb  errno.o [3]
 __iar_Memchr            0x08008e1d         Code  Gb  memchr.o [5]
 __iar_Memset            0x080070a1         Code  Gb  ABImemset.o [5]
 __iar_Memset_word       0x080070a9         Code  Gb  ABImemset.o [5]
 __iar_Strchr            0x08008dcd         Code  Gb  strchr.o [5]
-__iar_copy_init3        0x08011beb   0x2c  Code  Gb  copy_init3.o [5]
+__iar_copy_init3        0x08011c7b   0x2c  Code  Gb  copy_init3.o [5]
 __iar_d2uiz             0x08009199         Code  Gb  DblToI32.o [4]
 __iar_dadd              0x08009789         Code  Gb  DblAdd.o [4]
-__iar_data_init3        0x0801202d   0x28  Code  Gb  data_init.o [5]
+__iar_data_init3        0x080120bd   0x28  Code  Gb  data_init.o [5]
 __iar_dlib_perthread_access
-                        0x0800e289    0x2  Code  Gb  xtls.o [3]
+                        0x0800e319    0x2  Code  Gb  xtls.o [3]
 __iar_dsub              0x080091fd         Code  Gb  DblSub.o [4]
 __iar_dsubStart         0x0800920f         Code  Gb  DblSub.o [4]
-__iar_edom              0x0800e27d         Code  Gb  iarEdom.o [5]
-__iar_init_vfp          0x080120e5         Code  Gb  fpinit_M.o [4]
-__iar_program_start     0x08012391         Code  Gb  cstartup_M.o [5]
-__iar_sqrt              0x0800e181         Code  Gb  sqrt.o [4]
+__iar_edom              0x0800e30d         Code  Gb  iarEdom.o [5]
+__iar_init_vfp          0x08012175         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x0801243d         Code  Gb  cstartup_M.o [5]
+__iar_sqrt              0x0800e211         Code  Gb  sqrt.o [4]
 __iar_ui2d              0x080091d1         Code  Gb  I32ToDbl.o [4]
 __iar_unaligned___aeabi_memcpy
                         0x08006ba1         Code  Gb  ABImemcpy_unaligned.o [5]
@@ -1750,15 +1834,15 @@ __iar_unaligned___aeabi_memcpy4
                         0x08006bc1         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_unaligned___aeabi_memcpy8
                         0x08006bc1         Code  Gb  ABImemcpy_unaligned.o [5]
-__iar_vfp_asin          0x0800db39   0x10  Code  Gb  asin.o [4]
-__iar_vfp_atan2         0x0800da01   0x14  Code  Gb  atan2.o [4]
-__iar_zero_init3        0x08011cd9   0x40  Code  Gb  zero_init3.o [5]
-__low_level_init        0x08012293    0x4  Code  Gb  low_level_init.o [3]
+__iar_vfp_asin          0x0800dbc9   0x10  Code  Gb  asin.o [4]
+__iar_vfp_atan2         0x0800da91   0x14  Code  Gb  atan2.o [4]
+__iar_zero_init3        0x08011d69   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0801233f    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000         Data  Gb  startup_stm32f401xc.o [1]
-_call_main              0x08012285         Code  Gb  cmain.o [5]
-_exit                   0x0801229d         Code  Gb  cexit.o [5]
-_main                   0x0801228f         Code  Gb  cmain.o [5]
-a                       0x0800e140   0x40  Data  Lc  xatan.o [4]
+_call_main              0x08012331         Code  Gb  cmain.o [5]
+_exit                   0x08012349         Code  Gb  cexit.o [5]
+_main                   0x0801233b         Code  Gb  cmain.o [5]
+a                       0x0800e1d0   0x40  Data  Lc  xatan.o [4]
 acc                     0x200010dc    0xc  Data  Gb  main.o [1]
 acc_FIFO                0x20000dac   0x3c  Data  Gb  main.o [1]
 acc_ahrs                0x20001124    0xc  Data  Gb  main.o [1]
@@ -1783,17 +1867,17 @@ aci_gatt_init           0x0800685d   0x3c  Code  Gb  bluenrg_gatt_aci.o [1]
 aci_gatt_update_char_value
                         0x08006a9f   0xb6  Code  Gb  bluenrg_gatt_aci.o [1]
 aci_hal_set_tx_power_level
-                        0x0800d891   0x4e  Code  Gb  bluenrg_hal_aci.o [1]
+                        0x0800d921   0x4e  Code  Gb  bluenrg_hal_aci.o [1]
 aci_hal_write_config_data
-                        0x0800d819   0x78  Code  Gb  bluenrg_hal_aci.o [1]
+                        0x0800d8a9   0x78  Code  Gb  bluenrg_hal_aci.o [1]
 aci_l2cap_connection_parameter_update_request
                         0x08006f8b   0x6a  Code  Gb  bluenrg_l2cap_aci.o [1]
 ahrs                    0x20000fd4   0x1c  Data  Gb  main.o [1]
-ahrs_fusion_ag          0x0800cbfd  0x48c  Code  Gb  ahrs.o [1]
+ahrs_fusion_ag          0x0800cc8d  0x48c  Code  Gb  ahrs.o [1]
 ahrs_kp                 0x2000120c    0x4  Data  Gb  ahrs.o [1]
 appearance_char_handle  0x200012bc    0x2  Data  Gb  main.o [1]
-asin                    0x0800da15  0x10e  Code  Gb  asin.o [4]
-atan2                   0x0800d921   0xd0  Code  Gb  atan2.o [4]
+asin                    0x0800daa5  0x10e  Code  Gb  asin.o [4]
+atan2                   0x0800d9b1   0xd0  Code  Gb  atan2.o [4]
 bdaddr                  0x200011bc    0x8  Data  Gb  main.o [1]
 ch                      0x200012de    0x1  Data  Gb  main.o [1]
 ch_flag                 0x200012df    0x1  Data  Gb  main.o [1]
@@ -1805,7 +1889,7 @@ count2                  0x2000127c    0x4  Data  Gb  main.o [1]
 dev_name_char_handle    0x200012ba    0x2  Data  Gb  main.o [1]
 div                     0x08009763    0xe  Code  Gb  div.o [3]
 dt_recip                0x2000123c    0x4  Data  Gb  flight_control.o [1]
-enableAllSensors        0x0800aec1   0x3c  Code  Gb  main.o [1]
+enableAllSensors        0x0800af4d   0x3c  Code  Gb  main.o [1]
 euler_ahrs              0x200010c4    0xc  Data  Gb  main.o [1]
 euler_ahrs_offset       0x20001184    0xc  Data  Gb  main.o [1]
 euler_rc                0x200010b8    0xc  Data  Gb  main.o [1]
@@ -1813,7 +1897,7 @@ euler_rc_fil            0x200010d0    0xc  Data  Gb  main.o [1]
 euler_rc_x_pre          0x20000e90   0x30  Data  Gb  main.o [1]
 euler_rc_y_pre          0x20000e60   0x30  Data  Gb  main.o [1]
 exInt                   0x20001200    0x4  Data  Gb  ahrs.o [1]
-exit                    0x08012297    0x4  Code  Gb  exit.o [3]
+exit                    0x08012343    0x4  Code  Gb  exit.o [3]
 eyInt                   0x20001204    0x4  Data  Gb  ahrs.o [1]
 ezInt                   0x20001208    0x4  Data  Gb  ahrs.o [1]
 fly_ready               0x20001260    0x4  Data  Gb  main.o [1]
@@ -1856,8 +1940,8 @@ huart1                  0x20000c7c   0x40  Data  Gb  main.o [1]
 init_queue              0x080067cf   0x32  Code  Gb  rc.o [1]
 init_rc_variables       0x080065bf   0x32  Code  Gb  rc.o [1]
 init_remote_control     0x08006585   0x3a  Code  Gb  rc.o [1]
-initializeAllSensors    0x0800ae81   0x3c  Code  Lc  main.o [1]
-invSqrt                 0x0800d8e1   0x3c  Code  Gb  basic_math.o [1]
+initializeAllSensors    0x0800af0d   0x3c  Code  Lc  main.o [1]
+invSqrt                 0x0800d971   0x3c  Code  Gb  basic_math.o [1]
 isTimerEventExist       0x08007157    0x4  Code  Gb  timer.o [1]
 joydata                 0x200011b4    0x8  Data  Gb  main.o [1]
 list_get_size           0x0800514f   0x24  Code  Gb  ble_list.o [1]
@@ -1870,10 +1954,10 @@ list_remove_node        0x080050e1   0x1a  Code  Gb  ble_list.o [1]
 list_remove_tail        0x08005125   0x2a  Code  Gb  ble_list.o [1]
 mag                     0x200010f4    0xc  Data  Gb  main.o [1]
 mag_fil                 0x20001148    0xc  Data  Gb  main.o [1]
-main                    0x0800985d  0x8a8  Code  Gb  main.o [1]
-max_pitch_rad           0x080123f0    0x4  Data  Gb  rc.o [1]
-max_roll_rad            0x080123f4    0x4  Data  Gb  rc.o [1]
-max_yaw_rad             0x080123f8    0x4  Data  Gb  rc.o [1]
+main                    0x0800985d  0x934  Code  Gb  main.o [1]
+max_pitch_rad           0x0801249c    0x4  Data  Gb  rc.o [1]
+max_roll_rad            0x080124a0    0x4  Data  Gb  rc.o [1]
+max_yaw_rad             0x080124a4    0x4  Data  Gb  rc.o [1]
 memchr                  0x08008e1d         Code  Gb  memchr.o [5]
 motor_pwm               0x20001068   0x10  Data  Gb  main.o [1]
 motor_thr               0x200012b4    0x2  Data  Gb  flight_control.o [1]
@@ -1914,11 +1998,11 @@ setConnectable          0x08005bc9  0x11e  Code  Gb  sensor_service.o [1]
 set_connectable         0x20000268    0x1  Data  Gb  sensor_service.o [1]
 set_irq_as_input        0x080045f1   0x30  Code  Gb  SPBTLE_RF.o [1]
 set_irq_as_output       0x080045c7   0x2a  Code  Gb  SPBTLE_RF.o [1]
-set_motor_pwm           0x0800c9e5  0x11a  Code  Gb  motor.o [1]
-set_motor_pwm_zero      0x0800cb09   0x12  Code  Gb  motor.o [1]
+set_motor_pwm           0x0800ca75  0x11a  Code  Gb  motor.o [1]
+set_motor_pwm_zero      0x0800cb99   0x12  Code  Gb  motor.o [1]
 sprintf                 0x08006c65   0x34  Code  Gb  sprintf.o [3]
-sqrt                    0x0800e181         Code  Gb  sqrt.o [4]
-sqrtl                   0x0800e181         Code  Gb  sqrt.o [4]
+sqrt                    0x0800e211         Code  Gb  sqrt.o [4]
+sqrtl                   0x0800e211         Code  Gb  sqrt.o [4]
 strchr                  0x08008dcd         Code  Gb  strchr.o [5]
 strlen                  0x08008de5         Code  Gb  strlen.o [5]
 strncmp                 0x08006ff5   0x2a  Code  Gb  strncmp.o [3]
@@ -1935,15 +2019,15 @@ uwTick                  0x200012b0    0x4  Data  Gb  stm32f4xx_hal.o [1]
 vsnprintf               0x0800716d   0x3c  Code  Gb  vsnprint.o [3]
 
 
-[1] = C:\Users\matteo maravita\Desktop\Drone\FW - Repository\STEVAL-FCU001V1\branches\BLE remocon\EWARM\ToyDrone_Configuration\Obj
+[1] = C:\Users\matteo maravita\Desktop\Github repository\STEVAL-FCU001V1\ST_Drone_FCU_F401\STM32 FW Project\BLE Remocon Beta release 301117\EWARM\ToyDrone_Configuration\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tls.a
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  73 078 bytes of readonly  code memory
-   2 518 bytes of readonly  data memory
+  73 222 bytes of readonly  code memory
+   2 546 bytes of readonly  data memory
   21 219 bytes of readwrite data memory
 
 Errors: none

@@ -28,15 +28,15 @@
 #define ROLL_PID_KP1         3
 #define ROLL_PID_KI1         0
 //#define ROLL_PID_KP2         800      /* default */
-//#define ROLL_PID_KP2         100        /* test minidrone */
+#define ROLL_PID_KP2         100        /* test minidrone */
 //#define ROLL_PID_KP2         200        /* test FPV250 with STEVAL-ESC001V1 */
-#define ROLL_PID_KP2         50        /* test FPV250 with Afro ESC12A */
+//#define ROLL_PID_KP2         40        /* test FPV250 with Afro ESC12A */
 //#define ROLL_PID_KI2         400        /* default */
-//#define ROLL_PID_KI2         100        /* test minidrone */
+#define ROLL_PID_KI2         100        /* test minidrone */
 //#define ROLL_PID_KI2         200        /* test FPV250 with STEVAL-ESC001V1 */
-#define ROLL_PID_KI2         50        /* test FPV250 with Afro ESC12A */
-//#define ROLL_PID_KD2         10           //(x/PID_SAMPLING_TIME)
-#define ROLL_PID_KD2         5        /* test FPV250 with STEVAL-ESC001V1 */
+//#define ROLL_PID_KI2         40        /* test FPV250 with Afro ESC12A */
+#define ROLL_PID_KD2         10           //(x/PID_SAMPLING_TIME)
+//#define ROLL_PID_KD2         5        /* test FPV250 with STEVAL-ESC001V1 */
 #define ROLL_PID_I1_LIMIT    2.0         //5 degree
 //#define ROLL_PID_I2_LIMIT    (100/ROLL_PID_KI2)
 #define ROLL_PID_I2_LIMIT    20.0
