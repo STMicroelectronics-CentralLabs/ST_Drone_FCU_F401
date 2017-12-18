@@ -35,6 +35,7 @@ New features:
 - with BLE remocon motors switched OFF if connection is lost
 
 Known bugs or features to be added in future releases:
+- WARNING: it has been found a drift issue when using this FW project version at lift off (serious if drone with propeller guard mounted, about 70g weight), also when using external Remocon. ISSUE NOW UNDER DEBUGGING. The issue is NOT present in the official 221117 version.
 - BLE connectivity still under debugging, not yet extensively tested
 - Android app not yet extensively tested
 - Data from FCU sensors to Android app not yet implemented
