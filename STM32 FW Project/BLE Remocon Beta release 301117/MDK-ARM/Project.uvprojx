@@ -544,6 +544,10 @@
               <FileType>1</FileType>
               <FilePath>../Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c</FilePath>
               
+            </File><File>
+              <FileName>bluenrg_updater_aci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c</FilePath>
             </File></Files>
         </Group><Group>
           <GroupName>Middlewares/USB_Device_Library</GroupName>
