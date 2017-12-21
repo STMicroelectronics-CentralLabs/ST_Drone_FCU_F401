@@ -1,0 +1,33 @@
+*.dbgconf
+*.gmessina
+*.crf
+*.pbi
+*.pbd
+*.o
+*.d
+*.dep
+*.xcl
+*.browse
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/RTE/_ToyDrone_Configuration/RTE_Components.h
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.sct
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.map
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.lnp
+STM32 FW Project/Official latest release 221117/EWARM/ToyDrone_Configuration/Obj/ToyDrone.pbd.browse
+STM32 FW Project/Official latest release 221117/EWARM/ToyDrone_Configuration/Obj/ToyDrone.pbd.linf
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.axf
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.build_log.htm
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/ToyDrone Configuration/ToyDrone Configuration.htm
+STM32 FW Project/BLE Remocon Beta release 301117/SW4STM32/ToyDrone Configuration/.settings/language.settings.xml
+*.out
+STM32 FW Project/Official latest release 221117/EWARM/ToyDrone_Configuration/List/ToyDrone Configuration.map
+*.o
+*.cout
+STM32 FW Project/Official latest release 221117/EWARM/settings/ToyDrone.dni
+STM32 FW Project/Official latest release 221117/EWARM/Backup (3) of ToyDrone.ewt
+STM32 FW Project/Official latest release 221117/EWARM/Backup (3) of ToyDrone.ewp
+STM32 FW Project/Official latest release 221117/EWARM/Backup (3) of ToyDrone.ewd
+STM32 FW Project/Official latest release 221117/EWARM/Backup (2) of ToyDrone.ewt
+STM32 FW Project/Official latest release 221117/EWARM/Backup (2) of ToyDrone.ewp
+STM32 FW Project/Official latest release 221117/EWARM/Backup (2) of ToyDrone.ewd
+STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/startup_stm32f401xc.lst
+STM32 FW Project/Official latest release 221117/EWARM/settings/ToyDrone.ToyDrone_Configuration.cspy.bat
