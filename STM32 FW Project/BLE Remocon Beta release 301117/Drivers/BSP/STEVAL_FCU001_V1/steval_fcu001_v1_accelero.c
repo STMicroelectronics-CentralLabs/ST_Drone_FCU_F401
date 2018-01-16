@@ -36,6 +36,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 
+#include "steval_fcu001_v1.h"
 #include "steval_fcu001_v1_accelero.h"
 
 

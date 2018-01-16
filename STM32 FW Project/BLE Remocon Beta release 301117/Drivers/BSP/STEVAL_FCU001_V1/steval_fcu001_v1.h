@@ -284,6 +284,7 @@ void             BSP_LED_DeInit(Led_TypeDef Led);
 void             BSP_LED_On(Led_TypeDef Led);
 void             BSP_LED_Off(Led_TypeDef Led);
 void             BSP_LED_Toggle(Led_TypeDef Led);
+DrvStatusTypeDef Sensor_IO_Init( void );
 DrvStatusTypeDef Sensor_IO_I2C_Init( void );
 DrvStatusTypeDef Sensor_IO_SPI_Init( void );
 uint8_t Sensor_IO_Read( void *handle, uint8_t ReadAddr, uint8_t *pBuffer, uint16_t nBytesToRead );
@@ -296,7 +297,7 @@ uint8_t Sensor_IO_SPI_CS_Init_All(void);
 uint8_t Sensor_IO_SPI_CS_Init(void *handle);
 uint8_t Sensor_IO_SPI_CS_Enable(void *handle);
 uint8_t Sensor_IO_SPI_CS_Disable(void *handle);
-DrvStatusTypeDef LSM6DSM_Sensor_IO_ITConfig( void );
+DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void );
 
 void SD_IO_CS_Init(void);
 void SD_IO_CS_DeInit(void);

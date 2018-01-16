@@ -52,7 +52,10 @@
 
 
 #include "sensor_data.h"
-
+#include "steval_fcu001_v1_accelero.h"
+#include "steval_fcu001_v1_gyro.h"
+#include "steval_fcu001_v1_magneto.h"
+#include "steval_fcu001_v1_pressure.h"
 
 /*
  * This function read sensor data and prepare data for proper coordinate system
