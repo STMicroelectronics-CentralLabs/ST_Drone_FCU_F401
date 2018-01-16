@@ -39,6 +39,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "SPBTLE_RF.h"
 #include "gp_timer.h"
+#include "hci.h"
 #include "debug.h"
 
 #ifdef PRINT_CSV_FORMAT
