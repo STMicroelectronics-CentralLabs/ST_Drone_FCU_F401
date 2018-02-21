@@ -40,6 +40,7 @@
 #include "SPBTLE_RF.h"
 #include "gp_timer.h"
 #include "debug.h"
+#include "hci.h"
 
 #ifdef PRINT_CSV_FORMAT
 extern volatile uint32_t ms_counter;

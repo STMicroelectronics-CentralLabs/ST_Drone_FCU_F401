@@ -237,11 +237,11 @@ uint8_t *  USBD_FS_ProductStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *len
 {
   if(speed == 0)
   {   
-    USBD_GetString (USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);
+    USBD_GetString ((uint8_t *) USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);
   }
   else
   {
-    USBD_GetString (USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);    
+    USBD_GetString ((uint8_t *) USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);
   }
   return USBD_StrDesc;
 }
@@ -255,7 +255,7 @@ uint8_t *  USBD_FS_ProductStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *len
 */
 uint8_t *  USBD_FS_ManufacturerStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *length)
 {
-  USBD_GetString (USBD_MANUFACTURER_STRING, USBD_StrDesc, length);
+  USBD_GetString ((uint8_t *) USBD_MANUFACTURER_STRING, USBD_StrDesc, length);
   return USBD_StrDesc;
 }
 
@@ -270,11 +270,11 @@ uint8_t *  USBD_FS_SerialStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *leng
 {
   if(speed  == USBD_SPEED_HIGH)
   {    
-    USBD_GetString (USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);
+    USBD_GetString ((uint8_t *) USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);
   }
   else
   {
-    USBD_GetString (USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);    
+    USBD_GetString ((uint8_t *) USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);
   }
   return USBD_StrDesc;
 }
@@ -290,11 +290,11 @@ uint8_t *  USBD_FS_ConfigStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *leng
 {
   if(speed  == USBD_SPEED_HIGH)
   {  
-    USBD_GetString (USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length);
+    USBD_GetString ((uint8_t *) USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length);
   }
   else
   {
-    USBD_GetString (USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length); 
+    USBD_GetString ((uint8_t *) USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length);
   }
   return USBD_StrDesc;  
 }
@@ -310,11 +310,11 @@ uint8_t *  USBD_FS_InterfaceStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *l
 {
   if(speed == 0)
   {
-    USBD_GetString (USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
+    USBD_GetString ((uint8_t *) USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
   }
   else
   {
-    USBD_GetString (USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
+    USBD_GetString ((uint8_t *) USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
   }
   return USBD_StrDesc;  
 }

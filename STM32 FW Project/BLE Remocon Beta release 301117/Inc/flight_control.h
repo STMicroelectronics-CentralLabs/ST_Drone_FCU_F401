@@ -67,7 +67,7 @@
 //#define YAW_PID_I2_LIMIT    (100.0/YAW_PID_KI2)
 #define YAW_PID_I2_LIMIT    2
 
-#define PID_SAMPLING_TIME   0.00125
+#define PID_SAMPLING_TIME   0.00125f
 
 #define D_FILTER_COFF       0.025f
 

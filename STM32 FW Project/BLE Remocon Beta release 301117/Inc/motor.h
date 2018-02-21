@@ -8,12 +8,12 @@
 
 
 #ifdef MOTOR_DC
-  #define MOTOR_MAX_PWM_VALUE     1900.0    /* DC motor configuration */
-  #define MOTOR_MIN_PWM_VALUE     0.0     /* DC motor configuration */
+  #define MOTOR_MAX_PWM_VALUE     1900.0f    /* DC motor configuration */
+  #define MOTOR_MIN_PWM_VALUE     0.0f     /* DC motor configuration */
 #endif
 #ifdef MOTOR_ESC
-  #define MOTOR_MAX_PWM_VALUE     1700.0    /* External ESC configuration */
-  #define MOTOR_MIN_PWM_VALUE     850.0     /* 850 for 1msec (Fine tuned for Freq 400Hz), FCU ON motors not ARMED*/
+  #define MOTOR_MAX_PWM_VALUE     1700.0f    /* External ESC configuration */
+  #define MOTOR_MIN_PWM_VALUE     850.0f     /* 850 for 1msec (Fine tuned for Freq 400Hz), FCU ON motors not ARMED*/
 #endif
 
 typedef struct

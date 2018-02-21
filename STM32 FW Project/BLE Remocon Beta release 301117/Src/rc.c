@@ -29,9 +29,9 @@
 
 #define AUTO_CONNECTION_CENTER  0
 
-const float max_pitch_rad = PI*PITCH_MAX_DEG/180.0;
-const float max_roll_rad = PI*ROLL_MAX_DEG/180.0;
-const float max_yaw_rad = PI*YAW_MAX_DEG/180.0;
+const float max_pitch_rad = ((float)PI*(float)PITCH_MAX_DEG)/180.0f;
+const float max_roll_rad = ((float)PI*(float)ROLL_MAX_DEG)/180.0f;
+const float max_yaw_rad = ((float)PI*(float)YAW_MAX_DEG)/180.0f;
 int32_t t1;
 
 
@@ -114,10 +114,12 @@ void init_rc_variables(void)
 
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
-  int32_t timcnt, idx;
+
 
   #ifdef REMOCON_PWM
-    // save the counter data
+  int32_t timcnt, idx;
+  
+  // save the counter data
     switch (htim->Channel)
     {
       case HAL_TIM_ACTIVE_CHANNEL_1: idx = 0; timcnt = htim->Instance->CCR1; break;
@@ -177,7 +179,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
   #endif
   #ifdef REMOCON_BLE
         
-        update_rc_data(idx);
+        update_rc_data(0);
       
   #endif
 }

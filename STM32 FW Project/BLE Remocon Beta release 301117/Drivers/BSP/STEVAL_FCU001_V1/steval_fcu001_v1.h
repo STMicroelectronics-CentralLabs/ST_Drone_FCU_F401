@@ -301,6 +301,9 @@ DrvStatusTypeDef LSM6DSM_Sensor_IO_ITConfig( void );
 void SD_IO_CS_Init(void);
 void SD_IO_CS_DeInit(void);
 
+DrvStatusTypeDef Sensor_IO_Init( void );
+DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void );
+
 /**
   * @}
   */

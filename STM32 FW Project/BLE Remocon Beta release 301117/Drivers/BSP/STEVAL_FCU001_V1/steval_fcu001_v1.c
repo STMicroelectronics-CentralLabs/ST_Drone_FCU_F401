@@ -91,7 +91,7 @@
 //static uint32_t I2C_STEVAL_FCU001_V1_Timeout = STEVAL_FCU001_V1_I2C_ONBOARD_SENSORS_TIMEOUT_MAX;    /*<! Value of Timeout when I2C communication fails */
 //static I2C_HandleTypeDef I2C_STEVAL_FCU001_V1_Handle;
 static SPI_HandleTypeDef SPI_Sensor_Handle;
-static SPI_HandleTypeDef SPI_SD_Handle;
+//static SPI_HandleTypeDef SPI_SD_Handle;
 
 GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GPIO_PORT, LED2_GPIO_PORT};
 
@@ -346,7 +346,7 @@ uint8_t Sensor_IO_SPI_CS_Init(void *handle)
 uint8_t Sensor_IO_Write( void *handle, uint8_t WriteAddr, uint8_t *pBuffer, uint16_t nBytesToWrite )
 {  
    return Sensor_IO_SPI_Write( handle, WriteAddr, pBuffer, nBytesToWrite ); 
-  return COMPONENT_ERROR;
+  //return COMPONENT_ERROR;
 }
 
 

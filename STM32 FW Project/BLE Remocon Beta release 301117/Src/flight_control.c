@@ -130,14 +130,14 @@ void FlightControlPID(EulerAngleTypeDef *euler_rc, EulerAngleTypeDef *euler_ahrs
 
   #ifdef MOTOR_DC
 
-    motor_thr = 0.33333f*gTHR + 633.333f;           //Devo7E >> 630 to 1700
+    motor_thr = ((int16_t) (0.33333f*(float)gTHR + 633.333f));           //Devo7E >> 630 to 1700
   
   #endif
   
   #ifdef MOTOR_ESC
   
     //motor_thr = 0.28f*gTHR + 750.0f;                 //TGY-i6 remocon and external ESC STEVAL-ESC001V1
-    motor_thr = 0.28f*gTHR + 850.0f;                 //TGY-i6 remocon and external ESC Afro12A
+    motor_thr = ((int16_t) (0.28f*(float)gTHR + 850.0f));                 //TGY-i6 remocon and external ESC Afro12A
 
   #endif
   
@@ -251,14 +251,14 @@ void FlightControlPID_innerLoop(EulerAngleTypeDef *euler_rc, Gyro_Rad *gyro_rad,
   
 #ifdef MOTOR_DC
 
-  motor_thr = 0.33333f*gTHR + 633.333f;           //Remocon Devo7E >> 630 to 1700
+  motor_thr = ((int16_t) (0.33333f*(float)gTHR + 633.333f));           //Remocon Devo7E >> 630 to 1700
   
 #endif
   
 #ifdef MOTOR_ESC
   
   //motor_thr = 0.28f*gTHR + 750.0f;                 //TGY-i6 remocon and external ESC STEVAL-ESC001V1
-    motor_thr = 0.28f*gTHR + 850.0f;                 //TGY-i6 remocon and external ESC Afro12A
+    motor_thr = ((int16_t) (0.28f*(float)gTHR + 850.0f);                 //TGY-i6 remocon and external ESC Afro12A
 
 #endif
 

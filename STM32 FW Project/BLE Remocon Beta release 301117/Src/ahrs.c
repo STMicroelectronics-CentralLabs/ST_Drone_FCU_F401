@@ -28,7 +28,7 @@ void ahrs_fusion_ag(AxesRaw_TypeDef_Float *acc, AxesRaw_TypeDef_Float *gyro, AHR
   float norm;
   float vx, vy, vz;
   float ex, ey, ez;
-  float q0q0, q0q1, q0q2, q0q3, q1q1, q1q2, q1q3, q2q2, q2q3, q3q3;
+  float q0q0, q0q1, q0q2, /*q0q3,*/ q1q1, /*q1q2,*/ q1q3, q2q2, q2q3, q3q3;
   float halfT;
  
   
@@ -46,17 +46,17 @@ void ahrs_fusion_ag(AxesRaw_TypeDef_Float *acc, AxesRaw_TypeDef_Float *gyro, AHR
   azf = acc->AXIS_Z;
 
   // mdps convert to rad/s
-  gxf = gyro->AXIS_X * COE_MDPS_TO_RADPS;
-  gyf = gyro->AXIS_Y * COE_MDPS_TO_RADPS;
-  gzf = gyro->AXIS_Z * COE_MDPS_TO_RADPS;
+  gxf = ((float)gyro->AXIS_X) * ((float)COE_MDPS_TO_RADPS);
+  gyf = ((float)gyro->AXIS_Y) * ((float)COE_MDPS_TO_RADPS);
+  gzf = ((float)gyro->AXIS_Z) * ((float)COE_MDPS_TO_RADPS);
 
   // auxiliary variables to reduce number of repeated operations
   q0q0 = q0*q0;
   q0q1 = q0*q1;
   q0q2 = q0*q2;
-  q0q3 = q0*q3;
+  //q0q3 = q0*q3;
   q1q1 = q1*q1;
-  q1q2 = q1*q2;
+  //q1q2 = q1*q2;
   q1q3 = q1*q3;
   q2q2 = q2*q2;
   q2q3 = q2*q3;
@@ -89,14 +89,14 @@ void ahrs_fusion_ag(AxesRaw_TypeDef_Float *acc, AxesRaw_TypeDef_Float *gyro, AHR
   gzf = gzf + ahrs_kp*ez + ezInt;
 
   // integrate quaternion rate and normalise
-  halfT = 0.5*SENSOR_SAMPLING_TIME;
+  halfT = 0.5f*SENSOR_SAMPLING_TIME;
   q0 = q0 + (-q1*gxf - q2*gyf - q3*gzf)*halfT;
   q1 = q1 + (q0*gxf + q2*gzf - q3*gyf)*halfT;
   q2 = q2 + (q0*gyf - q1*gzf + q3*gxf)*halfT;
   q3 = q3 + (q0*gzf + q1*gyf - q2*gxf)*halfT;
 
   // normalise quaternion
-  norm = invSqrt(q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3);
+  norm = invSqrt(q0q0 + q1q1 + q2q2 + q3q3);
   q0 *= norm;
   q1 *= norm;
   q2 *= norm;

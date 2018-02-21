@@ -40,3 +40,10 @@ STM32 FW Project/BLE Remocon Beta release 301117/EWARM/Backup of ToyDrone.ewt
 *.linf
 *.tmp
 STM32 FW Project/BLE Remocon Beta release 301117/EWARM/ToyDrone_Configuration/List/ToyDrone Configuration.map
+*.dep
+*.wsdt
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/*.dep
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/ToyDrone.dep
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/settings/Project.wsdt
+*.__i
+*._ia
