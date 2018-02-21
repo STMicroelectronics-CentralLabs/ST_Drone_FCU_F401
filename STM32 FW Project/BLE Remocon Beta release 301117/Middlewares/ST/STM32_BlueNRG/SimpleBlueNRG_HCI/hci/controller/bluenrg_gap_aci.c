@@ -23,6 +23,7 @@
 #include "bluenrg_gap_aci.h"
 #include "bluenrg_gatt_server.h"
 #include "bluenrg_gap.h"
+#include <stddef.h>
 
 #define MIN(a,b)            ((a) < (b) )? (a) : (b)
 #define MAX(a,b)            ((a) > (b) )? (a) : (b)
