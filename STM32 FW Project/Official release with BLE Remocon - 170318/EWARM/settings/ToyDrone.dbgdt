@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>182</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <StaticWatch><expressions><item>VBAT</item><item>gELE</item><item>gAIL</item><item>gRUD</item><item>gTHR</item><item>motor_pwm</item><item>euler_ahrs</item><item>ahrs</item><item>pid</item><item>acc</item><item>gyro</item><item>rc_cal_flag</item><item>fly_ready</item><item>rc_enable_motor</item><item>motor_thr</item><item>joydata</item><item>rc_connection_flag</item><item>pre</item><item>PRE_Value</item><item>acc</item><item>gyro</item><item>press</item><item>temperature</item><item>press_zero_level</item><item>TargetBoardFeatures</item><item>EnvironmentalCharHandle</item><item>AccGyroMagCharHandle</item><item>mag</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>145</item><item>150</item><item>100</item><item>195</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Locals</Factory></Window></Windows></PreferedWindows></StaticWatch><Find-All-References><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-References><CallStack><col-names><item>Frame</item><item>_I0</item></col-names><col-widths><item>3500</item><item>20</item></col-widths><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></CallStack><Breakpoints><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><col-names><item>Breakpoint</item><item>_I0</item></col-names><col-widths><item>500</item><item>35</item></col-widths></Breakpoints><Locals><col-names><item>Location</item><item>Type</item><item>Value</item><item>Variable</item></col-names><col-widths><item>150</item><item>100</item><item>155</item><item>153</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window></Windows></PreferedWindows></Locals><Find-in-Files><ColumnWidth0>403</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>604</ColumnWidth2><ColumnWidth3>268</ColumnWidth3></Find-in-Files><Register><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Register><TerminalIO><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><InputSource>1</InputSource><InputMode>10</InputMode><Filename>$PROJ_DIR$\TermIOInput.txt</Filename><InputEcho>1</InputEcho><ShowReset>0</ShowReset></TerminalIO></Static>
+    <Windows>
+      
+      
+      
+    <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-8104-8701</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-7581-8711</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-7265-20712</Identity><TabName>References</TabName><Factory>Find-All-References</Factory><Session/></Tab><Tab><Identity>TabID-444-21249</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18853-8704</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>ToyDrone</ExpandedNode><ExpandedNode>ToyDrone/Application</ExpandedNode><ExpandedNode>ToyDrone/Application/EWARM</ExpandedNode><ExpandedNode>ToyDrone/Application/User</ExpandedNode><ExpandedNode>ToyDrone/Drivers</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-4501-21139</Identity><TabName>Call Stack</TabName><Factory>CallStack</Factory></Tab><Tab><Identity>TabID-30109-1516</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab><Tab><Identity>TabID-17361-17828</Identity><TabName>Locals</TabName><Factory>Locals</Factory></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd5></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\BSP\STEVAL_FCU001_V1\steval_fcu001_v1_accelero.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>540</YPos2><SelStart2>15041</SelStart2><SelEnd2>15041</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\BSP\Components\Common\accelerometer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>63</YPos2><SelStart2>3188</SelStart2><SelEnd2>3188</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\usbd_cdc_if.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>9</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>45</YPos2><SelStart2>3346</SelStart2><SelEnd2>3346</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>383</YPos2><SelStart2>16786</SelStart2><SelEnd2>16786</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Inc\main.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>117</YPos2><SelStart2>2961</SelStart2><SelEnd2>2961</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>318</YPos2><SelStart2>13613</SelStart2><SelEnd2>13613</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>2101</YPos2><SelStart2>74395</SelStart2><SelEnd2>74395</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>1099</YPos2><SelStart2>28336</SelStart2><SelEnd2>28357</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\usbd_desc.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>314</YPos2><SelStart2>10996</SelStart2><SelEnd2>10996</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>359</YPos2><SelStart2>11645</SelStart2><SelEnd2>11645</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gap_aci.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>164</YPos2><SelStart2>5076</SelStart2><SelEnd2>5076</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_aci_const.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>195</YPos2><SelStart2>7221</SelStart2><SelEnd2>7233</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap_aci.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>960</YPos2><SelStart2>54368</SelStart2><SelEnd2>54368</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>168</YPos2><SelStart2>4423</SelStart2><SelEnd2>4423</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_aci.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>64</YPos2><SelStart2>3223</SelStart2><SelEnd2>3240</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>81</YPos2><SelStart2>2676</SelStart2><SelEnd2>2676</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>98</YPos2><SelStart2>2860</SelStart2><SelEnd2>2887</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\sensor_service.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>686</YPos2><SelStart2>22307</SelStart2><SelEnd2>22307</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Inc\motenv1_config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>75</YPos2><SelStart2>3979</SelStart2><SelEnd2>3979</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>196</YPos2><SelStart2>7161</SelStart2><SelEnd2>7161</SelEnd2></Tab><ActiveTab>20</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00D6DA00><key>iaridepm.enu1</key></Toolbar-00D6DA00></Sizes></Row0><Row1><Sizes><Toolbar-269C2DA0><key>debuggergui.enu1</key></Toolbar-269C2DA0></Sizes></Row1><Row2><Sizes><Toolbar-269C4B50><key>armstlink.enu1</key></Toolbar-269C4B50></Sizes></Row2></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>460</Bottom><Right>273</Right><x>-2</x><y>-2</y><xscreen>490</xscreen><yscreen>523</yscreen><sizeHorzCX>358712</sizeHorzCX><sizeHorzCY>762391</sizeHorzCY><sizeVertCX>201318</sizeVertCX><sizeVertCY>673469</sizeVertCY></Rect></Wnd4></Sizes></Row0><Row1><Sizes><Wnd5><Rect><Top>-2</Top><Left>271</Left><Bottom>460</Bottom><Right>675</Right><x>271</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>295754</sizeVertCX><sizeVertCY>673469</sizeVertCY></Rect></Wnd5></Sizes></Row1></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>133</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>135</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>196793</sizeHorzCY><sizeVertCX>358712</sizeVertCX><sizeVertCY>762391</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+
