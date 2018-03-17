@@ -9,8 +9,8 @@
 #define AHRS_DEBUG          0
 #define COE_MDPS_TO_RADPS   1.745329252e-5
 #define COE_RADS_TO_MDPS    (1/(1.745329252e-5))
-#define NORM_R              0.25
-#define BIG_R               0.25
+#define NORM_R              0.25f
+#define BIG_R               0.25f
 #define AHRS_P_1            1e-1
 #define AHRS_P_2            1e-0
 #define AHRS_Q              1e-4
@@ -18,16 +18,16 @@
 #define ACC_OVER_D          (1.0/750)
 
 // Sampling time of sensors
-#define SENSOR_SAMPLING_TIME    0.00625
+#define SENSOR_SAMPLING_TIME    0.00625f
 //#define gyroMeasError 3.14159265358979 * (10.0f / 180.0f) // gyroscope measurement error in rad/s (shown as 10 deg/s)
 //#define beta sqrt(3.0f / 4.0f) * gyroMeasError // compute beta
-#define alpha        1.0
-#define BETA_NORM    0.8            //0.15
+#define alpha        1.0f
+#define BETA_NORM    0.8f            //0.15
 #define BETA_ZERO    0
-#define zeta         0.006             //0.003
-#define AHRS_KP_BIG  10.0               //0.4 is tested, so slow in calibrated. 
-#define AHRS_KP_NORM 0.4
-#define AHRS_KI      0.1
+#define zeta         0.006f             //0.003
+#define AHRS_KP_BIG  10.0f               //0.4 is tested, so slow in calibrated. 
+#define AHRS_KP_NORM 0.4f
+#define AHRS_KI      0.1f
 
 
 typedef struct

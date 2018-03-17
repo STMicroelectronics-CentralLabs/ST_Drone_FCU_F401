@@ -101,10 +101,10 @@ LPS22HB_Error_et LPS22HB_ReadReg( void *handle, uint8_t RegAddr, uint16_t NumByt
   
   return LPS22HB_OK;
   
-  if ( Sensor_IO_Read( handle, RegAddr, Data, NumByteToRead ) )
+  /*if ( Sensor_IO_Read( handle, RegAddr, Data, NumByteToRead ) )
     return LPS22HB_ERROR;
   else
-    return LPS22HB_OK;
+    return LPS22HB_OK;*/
   
 }
 

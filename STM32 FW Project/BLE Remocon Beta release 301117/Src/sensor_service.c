@@ -66,8 +66,10 @@ extern uint32_t ConnectionBleStatus;
 extern uint8_t bdaddr[6];
 extern uint8_t joydata[];
 
+#ifdef STM32_SENSORTILE
 extern uint32_t uhCCR4_Val;
 extern uint32_t uhCCR1_Val;
+#endif
 
 /* Private variables ------------------------------------------------------------*/
 static uint16_t HWServW2STHandle;
@@ -77,9 +79,9 @@ static uint16_t AccEventCharHandle;
 static uint16_t LedCharHandle;
 static uint16_t MaxCharHandle;
 
-#ifdef STM32_SENSORTILE
-static uint16_t GGCharHandle;
-#endif /* STM32_SENSORTILE */
+//#ifdef STM32_SENSORTILE
+//static uint16_t GGCharHandle;
+//#endif /* STM32_SENSORTILE */
 
 static uint16_t ConfigServW2STHandle;
 static uint16_t ConfigCharHandle;
@@ -94,9 +96,9 @@ static uint8_t LastTermBuffer[W2ST_CONSOLE_MAX_CHAR_LEN];
 static uint8_t LastTermLen;
 
 static uint8_t  EnvironmentalCharSize=2; /* Size for Environmental BLE characteristic */
-#ifndef USE_STM32L0XX_NUCLEO
-static uint32_t SizeOfUpdateBlueFW=0;
-#endif /* USE_STM32L0XX_NUCLEO */
+//#ifndef USE_STM32L0XX_NUCLEO
+//static uint32_t SizeOfUpdateBlueFW=0;
+//#endif /* USE_STM32L0XX_NUCLEO */
 
 static uint16_t connection_handle = 0;
 
@@ -107,7 +109,7 @@ static void GAP_DisconnectionComplete_CB(void);
 static uint32_t DebugConsoleCommandParsing(uint8_t * att_data, uint8_t data_length);
 static uint32_t ConfigCommandParsing(uint8_t * att_data, uint8_t data_length);
 
-static void Error_Handler(void);
+//static void Error_Handler(void);
 static void DisableHWFeatures(void);
 
 /* Private define ------------------------------------------------------------*/
@@ -843,10 +845,10 @@ static void GAP_DisconnectionComplete_CB(void)
     DisableHWFeatures();
   }
   
-#ifndef USE_STM32L0XX_NUCLEO
+//#ifndef USE_STM32L0XX_NUCLEO
   /* Reset for any problem during FOTA update */
-  SizeOfUpdateBlueFW = 0;
-#endif /* USE_STM32L0XX_NUCLEO */
+//  SizeOfUpdateBlueFW = 0;
+//#endif /* USE_STM32L0XX_NUCLEO */
 
   /* Stops all the Timers */
 //  if(HAL_TIM_OC_Stop_IT(&TimCCHandle, TIM_CHANNEL_4) != HAL_OK){
@@ -1747,9 +1749,9 @@ void HCI_Event_CB(void *pckt)
   }
 }
 
-static void Error_Handler(void)
-{  
-}
+//static void Error_Handler(void)
+//{  
+//}
 
 static void DisableHWFeatures(void)
 {  

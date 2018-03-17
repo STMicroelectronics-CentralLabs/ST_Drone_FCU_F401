@@ -7,8 +7,8 @@
 #include "quaternion.h"
 #include "ahrs.h"
 
-//#define REMOCON_PWM                     /* External Remocon RX 4 channel PWM
-#define REMOCON_BLE                   /* BLE Remocon App
+//#define REMOCON_PWM                     // External Remocon RX 4 channel PWM
+#define REMOCON_BLE                   // BLE Remocon App
 
 
 /* Definition for R/C Timing (1 LSB = 250us) */
@@ -50,7 +50,7 @@
 #define ROLL_MAX_DEG    30
 
 //#define YAW_MAX_DEG     (180.0*SENSOR_SAMPLING_TIME)
-#define YAW_MAX_DEG     (60.0*SENSOR_SAMPLING_TIME)
+#define YAW_MAX_DEG     (60.0f*SENSOR_SAMPLING_TIME)
 #define YAW_MIN_RAD     0.0872
 
 #define EULER_Z_TH      600

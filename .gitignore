@@ -31,3 +31,19 @@ STM32 FW Project/Official latest release 221117/EWARM/Backup (2) of ToyDrone.ewp
 STM32 FW Project/Official latest release 221117/EWARM/Backup (2) of ToyDrone.ewd
 STM32 FW Project/BLE Remocon Beta release 301117/MDK-ARM/startup_stm32f401xc.lst
 STM32 FW Project/Official latest release 221117/EWARM/settings/ToyDrone.ToyDrone_Configuration.cspy.bat
+*.ewp
+*.ewd
+STM32 FW Project/BLE Remocon Beta release 301117/EWARM/settings/ToyDrone.ToyDrone_Configuration.cspy.bat
+STM32 FW Project/BLE Remocon Beta release 301117/EWARM/Backup of ToyDrone.ewt
+*.bin
+*.ewt
+*.linf
+*.tmp
+STM32 FW Project/BLE Remocon Beta release 301117/EWARM/ToyDrone_Configuration/List/ToyDrone Configuration.map
+*.dep
+*.wsdt
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/*.dep
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/ToyDrone.dep
+/STM32 FW Project/BLE Remocon Beta release 301117/EWARM/settings/Project.wsdt
+*.__i
+*._ia

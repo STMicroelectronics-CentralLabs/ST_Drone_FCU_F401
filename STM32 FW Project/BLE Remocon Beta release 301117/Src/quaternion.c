@@ -79,8 +79,8 @@ void QuaternionToEuler(QuaternionTypeDef *qr, EulerAngleTypeDef *ea)
 {
     float q0q0, q1q1, q2q2, q3q3;
     float dq0, dq1, dq2;
-    float dq1q3, dq0q2, dq1q2;
-    float dq0q1, dq2q3, dq0q3;
+    float dq1q3, dq0q2/*, dq1q2*/;
+    float dq0q1, dq2q3/*, dq0q3*/;
 
     q0q0 = qr->q0*qr->q0;
     q1q1 = qr->q1*qr->q1;
@@ -89,10 +89,10 @@ void QuaternionToEuler(QuaternionTypeDef *qr, EulerAngleTypeDef *ea)
     dq0 = 2*qr->q0;
     dq1 = 2*qr->q1;
     dq2 = 2*qr->q2;
-    dq1q2 = dq1 * qr->q2;
+    //dq1q2 = dq1 * qr->q2;
     dq1q3 = dq1 * qr->q3;
     dq0q2 = dq0 * qr->q2;
-    dq0q3 = dq0 * qr->q3;
+    //dq0q3 = dq0 * qr->q3;
     dq0q1 = dq0 * qr->q1;
     dq2q3 = dq2 * qr->q3;
 

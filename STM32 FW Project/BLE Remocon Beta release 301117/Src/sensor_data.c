@@ -52,7 +52,10 @@
 
 
 #include "sensor_data.h"
-
+#include "steval_fcu001_v1_accelero.h"
+#include "steval_fcu001_v1_gyro.h"
+#include "steval_fcu001_v1_magneto.h"
+#include "steval_fcu001_v1_pressure.h"
 
 /*
  * This function read sensor data and prepare data for proper coordinate system
@@ -92,7 +95,7 @@ void ReadSensorRawData(void *ACC_handle, void *GYR_handle, void *MAG_handle, voi
     }
     
     if (USE_PRESSURE_SENSOR)
-        BSP_PRESSURE_Get_Press(PRE_handle, &pre);
+        BSP_PRESSURE_Get_Press(PRE_handle, pre);
     else
         *pre = 0;
     
@@ -146,4 +149,4 @@ void ReadSensorRawData(void *ACC_handle, void *GYR_handle, void *MAG_handle, voi
 }
 
 
-                       
+
