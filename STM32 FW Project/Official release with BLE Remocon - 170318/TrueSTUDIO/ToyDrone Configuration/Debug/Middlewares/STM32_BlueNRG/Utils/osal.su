@@ -1,2 +1,0 @@
-osal.c:51:7:Osal_MemCpy	24	static
-osal.c:63:7:Osal_MemSet	24	static

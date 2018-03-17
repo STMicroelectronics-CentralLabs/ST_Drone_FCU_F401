@@ -1,3 +1,0 @@
-bluenrg_l2cap_aci.c:29:12:aci_l2cap_connection_parameter_update_request	64	static
-bluenrg_l2cap_aci.c:58:12:aci_l2cap_connection_parameter_update_response_IDB05A1	72	static
-bluenrg_l2cap_aci.c:91:12:aci_l2cap_connection_parameter_update_response_IDB04A1	64	static
