@@ -1,0 +1,2 @@
+motor.c:17:6:set_motor_pwm	16	static
+motor.c:49:6:set_motor_pwm_zero	16	static

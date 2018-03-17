@@ -1,0 +1,7 @@
+timer.c:7:6:SetupTimer	16	static
+timer.c:15:6:StartTimer	16	static
+timer.c:21:6:StopTimer	16	static
+timer.c:26:6:ClearTimer	16	static
+timer.c:31:6:TimerProcess	16	static
+timer.c:40:10:isTimerEventExist	16	static
+timer.c:45:6:User_Timer_Callback	8	static

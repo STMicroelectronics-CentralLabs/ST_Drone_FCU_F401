@@ -1,0 +1,10 @@
+bluenrg_hal_aci.c:30:12:aci_hal_get_fw_build_number	48	static
+bluenrg_hal_aci.c:52:12:aci_hal_write_config_data	176	static
+bluenrg_hal_aci.c:87:12:aci_hal_read_config_data	184	static
+bluenrg_hal_aci.c:116:12:aci_hal_set_tx_power_level	48	static
+bluenrg_hal_aci.c:139:12:aci_hal_le_tx_test_packet_number	48	static
+bluenrg_hal_aci.c:162:12:aci_hal_device_standby	40	static
+bluenrg_hal_aci.c:179:12:aci_hal_tone_start	48	static
+bluenrg_hal_aci.c:201:12:aci_hal_tone_stop	40	static
+bluenrg_hal_aci.c:218:12:aci_hal_get_link_status	72	static
+bluenrg_hal_aci.c:242:12:aci_hal_get_anchor_period	56	static

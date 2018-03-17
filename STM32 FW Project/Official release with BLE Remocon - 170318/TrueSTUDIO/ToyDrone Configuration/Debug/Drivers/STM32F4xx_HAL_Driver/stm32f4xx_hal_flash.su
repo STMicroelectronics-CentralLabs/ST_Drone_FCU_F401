@@ -1,0 +1,17 @@
+stm32f4xx_hal_flash.c:174:19:HAL_FLASH_Program	32	static
+stm32f4xx_hal_flash.c:232:19:HAL_FLASH_Program_IT	32	static
+stm32f4xx_hal_flash.c:279:6:HAL_FLASH_IRQHandler	16	static
+stm32f4xx_hal_flash.c:397:13:HAL_FLASH_EndOfOperationCallback	16	static
+stm32f4xx_hal_flash.c:414:13:HAL_FLASH_OperationErrorCallback	16	static
+stm32f4xx_hal_flash.c:446:19:HAL_FLASH_Unlock	4	static
+stm32f4xx_hal_flash.c:466:19:HAL_FLASH_Lock	4	static
+stm32f4xx_hal_flash.c:478:19:HAL_FLASH_OB_Unlock	4	static
+stm32f4xx_hal_flash.c:498:19:HAL_FLASH_OB_Lock	4	static
+stm32f4xx_hal_flash.c:510:19:HAL_FLASH_OB_Launch	8	static
+stm32f4xx_hal_flash.c:547:10:HAL_FLASH_GetError	4	static
+stm32f4xx_hal_flash.c:561:19:FLASH_WaitForLastOperation	24	static
+stm32f4xx_hal_flash.c:617:13:FLASH_Program_DoubleWord	24	static
+stm32f4xx_hal_flash.c:643:13:FLASH_Program_Word	16	static
+stm32f4xx_hal_flash.c:668:13:FLASH_Program_HalfWord	16	static
+stm32f4xx_hal_flash.c:693:13:FLASH_Program_Byte	16	static
+stm32f4xx_hal_flash.c:710:13:FLASH_SetErrorCode	4	static
