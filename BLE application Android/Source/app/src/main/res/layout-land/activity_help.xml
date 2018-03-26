@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_MainButtonsVertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_MainButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Button_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_marginRight="@dimen/help_Button_margin"
+                    style="@style/MyButton_blue_dark"
+                    android:elegantTextHeight="false"
+                    android:minWidth="50dp"
+                    android:text="Home"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/Button_Setting"
+                    android:layout_width="@dimen/maxSizeButton"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_marginLeft="@dimen/help_Button_margin"
+                    android:layout_gravity="center_vertical"
+                    style="@style/MyButton_blue_dark"
+                    android:drawableTop="@drawable/software_drone_setting"
+                    android:textSize="0sp"
+                    />
+
+                <!--
+                <Button
+                    android:id="@+id/Button_Setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_marginLeft="@dimen/help_Button_margin"
+                    style="@style/MyButton_blue_dark"
+                    android:elegantTextHeight="false"
+                    android:minWidth="50dp"
+                    android:text="Setting"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+                -->
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/ErrorMsg"
+                    android:text="@string/HelpDescription"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <!--
+                <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                >
+                -->
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/tableLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TableRow
+                            android:id="@+id/tableRow01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_RadioButtonMobile2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textRadioButtonMobile2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/holo_blue_dark"
+                                    android:gravity="center"
+                                    android:text="Followers Cursors"
+                                    android:textColor="@color/White"
+                                    android:textSize="@dimen/help_image_text_size" />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/RadioButtonMobile_OFF2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="OFF"
+                                        android:textSize="@dimen/help_image_text_size" />
+
+                                    <RadioButton
+                                        android:id="@+id/RadioButtonMobile_ON2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ON"
+                                        android:textSize="@dimen/help_image_text_size" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textRadioButtonMobile_Explaination2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:background="@android:color/holo_orange_light"
+                                android:text="@string/Followers_Cursors"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/tableLayout_Connection_help2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/Image_Connection2"
+                                    android:layout_width="@dimen/maxSizeButton"
+                                    android:layout_height="@dimen/maxSizeButton"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/software_drone_ble"
+                                    />
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_Connection2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/Button_Connection2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/maxSizeButton"
+                                        style="@style/MyButton_blue_bright"
+                                        android:elegantTextHeight="false"
+                                        android:text="Press me to search drone"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/text_Connection_Explaination2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/Connection"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Button_Sensor_Calibration2"
+                                    android:layout_width="@dimen/maxSizeButton"
+                                    android:layout_height="@dimen/maxSizeButton"
+                                    android:layout_gravity="center_vertical"
+                                    style="@style/MyButton_blue_dark"
+                                    android:drawableTop="@drawable/software_drone_sensor_calibration1"
+                                    android:textSize="0sp"
+                                    />
+
+
+                                <Button
+                                    android:id="@+id/Button_Arm2"
+                                    android:layout_width="@dimen/maxSizeButton"
+                                    android:layout_height="@dimen/maxSizeButton"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    style="@style/MyButton_blue_dark"
+                                    android:drawableTop="@drawable/software_drone_motor2"
+                                    android:textSize="0sp"
+                                    />
+                                <TextView
+                                    android:id="@+id/textViewARMED2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="12sp"
+                                    android:background="@color/ErrorMsg"
+                                    android:text="Not Armed" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/text_initDrone_Explaination2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/initDrone"
+                                android:textSize="@dimen/help_text_size" />
+
+                        </TableRow>
+
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Take_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Button_Take_off"
+                                    android:layout_width="@dimen/maxSizeButtonLarger"
+                                    android:layout_height="@dimen/maxSizeButtonLarger"
+                                    android:layout_gravity="center_vertical"
+                                    style="@style/MyButton_blue_dark"
+                                    android:drawableTop="@drawable/software_drone_take_off"
+                                    android:textSize="0sp"
+                                    />
+                                <!--
+                                <Button
+                                    android:id="@+id/Button_Take_off"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/maxSizeButton"
+                                    style="@style/MyButton_blue_dark"
+                                    android:elegantTextHeight="false"
+                                    android:minWidth="50dp"
+                                    android:text="Take off/Land"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/White"
+                                    android:textSize="12sp" />
+                                -->
+                                <Button
+                                    android:id="@+id/Button_land"
+                                    android:layout_width="@dimen/maxSizeButtonLarger"
+                                    android:layout_height="@dimen/maxSizeButtonLarger"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    style="@style/MyButton_blue_dark"
+                                    android:drawableTop="@drawable/software_drone_land"
+                                    android:textSize="0sp"
+                                    />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_Take_off_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/Take_off"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_RadioButtonSwapPlanes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textRadioButtonSwapPlanes"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/help_image_text_size"
+                                    android:background="@android:color/holo_blue_dark"
+                                    android:textColor="@color/White"
+                                    android:text="Swap Commands" />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/RadioButtonSwapPlanes_Down"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/help_image_text_size"
+                                        android:text="YZX"/>
+
+                                    <RadioButton
+                                        android:id="@+id/RadioButtonSwapPlanes_zero"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/help_image_text_size"
+                                        android:text="ZYX"/>
+                                    <RadioButton
+                                        android:id="@+id/RadioButtonSwapPlanes_UP"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/help_image_text_size"
+                                        android:text="XYZ"/>
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textRadioButtonSwapPlanes_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:background="@android:color/holo_orange_light"
+                                android:text="@string/SwapPlanes"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_SeekBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <SeekBar
+                                    android:id="@+id/seekBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    style="@style/MySeek"
+                                    android:minWidth="150dp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textSeekBar"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="12sp"
+                                    android:text="Speed Scaler --%" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_SeekBar_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/SeekBar"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_textViewBattery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewBattery"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:background="@android:color/holo_green_light"
+                                    android:text="Battery -- %"
+                                    android:textColor="@color/White"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_textViewBattery_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/textViewBattery"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_textViewRSSI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewRSSI"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:background="@android:color/holo_green_light"
+                                    android:text="RSSI --"
+                                    android:textColor="@color/White"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_textViewRSSI_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/textViewRSSI"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Offset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/tableLayout_Offset_help2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/tableLayout_DirectionL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        >
+
+                                        <TableRow
+                                            android:id="@+id/tableRow1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <Button
+                                                android:id="@+id/Button_UP"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_column="1"
+                                                style="@style/MyButton_blue_bright"
+                                                android:elegantTextHeight="false"
+                                                android:minWidth="50dp"
+                                                android:textColor="@color/White"
+                                                android:textSize="12sp"
+                                                android:text="Y+" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <Button
+                                                android:id="@+id/Button_L"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_column="0"
+                                                style="@style/MyButton_blue_bright"
+                                                android:elegantTextHeight="false"
+                                                android:minWidth="50dp"
+                                                android:textColor="@color/White"
+                                                android:textSize="12sp"
+                                                android:text="R-" />
+
+                                            <Button
+                                                android:id="@+id/Button_R"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_column="2"
+                                                style="@style/MyButton_blue_bright"
+                                                android:elegantTextHeight="false"
+                                                android:minWidth="50dp"
+                                                android:textColor="@color/White"
+                                                android:textSize="12sp"
+                                                android:text="R+" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <Button
+                                                android:id="@+id/Button_Down"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_column="1"
+                                                style="@style/MyButton_blue_bright"
+                                                android:elegantTextHeight="false"
+                                                android:minWidth="50dp"
+                                                android:textColor="@color/White"
+                                                android:textSize="12sp"
+                                                android:text="Y-" />
+                                        </TableRow>
+                                    </TableLayout>
+
+                                    <Button
+                                        android:id="@+id/Button_DAL"
+                                        android:layout_width="@dimen/maxSizeWidthSeekBar"
+                                        android:layout_height="@dimen/maxSizeHeightSeekBar"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="#00ffffff"
+                                        android:drawableTop="@drawable/software_drone_seekbar"
+                                        android:textSize="0sp"
+                                        />
+                                    <!--
+                                    <Button
+                                        android:id="@+id/Button_DAL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/maxSizeButton"
+                                        android:layout_marginLeft="20dp"
+                                        android:elegantTextHeight="false"
+                                        android:minWidth="50dp"
+                                        style="@style/MyButton_blue_dark"
+                                        android:layout_gravity="center_vertical|center_horizontal"
+                                        android:text="Offset Left/Right"
+                                        android:textColor="@color/White"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textSize="12sp" />
+                                    -->
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_Offset_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/Offset"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_DataDrone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:id="@+id/tableLayout_DataDrone_help2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_RadioButtonDataDrone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="12dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textRadioButtonDataDrone"
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:background="@android:color/holo_blue_dark"
+                                            android:textColor="@color/White"
+                                            android:text="Data Drone Visisble" />
+
+                                        <RadioGroup
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/RadioButtonDataDrone_OFF"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12sp"
+                                                android:text="OFF"/>
+
+                                            <RadioButton
+                                                android:id="@+id/RadioButtonDataDrone_ON"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12sp"
+                                                android:text="ON"/>
+                                        </RadioGroup>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_RadioButtonLogFile"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="24dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textRadioButtonLogFile"
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:background="@android:color/holo_blue_dark"
+                                            android:textColor="@color/White"
+                                            android:text="Log File" />
+
+                                        <RadioGroup
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/RadioButtonLogFile_OFF"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12sp"
+                                                android:text="OFF"/>
+
+                                            <RadioButton
+                                                android:id="@+id/RadioButtonLogFile_ON"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12sp"
+                                                android:text="ON"/>
+                                        </RadioGroup>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:id="@+id/textViewData"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="12sp"
+                                    android:text="STDrone software version x" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_DataDrone_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/DataDrone"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_YawDisable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_column="0"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_RadioButtonYawDisable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textRadioButtonYawDisable"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:background="@android:color/holo_blue_dark"
+                                        android:textColor="@color/White"
+                                        android:text="Yaw Disable" />
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonYawDisable_OFF"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="OFF"/>
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonYawDisable_ON"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="ON"/>
+                                    </RadioGroup>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_YawDisable_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/YawDisable"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_column="0"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_RadioButtonShape"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textRadioButtonShape"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/holo_blue_dark"
+                                        android:textColor="@color/White"
+                                        android:textSize="12sp"
+                                        android:text="Shape Cursors" />
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonShape_OFF"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="Circle"/>
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonShape_ON"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="Square"/>
+                                    </RadioGroup>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_Shape_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/Shape"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Sensitivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_column="0"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/Sensitivity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/maxSizeButton"
+                                    style="@style/MyButton_blue_dark"
+                                    android:elegantTextHeight="false"
+                                    android:minWidth="100dp"
+                                    android:text="Sensitivity"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/White"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_Sensitivity_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/Sensitivity"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_SensitivitySeekBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_column="0"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_SeekBarFullYaw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_SeekBarYaw"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <SeekBar
+                                            android:id="@+id/seekBarYaw"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            style="@style/MySeek"
+                                            android:minWidth="150dp"
+                                            />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_text_SeekBarYaw"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/textSeekBarYaw"
+                                            android:gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textSize="12sp"
+                                            android:text="         Yaw non linear start slope         " />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_SeekBarFullPitchRoll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_SeekBarPitchRoll"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <SeekBar
+                                            android:id="@+id/seekBarPitchRoll"
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            style="@style/MySeek"
+                                            android:minWidth="150dp"
+                                            />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_text_SeekBarPitchRoll"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/textSeekBarPitchRoll"
+                                            android:gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textSize="12sp"
+                                            android:text="Pitch and Roll non linear start slope" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_SeekBarFullThrottle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_SeekBarThrottle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <SeekBar
+                                            android:id="@+id/seekBarThrottle"
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            style="@style/MySeek"
+                                            android:minWidth="150dp"
+                                            />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LinearLayout_text_SeekBarThrottle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/textSeekBarThrottle"
+                                            android:gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textSize="12sp"
+                                            android:text="     Throttle non linear start slope      " />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_SensitivitySeekBar_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/SensitivitySeekBar"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+                        <TableRow
+                            android:id="@+id/tableRow15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_SensitivitySeekBarMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_column="0"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/LinearLayout_RadioButtonSlope"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textRadioButtonSlope"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:background="@android:color/holo_blue_dark"
+                                        android:textColor="@color/White"
+                                        android:text="Start slope rate/Start slope rate Max" />
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonSlope_OFF"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="Start slope rate"/>
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButtonSlope_ON"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="12sp"
+                                            android:text="Start slope rate Max"/>
+                                    </RadioGroup>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_SensitivitySeekBarMax_Explaination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginTop="@dimen/help_text_margin"
+                                android:layout_marginLeft="@dimen/help_text_margin"
+                                android:layout_marginRight="@dimen/help_text_margin"
+                                android:text="@string/SensitivitySeekBarMax"
+                                android:textSize="@dimen/help_text_size" />
+                        </TableRow>
+                        <!-- ........................................................................................... -->
+
+                    </TableLayout>
+<!-- ........................................................................................... -->
+<!-- ........................................................................................... -->
+<!-- ........................................................................................... -->
+<!-- ........................................................................................... -->
+<!-- ........................................................................................... -->
+<!-- ........................................................................................... -->
+
+
+                    <!--
+                    template
+                                remove onClick
+                   <LinearLayout
+                       android:id="@+id/tableLayout_xxxx_help"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout_xxxx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+
+
+                       </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_xxxx_Explaination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/help_text_margin"
+                            android:layout_marginLeft="@dimen/help_text_margin"
+                            android:layout_marginRight="@dimen/help_text_margin"
+                            android:text="@string/xxxx"
+                            android:textSize="@dimen/help_text_size" />
+                   </LinearLayout>
+                   -->
+<!-- ........................................................................................... -->
+
+                    <!--
+                    </GridLayout>
+                    -->
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>

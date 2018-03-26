@@ -1,0 +1,172 @@
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<resources>
+    <string name="Followers_Cursors">
+        This is a new feature!\n
+        You don\'t need to watch the screen to pilot the drone any more.\n
+        In fact the Cursor is redrawed and centered where you put the finger into screen.\n
+        In this way the drone does\'t move at the first touch, it starts moving only\n
+        if you move your fingher on the screen.\n
+        The standard cursors are fixed, so you need to watch the screen to point\n
+        the fingher toward the center to avoid moving drone.\n
+        Try it!\n
+        You can drive the drone without to watch the screen now.\n
+        If your fingher is to much closed to the bounds of screen then\n
+        a vibration will give you a feedback.\n
+    </string>
+
+    <string name="SwapPlanes">
+        This is a new feature!\n
+        You can swap x, y, z axis of analog pilot cursors.\n
+        (x = left/right, y = altitude, z = frontward/backward)\n
+        In this way you can use right cursor to obtain death loop\n
+        and left cursor to generate arcs.\n
+        It is a new way to pilot drone.\n
+        Some input can\'t be executed because are out of range\n
+        of propoller motors possibilities.\n
+        Try it!\n
+    </string>
+
+    <string name="HelpDescription">This Help is scrollable</string>
+    <string name="SeekBar">
+        You can scale the speed of propoller motors, so you can reduce\n
+        the speed for a smooth driving
+    </string>
+    <string name="textViewBattery" translatable="false">
+        The led shows you the percentage of battery level. 4.2V is 100%
+    </string>
+    <string name="textViewRSSI" translatable="false">
+        The led shows you the power level of BLE drone connection in db.
+    </string>
+    <string name="Offset">
+        The Offset left/right button allows to swap analogic/digital cursor.\n
+        Pressing the same button the cursors types are swapped.\n
+        If offeset is pressed, then digital cursors changes the offset Yaw,\n
+        pitch and roll and altitude by 1/128 of their max value for each click.
+    </string>
+    <string name="Take_off">
+        Third Action before starts\n
+        The Take_off button is for taking off the drone.\n
+        During this phase is necessary to use altitude cursor to stop the drone.\n
+        When drone flies, the same button become a Land for landing.\n
+    </string>
+    <string name="initDrone">
+        Second Action before starts\n
+        The first Button is for sensor calibration, so drone Gyroscpe sensor starts \n
+        from correct value, because the drone board could be a bit not horizontal \n
+        The Take_off button requires 1 sec pressed to be active. \n
+        If button is pressed for at least 1 sec, then button becomes\n
+        green for 2 sec else red for 2 sec. \n
+        Use it before to take off.\n
+        The second button is for Arming the propoller motors.\n
+        When drone flies, the same button become a stop propoller motors.\n
+        Stop button is the last possible action to stop drone\n
+        when you don't have any more the drone control.\n
+        The third item is the led to know Arming status\n
+        (green is armed, red is not armed).\n
+    </string>
+    <string name="Connection">
+        First Action before starts\n
+        Connection Button allows to connect the drone by BLE.\n
+        After pressing, the page becomes the connection page\n
+        to search and select your drone into the list.\n
+        Click on your drone to allow connection and the page return the home one.\n
+        The button changes color in order to the status connection:\n
+        \t\t\t\tBlue light is for starting connection phase.\n
+        \t\t\t\tgreen means connected.\n
+        \t\t\t\tYellow means searching connection.\n
+        \t\t\t\tRed means no connection.\n
+    </string>
+    <string name="DataDrone">
+        The first selector is for enabling drone sensor data: \n
+        \t\t\t\tAccelerometer\n
+        \t\t\t\tGyroscope\n
+        \t\t\t\tMagnetometer\n
+        \t\t\t\tPressure\n
+        \t\t\t\tAltitude\n
+        Instead of -STDrone software version- will be visualized\n
+        these sensor data with their measure unit.\n
+        The second selector is for Enable or disable Logging File\n
+        with timestamp of drone sensor data.\n
+        Pay Attention!!!\n
+        the name of files are always different,\n
+        so you remeber to delete manually useless file\n
+        The directory is into main root of sdcard:\n
+        /STMicroelectronics/logs\n
+    </string>
+    <string name="YawDisable">
+        The selector is for enable or disable Yaw (activation suggested for beginners)\n
+    </string>
+    <string name="Shape">
+        The selector is for changing square or circle shape cursor.\n
+        The Square is optimum to have the right corrispondence with drone dynamic.\n
+        In fact the maximum speed is on the corner of square.\n
+        Before moving, you can rotate to 45degree into right direction by using Yaw.\n
+        Then you try the maximum speed moving fingher on the corner of square.\n
+    </string>
+    <string name="Sensitivity">
+        Sensitivity button is for moving into Sensitivity page\n
+        to set Sensitivity Analog Cursor\n
+        The speed moving of finghers are usually proportionally\n
+        to the speed rotation request for propoller motors\n
+        The Sensitivity page allows to introduce a non linear behaviour.\n
+        In particular is possible to increase the speed slope rate\n
+        when you touch cursor for the first time.\n
+        If you increase start slope rate then you also decrease the it\n
+        when you are closed to the cursor bounds.\n
+    </string>
+    <string name="SensitivitySeekBar">
+        The seek bar changes the start slope rate of sensitivity\n
+        when you press cursor for first touch.\n
+        The selector are for Yaw, Pitch/Roll and Altitude.\n
+        The value can change since 1 to Max value.\n
+        1 means non linear disable, so speed rotation request\n
+        is proportional to speed finghers\n
+        x value means x times higher than proportional speed only for first touch\n
+        If you increase start slope rate then you also decrease the it\n
+        when you are closed to the cursor bounds.\n
+    </string>
+    <string name="SensitivitySeekBarMax">
+        The selector is for change seek bar scope\n
+        If -Start slope rate Max- is selected the Max range can change by seek bar\n
+        There is a mininum value possible not changeble\n
+        Changing Max changes, except for non linear disable, also start slope rate\n
+        change and its value is also visualised\n
+    </string>
+</resources>

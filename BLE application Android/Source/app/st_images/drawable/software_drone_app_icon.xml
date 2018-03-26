@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:fillColor="#36A9E1"
+        android:pathData="M 172.1 102 l 24.3 -2.6 l -26.2 -1.9 c 0 -1 -0.6 -1.9 -1.5 -2.2 c -0.2 -0.1 -0.4 -0.1 -0.5 -0.1 c -0.8 0 -1.6 0.5 -1.9 1.4 l -2.7 -2.5 l -23.9 -2.1 l 25.9 7.1 l -0.4 1.5 c -0.3 0 -3.3 0.3 -3.3 0.3 s -2 8.6 -2.5 8.7 l -3.1 2.3 l -7.5 -0.9 l -5.4 -0.7 c 0 0 0 0 0 0 l -9.5 -1.2 l 0.6 -2.4 l 24.5 -2.4 l -25.8 -1.9 c 0 -1 -0.6 -1.9 -1.5 -2.2 c -0.2 -0.1 -0.4 -0.1 -0.5 -0.1 c -0.9 0 -1.7 0.6 -2 1.6 l 0 0.1 l -3.1 -2.8 l -18.1 -1.6 l -5.8 -0.5 l 6.7 1.8 c 0 0 0 0 0 0 l 16.6 4.6 l -1.2 4.6 l -18.9 -2.3 c 0.4 -3.5 -2.7 -6.7 -5.2 -7.2 l -12.1 -2.6 c -0.6 -0.1 -1.3 -0.2 -2 -0.2 c -1.8 0 -3.5 0.5 -5 1.4 L 64.4 81.6 l -1.3 -2.6 l 1.7 -8.8 c 0 0 -1.8 -1.3 -1.9 -1.4 l 0.4 -2 L 66 69 l 24.2 -3.3 l -26.6 -1.1 c -0.1 -0.9 -0.8 -1.7 -1.7 -1.9 c -0.1 0 -0.3 0 -0.4 0 c -0.7 0 -1.4 0.4 -1.7 1 l -2.6 -2.3 L 33.2 60 l 25.9 6.3 l -0.2 1.4 c -0.2 0 -3.5 0.8 -3.5 0.8 L 55 70.8 l -21 -0.9 c -0.1 -0.9 -0.8 -1.7 -1.7 -1.9 c -0.1 0 -0.3 0 -0.4 0 c -0.7 0 -1.4 0.4 -1.7 1 l -2.6 -2.3 L 3.6 65.3 l 25.9 6.3 l -0.2 1.4 c -1.7 0.1 -3.5 0.8 -3.5 0.8 l 0 0.1 l 0 0 l -0.3 1.6 l -0.3 1.5 L 25 78.2 l 0 0.1 l -1 0.8 L 22.3 87 l 1.8 1.5 l -0.2 22.2 l 3.4 1 l 5.3 -17 l 2.4 -1.9 l 18.6 5.6 l -0.1 6.8 l 3.4 1 l 1.9 -6.2 l 13.9 4.2 l -0.1 0.7 c -0.2 2.8 0.4 5.6 1.8 8 l 0.7 1.3 c -2.7 3.5 -3.6 7.9 -1.9 11.6 c 1.7 3.6 5.3 5.5 9.5 5.5 c 2.2 0 4.4 -0.5 6.6 -1.7 c 6.3 -3.3 9.4 -10.2 7 -15.6 l 0.9 -0.8 l 21.1 5.4 l 1.3 2.8 l -2.6 17.7 l 3.5 0.7 l 9.4 -19.9 l 2.2 -0.5 l 1.5 -6.3 l 21 2.7 l 0 0 l 1.3 2.9 l -2.6 17.7 l 3.5 0.7 l 9.4 -19.9 l 2.2 -0.5 l 1.9 -7.8 l -0.6 -1.2 l 1.1 -4 c 0 0 -1.7 -1.7 -1.9 -1.8 l 0.6 -2.5 L 172.1 102 Z M 54.6 72.8 l -1 0.8 l -1.6 7.9 l 1.8 1.5 l -0.1 11.3 l -18.2 -6 l -1.9 -3.9 l 1.1 -5.9 l 0 0 l 0.2 -0.9 l 0.4 -2.1 c 0 0 -1.4 -1.1 -1.9 -1.4 l 0.4 -2 l 2.7 2.3 l 18.4 -2.5 L 54.6 72.8 Z M 60 96.4 l 2.2 -7.2 l 2.4 -1.9 l 0 -0.1 l 13.7 12 l -2.8 2.3 L 60 96.4 Z M 80.6 129.1 c -0.4 0.1 -0.9 0.2 -1.3 0.2 c -2.3 0 -4.5 -1.9 -5.4 -4.7 c -1 -3.4 0.3 -6.9 3 -7.8 c 0.4 -0.1 0.9 -0.2 1.3 -0.2 c 1.1 0 2.2 0.4 3.1 1.2 c -0.5 -0.2 -1 -0.4 -1.6 -0.4 c -0.4 0 -0.7 0.1 -1.1 0.2 c -1 0.3 -1.8 1.2 -2.2 2.2 c 0.7 0.3 1.4 1.5 1.7 3 c 0.3 1.5 0 2.9 -0.6 3.4 c 0.9 1 2 1.6 3.1 1.6 c 0.4 0 0.7 -0.1 1.1 -0.2 c 0.7 -0.2 1.3 -0.7 1.8 -1.4 C 82.9 127.6 81.9 128.6 80.6 129.1 Z M 119.6 114.7 l -19.2 -4.3 l 1.2 -1.1 l 21.5 2.7 L 119.6 114.7 Z" />
+</vector>

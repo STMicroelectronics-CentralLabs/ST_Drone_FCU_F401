@@ -1,0 +1,3 @@
+[submodule "BLE application Android/Source/BlueSTSDK"]
+	path = BLE application Android/Source/BlueSTSDK
+	url = https://github.com/STMicroelectronics-CentralLabs/BlueSTSDK_Android.git

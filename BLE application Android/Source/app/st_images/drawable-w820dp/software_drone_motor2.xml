@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="32dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 175.5 75.7 h -14.3 c -2.1 0 -3.9 1.7 -3.9 3.9 v 7.8 h -4.2 v -7.2 c 0 -2.1 -1.7 -3.9 -3.9 -3.9 h -15.2 l -11.6 -10.2 c -0.7 -0.6 -1.6 -1 -2.6 -1 H 98.5 v -5 h 17 c 2.5 0 4.5 -2 4.5 -4.5 s -2 -4.5 -4.5 -4.5 h -43 c -2.5 0 -4.5 2 -4.5 4.5 s 2 4.5 4.5 4.5 h 17 v 5 H 64.6 c -1.2 0 -2.4 0.6 -3.1 1.5 L 51.3 80.2 H 39.7 c -2.1 0 -3.9 1.7 -3.9 3.9 v 19.1 h -6.2 v -17 c 0 -2.5 -2 -4.5 -4.5 -4.5 c -2.5 0 -4.5 2 -4.5 4.5 v 43 c 0 2.5 2 4.5 4.5 4.5 c 2.5 0 4.5 -2 4.5 -4.5 v -17 h 6.2 v 17.9 c 0 2.1 1.7 3.9 3.9 3.9 h 9.7 l 14.7 13.8 c 0.7 0.7 1.7 1 2.7 1 h 61.2 c 1 0 2 -0.4 2.7 -1.1 l 19 -19 h 5.4 v 6.5 c 0 2.1 1.7 3.9 3.9 3.9 h 16.7 c 2.1 0 3.9 -1.7 3.9 -3.9 V 79.6 C 179.4 77.5 177.7 75.7 175.5 75.7 Z M 171.7 131.3 h -8.9 v -6.5 c 0 -2.1 -1.7 -3.9 -3.9 -3.9 H 148 c -1 0 -2 0.4 -2.7 1.1 l -19 19 h -58 l -14.7 -13.8 c -0.7 -0.7 -1.7 -1 -2.7 -1 h -7.3 V 88 h 9.6 c 1.2 0 2.4 -0.6 3.1 -1.5 l 10.2 -13.5 h 51.9 l 11.6 10.2 c 0.7 0.6 1.6 1 2.6 1 h 12.8 v 7.2 c 0 2.1 1.7 3.9 3.9 3.9 h 11.9 c 2.1 0 3.9 -1.7 3.9 -3.9 v -7.8 h 6.5 V 131.3 Z" />
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M 105.9 89.5 v 9.1 c 4.2 2.6 6.8 7.2 6.8 12.2 c 0 7.9 -6.4 14.4 -14.4 14.4 c -7.9 0 -14.4 -6.4 -14.4 -14.4 c 0 -5 2.6 -9.6 6.8 -12.2 v -9.1 c -9 3.2 -15.1 11.7 -15.1 21.3 c 0 12.5 10.2 22.6 22.6 22.6 c 12.5 0 22.6 -10.2 22.6 -22.6 C 121 101.2 114.9 92.6 105.9 89.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 98.4 111.6 c 2.4 0 4.4 -2 4.4 -4.4 V 82.8 c 0 -2.4 -2 -4.4 -4.4 -4.4 c -2.4 0 -4.4 2 -4.4 4.4 v 24.3 C 93.9 109.6 95.9 111.6 98.4 111.6 Z" />
+</vector>

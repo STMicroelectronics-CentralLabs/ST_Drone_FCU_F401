@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<resources>
+    <string name="SensitivitySeekBar">La barra cambia il valore di sensibilita\' del cursore al momento del primo tocco, cioe\' quante volte deve aumentare la richiesta di velocita\' angolare dei motori rispetto al caso proporzionale\nLe barre sono rispettivamente per Yaw, Pitch/Roll and Altitude.\nL\'intervallo dei valori va da 1 a Max (Max di default e\' 10, altrimenti si puo\' cambiare)\n1 significa proporzionale senza non linearita\' \nvalore x diverso da 1 significa che la richiesta di velocita\' angolare  dei motori e\' x volte maggiore la velocita\' del dito solo nella zona spaziale del primo tocco.\nSe x > 1 allora la richiesta di velocita\' angolare  dei motori e\' x volte minore la velocita\' del dito nella zona spaziale vicino ai bordi del cursore.\n</string>
+    <string name="Connection">Prima azione per far funzionare il drone\nIl bottone di connesione permette al drone di collegarsi via BLE\nPremendo il tasto si accedera\' ad una nuova schermata per selezionare il drone da connettere\nSeleziona il drone e poi fai click per tornare alla shermata principale\nIl buttone cambia colore in funzione dello stato di connessione:\n                    azzurro = inizia connessione per la prima volta\n                    verde = connesso\n                    giallo = cerca connessione\n                    rosso =connessione impossibile\n</string>
+    <string name="DataDrone">Il primo selettore serve ad attivare o disattivare la visualizzazione su schermo dei dati dei sensori del drone: \n        \t\t\t\tAccelerometer\n        \t\t\t\tGyroscope\n        \t\t\t\tMagnetometer\n        \t\t\t\tPressure\n        \t\t\t\tAltitude\n        Ivece di -STDrone software version- saranno visulizzati tali dati.\n        Il secondo selettore serve ad attivare o disattivare il salvataggio dei dati con timestamp  su File.\n        Ogni salvataggio ha un nome diverso! ricordati di cancellare quelli vecchi manualmente.\n        La cartella del file e\' nella main root della sdcard:\n        /STMicroelectronics/logs\n</string>
+    <string name="Followers_Cursors">Questa e\' una nuova funzione\npotrai pilotare il drone senza piu\' guardare lo schermo!\nInfatti i cursori analogici saranno ridisegnati e centrati dove appoggerai il dito\nIn questo modo se sbagli mira e non centri il cursore il drone non subira\' una spinta erronea, si muovera\' solo non appena muoverai il dito\nI cursori standard sono fissi, quindi devi smettere di guardare il drone e guardare lo schermo per puntare il dito verso il centro del cursore analogico altrimenti il drone si muovera\' per sbaglio\nProvalo!\nSe il dito si appoggiera\' troppo vicino allo schermo sentirai una vibrazione, cosi\' non distoglierai lo sguardo dal drone ma ti bastera\' sollevare il dito e riappoggiarlo di nuovo\n</string>
+    <string name="Offset">Il bottone Offset left/right permette di scambiare i cursori da analogic a digital e viceversa.\n        Se premi offeset, potrai usare i cursori digitali per cambiare offset di  yaw, pitch and roll and altitude di un  1/128 dei loro valori massimi ad ogni click.</string>
+    <string name="SeekBar">La barra permette di riscalare la velocita\' di richiesta dei motori, cosi\' potrai passare da una guida sportiva ad una guida piu\' tranquilla</string>
+    <string name="Sensitivity">il bottone di sensibilita\' serve ad accedere alla pagina per modulare la sensibilita\' della velocita\' del dito rispetto a quella dei motori a seconda di dove si trova il dito rispetto il cursore analogico.\nLa velocita\' del dito e\' normalmente proporzionale alla velocita\' dei motori su qualunque punto dello schermo.\nLa sensibilita\' introduce un comportamento non lineare sullo schermo\nIn particolare si puo\' aumentare la velocita\' dei motori rispetto la velocita\' del dito nella zona dove il dito preme lo schermo la prima volta\nIn questa maniera si abbassera\' la dei motori rispetto la velocita\' del dito nella zona vicino ai confini del cursore</string>
+    <string name="SensitivitySeekBarMax">Il selettore permette di cambiare i fattori di non linearita\' oppure il valore massimo di non linearita\'\n        Esiste un valore minimo per il Max oltre il quale non si puo\' scendere\n        Variando Max si cambia anche la sensitivity, eccetto il caso in cui e\' 1</string>
+    <string name="Shape">Il selettore serve a cambiare forma tra cerchio e quadrato.\n        Il quadrato ha la migliore corrispondenza con la cinematica del drone\n       Infatti la velocita\' massima si ha negli angoli del quadrato\n       Prova a girare di 45 gradi il drone nella direzione voluta e poi muovi il dito sull'angolo del quadrato per provare la massima velocita'\n  "</string>
+    <string name="SwapPlanes">Questa e\' una nuova funzione!\n        Si possono scambiare i tre assi x,y,z dei comandi del cursore analogico. (x = sinistra/destra, y = altezza, z = avanti/indietro)\n        In questo modo puoi generare archi e giri della morte usando un solo cursore/dito\n        E\' un nuovo modo per pilotare il drone.\n        Non tutti i movimenti possono essere eseguiti dal drone a causa delle limitazioni sulla massima velocita\' dei motori\n       Provalo!</string>
+    <string name="Take_off">Terza azione per far funzionare il drone \n        Il bottone Take_off serve a far decollare il drone.\n        Durante questa fase usare il throttle per controllare l\'altezza desiderata\n        Durante il volo, lo stesso bottone permette di atterrare</string>
+    <string name="YawDisable">Il selettore attiva o disattiva lo Yaw, rotazione intorno all\'asse verticale (attivazione suggerita ai novizi)\n</string>
+    <string name="initDrone">Seconda azione per far funzionare il drone \n       Il primo bottone serve ad attivare la sensor calibration, cosi\' il Giroscopio sara\' settato col valore corretto, perche\' nel tempo la board del drone potrebbe inclinarsi un po\'\n        Il bottone richiede di essere premuto per un 1 sec per essere attivato.\n        Se il bottone e\' premuto per almeno 1 sec, allora diventa verde per 2 sec altrimenti rosso per 2 sec.\n       Azionarlo prima del decollo e prima di accendere i motori.\n       Il secondo bottone accende i motori (Arm)\n      Quando il drone vola lo stesso bottone serve a spegnere i motori\n       Lo stop va usato quando si perde il controllo del drone\n       Il terzo elemento e\' un led per visualizzare lo stato dei motori (verde = motore acceso, rosso = motore spento).\n</string>
+    <string name="HelpDescription">Questo Help e\' scrollabile</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="134dp"
+    android:height="21dp"
+    android:viewportWidth="550"
+    android:viewportHeight="200">
+
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 509.8 134 H 42.5 c -18.7 0 -34 -15.3 -34 -34 c 0 -18.7 15.3 -34 34 -34 h 467.3 c 18.7 0 34 15.3 34 34 C 543.8 118.7 528.5 134 509.8 134 Z M 42.5 75 c -13.8 0 -25 11.2 -25 25 s 11.2 25 25 25 h 467.3 c 13.8 0 25 -11.2 25 -25 s -11.2 -25 -25 -25 H 42.5 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 41.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 46.1 114 44.1 116 41.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 58.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 62.9 114 60.9 116 58.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 75.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 79.6 114 77.6 116 75.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 91.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 96.4 114 94.4 116 91.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 108.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 113.1 114 111.1 116 108.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 125.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 129.9 114 127.9 116 125.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 142.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 146.6 114 144.6 116 142.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 158.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 163.4 114 161.4 116 158.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 175.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 180.1 114 178.1 116 175.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 192.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 196.9 114 194.9 116 192.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 209.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 213.6 114 211.6 116 209.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 225.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 230.4 114 228.4 116 225.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 242.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 247.1 114 245.1 116 242.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 259.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 263.9 114 261.9 116 259.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 276.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 280.6 114 278.6 116 276.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 292.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 297.4 114 295.4 116 292.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 309.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 314.1 114 312.1 116 309.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 326.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 330.9 114 328.9 116 326.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 343.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 347.6 114 345.6 116 343.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 359.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 364.4 114 362.4 116 359.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 376.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 381.1 114 379.1 116 376.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 393.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 397.9 114 395.9 116 393.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 410.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 414.6 114 412.6 116 410.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 426.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 431.4 114 429.4 116 426.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 443.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 448.1 114 446.1 116 443.6 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 460.4 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 464.9 114 462.9 116 460.4 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 477.1 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 481.6 114 479.6 116 477.1 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 493.9 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 498.4 114 496.4 116 493.9 116 Z" />
+    <path
+        android:fillColor="#34A7DB"
+        android:pathData="M 510.6 116 c -2.5 0 -4.5 -2 -4.5 -4.5 v -23 c 0 -2.5 2 -4.5 4.5 -4.5 s 4.5 2 4.5 4.5 v 23 C 515.1 114 513.1 116 510.6 116 Z" />
+</vector>

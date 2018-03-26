@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".Joystick">
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--
+        <ImageView
+            android:id="@+id/Image_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/software_drone_background__light_blue"
+            />
+            -->
+        <ImageView
+            android:id="@+id/Image_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/software_drone_st_logo"
+            />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_for_measures"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="top|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_MainButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Button_Setting"
+                    android:layout_width="@dimen/maxSizeButton"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_marginRight="80dp"
+                    android:layout_gravity="center_vertical"
+                    style="@style/MyButton_blue_dark"
+                    android:drawableTop="@drawable/software_drone_setting"
+                    android:textSize="0sp"
+                    />
+
+                <!--
+                <Button
+                    android:id="@+id/Button_Setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_marginRight="80dp"
+                    android:elegantTextHeight="false"
+                    android:minWidth="50dp"
+                    android:text=" Setting "
+                    style="@style/MyButton_blue_dark"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+                -->
+
+                <Button
+                    android:id="@+id/Button_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:layout_gravity="center_vertical"
+                    style="@style/MyButton_blue_dark"
+                    android:elegantTextHeight="false"
+                    android:minWidth="50dp"
+                    android:text=" Help "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewBattery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text=" Battery 00% "
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewRSSI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text=" RSSI 00db "
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_SeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/help_SeekBar_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:minWidth="150dp"
+                    style="@style/MySeek"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_text_SeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textSeekBar2"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:text="Speed Scaler --%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tableLayout_DirectionL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/Button_UP"
+                        android:layout_width="@dimen/SizeDigitalButton"
+                        android:layout_height="@dimen/SizeDigitalButton"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        style="@style/MyButton_blue_dark"
+                        android:drawableTop="@drawable/software_drone_cursor_up"
+                        android:textSize="0sp"
+                        />
+
+                    <!--
+                    <Button
+                        android:id="@+id/Button_UP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        style="@style/MyButton_blue_bright"
+                        android:elegantTextHeight="false"
+                        android:minWidth="50dp"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"
+                        android:text="Y+" />
+                    -->
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/Button_L"
+                        android:layout_width="@dimen/SizeDigitalButton"
+                        android:layout_height="@dimen/SizeDigitalButton"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        style="@style/MyButton_blue_dark"
+                        android:drawableTop="@drawable/software_drone_cursor_z1"
+                        android:textSize="0sp"
+                        />
+
+                    <!--
+                    <Button
+                        android:id="@+id/Button_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        style="@style/MyButton_blue_bright"
+                        android:elegantTextHeight="false"
+                        android:minWidth="50dp"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"
+                        android:text="R-" />
+                    -->
+
+                    <Button
+                        android:id="@+id/Button_R"
+                        android:layout_width="@dimen/SizeDigitalButton"
+                        android:layout_height="@dimen/SizeDigitalButton"
+                        android:layout_column="2"
+                        android:layout_gravity="center_vertical"
+                        style="@style/MyButton_blue_dark"
+                        android:drawableTop="@drawable/software_drone_cursor_z2"
+                        android:textSize="0sp"
+                        />
+
+                    <!--
+                    <Button
+                        android:id="@+id/Button_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        style="@style/MyButton_blue_bright"
+                        android:elegantTextHeight="false"
+                        android:minWidth="50dp"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"
+                        android:text="R+" />
+                    -->
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/Button_Down"
+                        android:layout_width="@dimen/SizeDigitalButton"
+                        android:layout_height="@dimen/SizeDigitalButton"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        style="@style/MyButton_blue_dark"
+                        android:drawableTop="@drawable/software_drone_cursor_down"
+                        android:textSize="0sp"
+                        />
+
+                    <!--
+                    <Button
+                        android:id="@+id/Button_Down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        style="@style/MyButton_blue_bright"
+                        android:elegantTextHeight="false"
+                        android:minWidth="50dp"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"
+                        android:text="Y-" />
+                    -->
+                </TableRow>
+            </TableLayout>
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Button_DAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Button_DAL"
+                android:layout_width="@dimen/maxSizeWidthSeekBar"
+                android:layout_height="@dimen/maxSizeHeightSeekBar"
+                android:layout_marginRight="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="#00ffffff"
+                android:drawableTop="@drawable/software_drone_seekbar"
+                android:textSize="0sp"
+                />
+            <!--
+            <Button
+                android:id="@+id/Button_DAL"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/maxSizeButton"
+                android:layout_marginRight="60dp"
+                android:elegantTextHeight="false"
+                android:minWidth="50dp"
+                style="@style/MyButton_blue_dark"
+                android:text=" Offset Left "
+                android:textColor="@color/White"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/LinearLayout_Take_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Button_Take_off"
+                    android:layout_width="@dimen/maxSizeButtonLarger"
+                    android:layout_height="@dimen/maxSizeButtonLarger"
+                    android:layout_gravity="center_vertical"
+                    style="@style/MyButton_blue_dark"
+                    android:drawableTop="@drawable/software_drone_take_off"
+                    android:textSize="0sp"
+                    />
+                <!--
+                <Button
+                    android:id="@+id/Button_Take_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    style="@style/MyButton_blue_dark"
+                    android:elegantTextHeight="false"
+                    android:minWidth="50dp"
+                    android:text=" Take off "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/White"
+                    android:textSize="12sp"
+                    />
+                -->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Image_Connection"
+                    android:layout_width="@dimen/maxSizeButton"
+                    android:layout_height="@dimen/maxSizeButton"
+                    android:src="@drawable/software_drone_ble"
+                    />
+
+                <Button
+                    android:id="@+id/Button_Connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/maxSizeButton"
+                    style="@style/MyButton_red"
+                    android:elegantTextHeight="false"
+                    android:text=" Disconnected Press me "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                 <Button
+                     android:id="@+id/Button_Sensor_Calibration"
+                     android:layout_width="@dimen/maxSizeButton"
+                     android:layout_height="@dimen/maxSizeButton"
+                     android:layout_gravity="center_vertical"
+                     style="@style/MyButton_blue_dark"
+                     android:drawableTop="@drawable/software_drone_sensor_calibration1"
+                     android:textSize="0sp"
+                     />
+
+                 <!--
+                 <Button
+                     android:id="@+id/Button_Sensor_Calibration"
+                     android:layout_width="wrap_content"
+                     android:layout_height="@dimen/maxSizeButton"
+                     style="@style/MyButton_blue_dark"
+                     android:elegantTextHeight="false"
+                     android:minWidth="50dp"
+                     android:text=" / "
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textColor="@color/White"
+                     android:textSize="12sp" />
+                 -->
+
+                 <Button
+                     android:id="@+id/Button_Arm"
+                     android:layout_width="@dimen/maxSizeButton"
+                     android:layout_height="@dimen/maxSizeButton"
+                     android:layout_marginLeft="10dp"
+                     android:layout_gravity="center_vertical"
+                     style="@style/MyButton_blue_dark"
+                     android:drawableTop="@drawable/software_drone_motor2"
+                     android:textSize="0sp"
+                     />
+
+                 <!--
+                 <Button
+                     android:id="@+id/Button_Arm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="@dimen/maxSizeButton"
+                     style="@style/MyButton_blue_dark"
+                     android:elegantTextHeight="false"
+                     android:minWidth="50dp"
+                     android:layout_marginLeft="10dp"
+                     android:text=" Arm  "
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textColor="@color/White"
+                     android:textSize="12sp" />
+                 -->
+
+                 <TextView
+                    android:id="@+id/textViewARMED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                     android:textSize="12sp"
+                     android:background="@color/ErrorMsg"
+                    android:text=" Not Armed " />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Button_DAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Button_DAR"
+                android:layout_width="@dimen/maxSizeWidthSeekBar"
+                android:layout_height="@dimen/maxSizeHeightSeekBar"
+                android:layout_gravity="center_vertical"
+                android:background="#00ffffff"
+                android:layout_marginLeft="1dp"
+                android:drawableTop="@drawable/software_drone_seekbar"
+                android:textSize="0sp"
+                />
+            <!--
+            <Button
+                android:id="@+id/Button_DAR"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/maxSizeButton"
+                style="@style/MyButton_blue_dark"
+                android:layout_marginLeft="1dp"
+                android:minWidth="50dp"
+                android:text=" Offset Right "
+                android:textColor="@color/White"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout_textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="STDrone software version --" />
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="right|center_vertical"
+android:orientation="horizontal">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout_DirectionR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/Button_UP2"
+                android:layout_width="@dimen/SizeDigitalButton"
+                android:layout_height="@dimen/SizeDigitalButton"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                style="@style/MyButton_blue_dark"
+                android:drawableTop="@drawable/software_drone_cursor_x2"
+                android:textSize="0sp"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/Button_UP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                style="@style/MyButton_blue_bright"
+                android:elegantTextHeight="false"
+                android:minWidth="50dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="Z+" />
+            -->
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/Button_Left2"
+                android:layout_width="@dimen/SizeDigitalButton"
+                android:layout_height="@dimen/SizeDigitalButton"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                style="@style/MyButton_blue_dark"
+                android:drawableTop="@drawable/software_drone_cursor_y1"
+                android:textSize="0sp"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/Button_Left2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                style="@style/MyButton_blue_bright"
+                android:elegantTextHeight="false"
+                android:minWidth="50dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="X-" />
+            -->
+
+            <Button
+                android:id="@+id/Button_Right2"
+                android:layout_width="@dimen/SizeDigitalButton"
+                android:layout_height="@dimen/SizeDigitalButton"
+                android:layout_column="2"
+                android:layout_gravity="center_vertical"
+                style="@style/MyButton_blue_dark"
+                android:drawableTop="@drawable/software_drone_cursor_y2"
+                android:textSize="0sp"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/Button_Right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                style="@style/MyButton_blue_bright"
+                android:elegantTextHeight="false"
+                android:minWidth="50dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="X+" />
+            -->
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/Button_Down2"
+                android:layout_width="@dimen/SizeDigitalButton"
+                android:layout_height="@dimen/SizeDigitalButton"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                style="@style/MyButton_blue_dark"
+                android:drawableTop="@drawable/software_drone_cursor_x1"
+                android:textSize="0sp"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/Button_Down2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                style="@style/MyButton_blue_bright"
+                android:elegantTextHeight="false"
+                android:minWidth="50dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="Z-" />
+            -->
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+</FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018  STMicroelectronics – All rights reserved
+  ~ The STMicroelectronics corporate logo is a trademark of STMicroelectronics
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ - Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~    and the following disclaimer.
+  ~
+  ~ - Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~    conditions and the following disclaimer in the documentation and/or other materials provided
+  ~    with the distribution.
+  ~
+  ~ - Neither the name nor trademarks of STMicroelectronics International N.V. nor any other
+  ~    STMicroelectronics company nor the names of its contributors may be used to endorse or
+  ~    promote products derived from this software without specific prior written permission.
+  ~
+  ~ - All of the icons, pictures, logos and other images that are provided with the source code
+  ~    in a directory whose title begins with st_images may only be used for internal purposes and
+  ~    shall not be redistributed to any third party or modified in any way.
+  ~
+  ~ - Any redistributions in binary form shall not include the capability to display any of the
+  ~    icons, pictures, logos and other images that are provided with the source code in a directory
+  ~    whose title begins with st_images.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+  ~ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  ~ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  ~ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+  ~ OF SUCH DAMAGE.
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:columnCount="3"
+    android:alignmentMode="alignMargins"
+    tools:context=".HomeActivity$HomeFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_columnSpan="3"
+        android:id="@+id/fragment_home_toolbar"
+        android:background="@color/homePrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Dashboard"
+        android:minHeight="?attr/actionBarSize" >
+    </android.support.v7.widget.Toolbar>
+
+    <!-- TODO: Add content description to all image buttons -->
+    <!-- TODO: Give proper icons to images in production -->
+
+    <ImageView
+        android:id="@+id/fragment_home_underbelly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/home_underbelly" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_home_toolbar"
+        android:layout_above="@id/fragment_home_underbelly">
+        <GridLayout
+            android:id="@+id/fragment_home_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:background="#FFFFFF"
+            android:layout_below="@id/fragment_home_toolbar"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/fragment_home_bank_image_desc"
+                android:onClick="fragmentHomeOnClickBank"
+                android:src="@drawable/ic_home_bank" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/fragment_home_cash_desc"
+                android:onClick="fragmentHomeOnClickCash"
+                android:src="@drawable/ic_home_cash"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/fragment_home_spend_desc"
+                android:onClick="fragmentHomeOnClickShop"
+                android:src="@drawable/ic_home_shop"/>
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_bank_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_cash_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_shop_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/fragment_home_fw_desc"
+                android:onClick="fragmentHomeOnClickFW"
+                android:src="@drawable/ic_home_fw"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/fragment_home_send_label"
+                android:onClick="fragmentHomeOnClickSend"
+                android:src="@drawable/ic_home_spent"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/fragment_home_bills_desc"
+                android:onClick="fragmentHomeOnClickBills"
+                android:src="@drawable/ic_home_bills"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/fragment_home_family_wallet_label"
+                android:textSize="@dimen/activity_home_text_size"
+                android:textColor="@color/semi_white_text"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_send_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_bills_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+            <Space
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_marginTop="16dp"
+                android:layout_columnSpan="1"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/fragment_home_emergency_desc"
+                android:onClick="fragmentHomeOnClickEmergency"
+                android:src="@drawable/ic_home_emergency"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:layout_height="@dimen/activity_home_image_height"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/fragment_home_zaplog_desc"
+                android:onClick="fragmentHomeOnClickZapLog"
+                android:src="@drawable/ic_home_zaplock"/>
+            <Space
+                android:layout_columnSpan="1"/>
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_emergency_label"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="@dimen/activity_home_image_width"
+                android:text="@string/fragment_home_zap_log"
+                android:textColor="@color/semi_white_text"
+                android:textSize="@dimen/activity_home_text_size"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
