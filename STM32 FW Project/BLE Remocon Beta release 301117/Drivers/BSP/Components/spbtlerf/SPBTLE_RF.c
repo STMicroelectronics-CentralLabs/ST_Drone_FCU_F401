@@ -118,9 +118,9 @@ void print_csv_time(void){
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {  
   switch(GPIO_Pin){
-    case BNRG_SPI_EXTI_PIN:    // IF BLUETOOTH IRQ IS CALLED
-      HCI_Isr();               // Enqueue data from BLE
-      HCI_ProcessEvent=1;      // Initialize Process Event
+    case BNRG_SPI_EXTI_PIN:
+      HCI_Isr();
+      HCI_ProcessEvent=1;
     break;
   }
 }
