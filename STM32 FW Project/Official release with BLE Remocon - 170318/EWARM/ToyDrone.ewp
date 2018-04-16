@@ -1126,6 +1126,9 @@
             <file>
                 <name>$PROJ_DIR$\..\Drivers\BSP\STEVAL_FCU001_V1\steval_fcu001_v1_pressure.c</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\STEVAL_FCU001_V1\steval_fcu001_v1_temperature.c</name>
+            </file>
         </group>
         <group>
             <name>CMSIS</name>

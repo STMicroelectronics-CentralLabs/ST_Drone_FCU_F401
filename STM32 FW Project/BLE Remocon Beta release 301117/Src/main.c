@@ -411,7 +411,7 @@ int32_t BytesToWrite;
     /* USER CODE BEGIN 3 */    
     if(HCI_ProcessEvent) {
           HCI_ProcessEvent=0;
-          HCI_Process();
+          HCI_Process(); // Start the BLE buffer enqueue
     }
     
     if(set_connectable){
