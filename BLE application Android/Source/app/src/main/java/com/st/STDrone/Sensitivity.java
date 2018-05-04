@@ -45,6 +45,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
@@ -309,8 +310,8 @@ public class Sensitivity extends AppCompatActivity {
     private SeekBar.OnSeekBarChangeListener mSeekBarListenerYaw = new SeekBar.OnSeekBarChangeListener() {
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//            progress	int: The current progress level. This will be in the range min..max where min
-//            and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
+            //progress	int: The current progress level. This will be in the range min..max where min
+            //and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
             {
                 Log.d("scrollText", "SeekBar : progress value: "+String.valueOf(progress)); // for debug
                 mProgressSeekBar = progress;
@@ -362,8 +363,8 @@ public class Sensitivity extends AppCompatActivity {
     private SeekBar.OnSeekBarChangeListener mSeekBarListenerPitchRoll = new SeekBar.OnSeekBarChangeListener() {
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//            progress	int: The current progress level. This will be in the range min..max where min
-//            and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
+        //progress	int: The current progress level. This will be in the range min..max where min
+        //and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
             {
                 Log.d("scrollText", "SeekBar : progress value: "+String.valueOf(progress)); // for debug
                 mProgressSeekBar = progress;
@@ -417,8 +418,8 @@ public class Sensitivity extends AppCompatActivity {
     private SeekBar.OnSeekBarChangeListener mSeekBarListenerThrottle = new SeekBar.OnSeekBarChangeListener() {
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//            progress	int: The current progress level. This will be in the range min..max where min
-//            and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
+            //progress	int: The current progress level. This will be in the range min..max where min
+            //and max were set by setMin(int) and setMax(int), respectively. (The default values for min is 0 and max is 100.)
             {
                 Log.d("scrollText", "SeekBar : progress value: "+String.valueOf(progress)); // for debug
                 mProgressSeekBar = progress;

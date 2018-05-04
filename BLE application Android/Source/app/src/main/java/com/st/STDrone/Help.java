@@ -43,6 +43,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.st.BlueSTSDK.Manager;
@@ -75,8 +76,6 @@ public class Help  extends AppCompatActivity {
         }
         return i;
     }//getStartIntent
-
- 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

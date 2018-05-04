@@ -50,6 +50,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -102,10 +103,16 @@ import static java.lang.StrictMath.sqrt;
 
 public class Joystick extends AppCompatActivity {
 
-    private int mVersion = 30;
+    private int mVersion = 33;
 
     private final static boolean graphicsEnable = true;
     private final static boolean lastFeatureEnable = false;
+//    private final static boolean cursorDrawEnable = false;
+//    private final static boolean majorButtonsDrawDisable = true;
+//    private final static boolean bleEnable = false;
+    private final static boolean cursorDrawEnable = true;
+    private final static boolean majorButtonsDrawDisable = false;
+    private final static boolean bleEnable = true;
 
     //========================================================================================
     // joyistick BLE
@@ -162,6 +169,7 @@ public class Joystick extends AppCompatActivity {
                 else
                 {
                     mAnalogBLEQuequeTask.cancel();
+
                     mAnalogBLEQuequeTask = new myAnalogBLEQuequeTask();
                     mScrollTimer.scheduleAtFixedRate(mAnalogBLEQuequeTask,0, mTimerAnalogBLEQueque); // msec
 
@@ -216,6 +224,7 @@ public class Joystick extends AppCompatActivity {
     private Node.NodeStateListener mNodeStatusListener = new Node.NodeStateListener() {
         @Override
         public void onStateChange(final Node node, Node.State newState, Node.State prevState) {
+            Log.d("notification", "NodeStateListener "+newState); // for debug
             StatusConnectionVisualization();
         }//onStateChange
     };
@@ -236,6 +245,7 @@ public class Joystick extends AppCompatActivity {
     private SensitivityParameter mInitSensitivityParam;
 
     private static boolean mFirstTime = true;
+    //private boolean mFirstTime = true;
 
     private static boolean mBuildParameter = true;
 
@@ -358,8 +368,8 @@ public class Joystick extends AppCompatActivity {
     private Boolean mButton_Take_off_status = false;
     private long mLastDown = 0;
     private Boolean mButton_Arm_status = false;
-    private static Boolean mButton_Setting_status = false;
-    private static Boolean mButton_Help_status = false;
+    private  boolean mButton_Setting_status = false;
+    private  boolean mButton_Help_status = false;
 
     private int mOffsetRotY = 0; // default
     private int mOffsetAxisX = 0; // default
@@ -391,10 +401,11 @@ public class Joystick extends AppCompatActivity {
     //public static Intent getStartIntent(Context c, @NonNull Node node, SettingParameter initParam, SensitivityParameter initSensitivityParam) {
     public static Intent getStartIntent(Context c, @NonNull Node node) {
         Intent i = new Intent(c, Joystick.class);
-        if(node != null)
-        {
-            i.putExtra(NODE_TAG, node.getTag());
-            i.putExtras(NodeContainerFragment.prepareArguments(node));
+        if(bleEnable) {
+            if (node != null) {
+                i.putExtra(NODE_TAG, node.getTag());
+                i.putExtras(NodeContainerFragment.prepareArguments(node));
+            }
         }
         return i;
     }//getStartIntent
@@ -584,7 +595,10 @@ public class Joystick extends AppCompatActivity {
 
         mInitAnalogBoundsDone = true;
 
-        drawAnalog();
+        if(cursorDrawEnable)
+        {
+            drawAnalog();
+        }
     }
 
     void mySetColorButton(Button selectedButton, int color)
@@ -631,21 +645,24 @@ public class Joystick extends AppCompatActivity {
 
         setContentView(R.layout.activity_joystick);
 
-        findViewById(R.id.Button_UP).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_L).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_R).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Down).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_UP2).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Left2).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Right2).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Down2).setOnClickListener(mOnClickListener);
+        if(!majorButtonsDrawDisable)
+        {
+            findViewById(R.id.Button_UP).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_L).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_R).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Down).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_UP2).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Left2).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Right2).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Down2).setOnClickListener(mOnClickListener);
 
-        findViewById(R.id.Button_Connection).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Connection).setOnClickListener(mOnClickListener);
 
-        findViewById(R.id.Button_Take_off).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Sensor_Calibration).setOnTouchListener(mOnTouchListener_Button_Sensor_Calibration);
-         findViewById(R.id.Button_Arm).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_Help).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Take_off).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Sensor_Calibration).setOnTouchListener(mOnTouchListener_Button_Sensor_Calibration);
+            findViewById(R.id.Button_Arm).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_Help).setOnClickListener(mOnClickListener);
+        }
         findViewById(R.id.Button_Setting).setOnClickListener(mOnClickListener);
 
         // how to generate an imageButton with 3 states instead of radioButton (switch and toggleButton are only 2 states)
@@ -658,31 +675,53 @@ public class Joystick extends AppCompatActivity {
         mBuildParameter = false;
 
         mSeekBar = findViewById(R.id.seekBar);
-        mSeekBar.setProgress(mProgressSeekBar);
-        mSeekBar.setOnSeekBarChangeListener(mSeekBarListener);
+        if(!majorButtonsDrawDisable)
+        {
+            mSeekBar.setProgress(mProgressSeekBar);
+            mSeekBar.setOnSeekBarChangeListener(mSeekBarListener);
 
-        findViewById(R.id.Button_DAL).setOnClickListener(mOnClickListener);
-        findViewById(R.id.Button_DAR).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_DAL).setOnClickListener(mOnClickListener);
+            findViewById(R.id.Button_DAR).setOnClickListener(mOnClickListener);
 
-        mColor = argb(255,0,0x99,0xcc);
-        Button selectedButton = findViewById(R.id.Button_UP);
-        mySetColorButton(selectedButton,mColor);
-        selectedButton = findViewById(R.id.Button_Down);
-        mySetColorButton(selectedButton,mColor);
-        selectedButton = findViewById(R.id.Button_L);
-        mySetColorButton(selectedButton,mColor);
-        selectedButton = findViewById(R.id.Button_R);
-        mySetColorButton(selectedButton,mColor);
-        mColor = argb(255,0,0x99,0xcc);
-        selectedButton = findViewById(R.id.Button_UP2);
-        mySetColorButton(selectedButton,mColor);
-        selectedButton = findViewById(R.id.Button_Down2);
-        mySetColorButton(selectedButton,mColor);
-        mColor = argb(255,0,0x99,0xcc);
-        selectedButton = findViewById(R.id.Button_Left2);
-        mySetColorButton(selectedButton,mColor);
-        selectedButton = findViewById(R.id.Button_Right2);
-        mySetColorButton(selectedButton,mColor);
+            mColor = argb(255,0,0x99,0xcc);
+            Button selectedButton = findViewById(R.id.Button_UP);
+            mySetColorButton(selectedButton,mColor);
+            selectedButton = findViewById(R.id.Button_Down);
+            mySetColorButton(selectedButton,mColor);
+            selectedButton = findViewById(R.id.Button_L);
+            mySetColorButton(selectedButton,mColor);
+            selectedButton = findViewById(R.id.Button_R);
+            mySetColorButton(selectedButton,mColor);
+            mColor = argb(255,0,0x99,0xcc);
+            selectedButton = findViewById(R.id.Button_UP2);
+            mySetColorButton(selectedButton,mColor);
+            selectedButton = findViewById(R.id.Button_Down2);
+            mySetColorButton(selectedButton,mColor);
+            mColor = argb(255,0,0x99,0xcc);
+            selectedButton = findViewById(R.id.Button_Left2);
+            mySetColorButton(selectedButton,mColor);
+            selectedButton = findViewById(R.id.Button_Right2);
+            mySetColorButton(selectedButton,mColor);
+        }
+
+        if(majorButtonsDrawDisable)
+        {
+            Button selectedButton = findViewById(R.id.Button_Connection);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_Take_off);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_Sensor_Calibration);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_Arm);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_Help);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_DAL);
+            selectedButton.setVisibility(View.INVISIBLE);
+            selectedButton = findViewById(R.id.Button_DAR);
+            selectedButton.setVisibility(View.INVISIBLE);
+            mSeekBar.setVisibility(View.INVISIBLE);
+        }
 
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         mWidthPixels  = metrics.widthPixels;
@@ -690,9 +729,12 @@ public class Joystick extends AppCompatActivity {
         mDensityDpi = metrics.densityDpi;
         mWidth_dp  = fromPx_to_dp(mWidthPixels);
 
-        ViewGroup.LayoutParams param = new ViewGroup.LayoutParams(mWidthPixels,mHeightPixels);
-        mAllAnalogDrawable = new AllAnalogDrawable(this);
-        addContentView (mAllAnalogDrawable, param);
+        if(cursorDrawEnable)
+        {
+            ViewGroup.LayoutParams param = new ViewGroup.LayoutParams(mWidthPixels,mHeightPixels);
+            mAllAnalogDrawable = new AllAnalogDrawable(this);
+            addContentView (mAllAnalogDrawable, param);
+        }
 
 
         LinearLayout selectedLinearLayout = findViewById(R.id.tableLayout_DirectionL);
@@ -701,21 +743,25 @@ public class Joystick extends AppCompatActivity {
         selectedLinearLayout.setVisibility(View.INVISIBLE);
         mInitAnalogBoundsDone = false;
 
+
         if(!lastFeatureEnable)
         {
-            selectedButton = findViewById(R.id.Button_Take_off);
+            Button selectedButton = findViewById(R.id.Button_Take_off);
             selectedButton.setVisibility(View.INVISIBLE);
         }
 
-        mAllAnalogDrawable.setOnTouchListener(mOnTouchListener);
+        if(cursorDrawEnable)
+            mAllAnalogDrawable.setOnTouchListener(mOnTouchListener);
 
         mOffsetRotY = 0; // default
         mOffsetAxisX = 0; // default
         mOffsetAxisY = 0; // default
         mOffsetAxisZ = 0; // default
 
+        Log.d("mFirstTime", this+" "+mFirstTime); // for debug
         if(!mFirstTime)
         {
+
             //=======================================================================================
             // BLE
             //find the node
@@ -726,6 +772,7 @@ public class Joystick extends AppCompatActivity {
                 mFirstTime = true;
             else
             {
+                //mFirstTime = false;
                 //registration feature
                 UUIDToFeatureMap map = new UUIDToFeatureMap();
                 map.put(UUID.fromString("00008000-0001-11e1-ac36-0002a5d5c51b") , FeatureJoystick.class); // new FeatureJoystick
@@ -734,6 +781,8 @@ public class Joystick extends AppCompatActivity {
                 //create or recover the NodeContainerFragment
                 if (savedInstanceState == null) {
                     Intent i = getIntent();
+//                    if (mNodeContainer != null)
+//                        mNodeContainer.onDestroy();
                     mNodeContainer = new NodeContainerFragment();
                     mNodeContainer.setArguments(i.getExtras());
 
@@ -756,20 +805,24 @@ public class Joystick extends AppCompatActivity {
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         getParameters(pref);
-        mAllAnalogDrawable.setShape(mShapeCircle);
-        mAllAnalogDrawable.setDensity(mDensityDpi);
-        mAllAnalogDrawable.setPlanes(mSwapCommandcode);
-        mAllAnalogDrawable.setYaw(mYawDisalble);
-
-        TextView textSeekBar = findViewById(R.id.textSeekBar2);
-        textSeekBar.setText("Speed Scaler "+ String.valueOf(mProgressSeekBar)+"%");
-
-        if(!mDataDroneVisible)
+        if(cursorDrawEnable)
         {
-            TextView textViewDataSensors = findViewById(R.id.textViewData);
-            String swVersion = "STDrone software version ";
-            swVersion = swVersion + String.valueOf(mVersion);
-            textViewDataSensors.setText(swVersion);
+            mAllAnalogDrawable.setShape(mShapeCircle);
+            mAllAnalogDrawable.setDensity(mDensityDpi);
+            mAllAnalogDrawable.setPlanes(mSwapCommandcode);
+            mAllAnalogDrawable.setYaw(mYawDisalble);
+        }
+
+        if(!majorButtonsDrawDisable) {
+            TextView textSeekBar = findViewById(R.id.textSeekBar2);
+            textSeekBar.setText("Speed Scaler " + String.valueOf(mProgressSeekBar) + "%");
+            if(!mDataDroneVisible)
+            {
+                TextView textViewDataSensors = findViewById(R.id.textViewData);
+                String swVersion = "STDrone software version ";
+                swVersion = swVersion + String.valueOf(mVersion);
+                textViewDataSensors.setText(swVersion);
+            }
         }
 
         mRightL = 0;
@@ -777,6 +830,7 @@ public class Joystick extends AppCompatActivity {
         mBottom = 0;
         mHeightAvailable = 0;
 
+        if(!majorButtonsDrawDisable)
         {
             LinearLayout selectedLinearLayout = findViewById(R.id.LinearLayout_MainButtons);
             selectedLinearLayout.post(new Runnable() {
@@ -869,7 +923,15 @@ public class Joystick extends AppCompatActivity {
         for (Feature f : features) {
             if (mNode.isEnableNotification(f))
                 mNode.disableNotification(f);
+            if(mGenericUpdate != null)
+                f.removeFeatureListener(mGenericUpdate);
         }//for sTestFeature
+
+        Feature featureSelected = mNode.getFeature(FeatureSwitch.class);
+        if (featureSelected != null){
+            if(mSwitchUpdate != null)
+                featureSelected.removeFeatureListener(mSwitchUpdate);
+        }
     }//disableNeedNotification
 
     private void StatusBatteryVoltagePercentageVisualization(final int batteryVoltagePercentage){
@@ -928,6 +990,9 @@ public class Joystick extends AppCompatActivity {
         mAnalogActivatorR = true;
         if(mNode == null)
             mFirstTime = true;
+//        else
+//            mFirstTime = false;
+        Log.d("notification", this+" onResume"); // for debug
         StatusConnectionVisualization();
         if(!mFirstTime)
             mNode.addNodeStateListener(mNodeStatusListener);
@@ -942,6 +1007,8 @@ public class Joystick extends AppCompatActivity {
             }
             else
             {
+                // the button for mDataDroneVisible was in joystick, it is in setting now
+                // todo: check if it is yet useful
                 if(mGenericUpdate !=null)
                 {
                     activeBatteryRSSIlistener();
@@ -976,23 +1043,17 @@ public class Joystick extends AppCompatActivity {
     @Override
     protected void onPause() {
 
-        if((mNode != null)&&(!mButton_Setting_status)&&(!mButton_Help_status))
+        Log.d("notification", this+" onPause "); // for debug
+        //if((mNode != null)&&(!mButton_Setting_status)&&(!mButton_Help_status))
+        if(mNode != null)
         {
+            Log.d("notification", this+" onPauseIfNode "+mNode.getState()); // for debug
             //it is safe remove also if we didn't add it
             mNode.removeNodeStateListener(mNodeStatusListener);
 
             //if the node is already disconnected we don't care of disable the notification
             if (mNode.isConnected()) {
                 disableNeedNotification();
-
-                Feature featureSelected = mNode.getFeature(FeatureSwitch.class);
-                if ((featureSelected != null) && featureSelected.isEnabled())
-                {
-                    if (mNode.isEnableNotification(featureSelected)) {
-                        featureSelected.removeFeatureListener(mSwitchUpdate);
-                        mNode.disableNotification(featureSelected);
-                    }
-                }
             }//if
         }
 
@@ -1002,9 +1063,44 @@ public class Joystick extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        if((mNodeContainer!=null)&&(!mButton_Setting_status)&&(!mButton_Help_status))
+        mScrollTimer.cancel();
+        mScrollTimer.purge();
+        Log.d("notification", this+" onStop "); // for debug
+        if((mNodeContainer!=null)&&(!mButton_Setting_status)&&(!mButton_Help_status)) {
+            Log.d("notification", "mButton_Setting_status "+mButton_Setting_status); // for debug
+            Log.d("notification", "mButton_Help_status "+mButton_Help_status); // for debug
+            Log.d("notification", this+" onStopIfNode "+mNode.getState()); // for debug
             mNodeContainer.onDisconnection();
+        }
     }
+
+    @Override
+    protected void onDestroy() {
+        Log.d("notification", this+" onDestroy "); // for debug
+        super.onDestroy();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mNode != null)
+            mNodeContainer.keepConnectionOpen(true);
+        super.onBackPressed();
+    }//onBackPressed
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button, we don't return for permit to
+            // do the standard action of this button
+            case android.R.id.home:
+                if (mNode != null)
+                    mNodeContainer.keepConnectionOpen(true);
+        }//switch
+
+        return super.onOptionsItemSelected(item);
+    }//onOptionsItemSelected
+
 
     private Timer mScrollTimer = new Timer();
 
@@ -1135,12 +1231,12 @@ public class Joystick extends AppCompatActivity {
             final Feature.Sample samplef = sample;
             if (f instanceof FeatureHumidity) { // battery % instead
                 int batteryVoltagePercentage = samplef.data[0].intValue();
-                Log.d("drawAnalog", "drawBattery"); // for debug
+                //Log.d("notification", "drawBattery"); // for debug
                 StatusBatteryVoltagePercentageVisualization(batteryVoltagePercentage);
             }
             if (f instanceof FeatureTemperature) { // RSSI % instead
                 int RSSIdrone = samplef.data[0].intValue();
-                Log.d("drawAnalog", "drawRSSI"); // for debug
+                //Log.d("notification", "drawRSSI: "+String.valueOf(RSSIdrone)); // for debug
                 StatusRSSIdroneVisualization(RSSIdrone);
             }
             if(mDataDroneVisible) {
@@ -1157,15 +1253,15 @@ public class Joystick extends AppCompatActivity {
                     if(mButton_Arm_status)
                     {
                         mAltitude = 44330*100*(1- Math.pow(pressure/mPressureRef,(double)(1.0f/5.255f))); // *100 to have cm instead of m
-                        Log.d("Pressure", "PressureRef : "+String.valueOf(mPressureRef)); // for debug
-                        Log.d("Pressure", "Pressure : "+String.valueOf(pressure)); // for debug
-                        Log.d("Pressure", "mAltitude : "+String.valueOf(mAltitude)); // for debug
+//                        Log.d("notification", "PressureRef : "+String.valueOf(mPressureRef)); // for debug
+//                        Log.d("notification", "Pressure : "+String.valueOf(pressure)); // for debug
+//                        Log.d("notification", "mAltitude : "+String.valueOf(mAltitude)); // for debug
                     }
                     else
                     {
                         mPressureRef = pressure;
                         mAltitude = 0;
-                        Log.d("Pressure", "PressureRef : "+String.valueOf(mPressureRef)); // for debug
+                       // Log.d("notification", "PressureRef : "+String.valueOf(mPressureRef)); // for debug
                     }
                     myf.ReplaceValue((float)mAltitude);
                     if(lastFeatureEnable)
@@ -1178,16 +1274,18 @@ public class Joystick extends AppCompatActivity {
                     }
                 }
                 final String featureDump = mStringDataSensorsAcceleration + mStringDataSensorsGyroscope + mStringDataSensorsMagnetometer + mStringDataSensorsPressure + mStringDataSensorsHumidity;
-                Joystick.this.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        mTextView.setText(featureDump);
-                        //if(mAnalogOnGoing == false)
-                        {
-                            Log.d("drawAnalog", "mDataDroneVisible"); // for debug
+                if (f instanceof FeatureAcceleration) {
+                    Joystick.this.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mTextView.setText(featureDump);
+                            //if(mAnalogOnGoing == false)
+                            {
+                                //Log.d("notification", "mDataDroneVisible"); // for debug
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         }//onUpdate
     }//GenericFragmentUpdate
@@ -1276,7 +1374,8 @@ public class Joystick extends AppCompatActivity {
         {
             noFeatures = false;
         }
-        featureSelected = mNode.getFeature(MyFeatureTemperature.class);// receives RSSI  instead
+        //featureSelected = mNode.getFeatures(MyFeatureTemperature.class).get(0); // RSSI  instead
+        featureSelected = mNode.getFeature(MyFeatureTemperature.class); // RSSI  instead
         if ((featureSelected != null) && featureSelected.isEnabled())
         {
             noFeatures = false;
@@ -1323,6 +1422,7 @@ public class Joystick extends AppCompatActivity {
                 CaracteristicVisualization(featureSelected);
                 noFeatures = false;
             }
+            //featureSelected = mNode.getFeatures(MyFeatureTemperature.class).get(0); // RSSI  instead
             featureSelected = mNode.getFeature(MyFeatureTemperature.class); // RSSI  instead
             if ((featureSelected != null) && featureSelected.isEnabled())
             {
@@ -1349,6 +1449,7 @@ public class Joystick extends AppCompatActivity {
             {
                 CaracteristicVisualization(featureSelected);
             }
+            //featureSelected = mNode.getFeatures(MyFeatureTemperature.class).get(0); // RSSI  instead
             featureSelected = mNode.getFeature(MyFeatureTemperature.class); // RSSI  instead
             if ((featureSelected != null) && featureSelected.isEnabled())
             {
@@ -1736,6 +1837,9 @@ public class Joystick extends AppCompatActivity {
                 {
                     mButton_Setting_status = true;
                     Intent i = Setting.getStartIntent(Joystick.this,mNode);
+                    if (mNode != null)
+                        mNodeContainer.keepConnectionOpen(true);
+                    Log.d("notification", this+" Button_Setting "+mButton_Setting_status); // for debug
                     startActivity(i);
                 }
                 break;
@@ -1744,6 +1848,8 @@ public class Joystick extends AppCompatActivity {
                 {
                     mButton_Help_status = true;
                     Intent i = Help.getStartIntent(Joystick.this,mNode);
+                    if (mNode != null)
+                        mNodeContainer.keepConnectionOpen(true);
                     startActivity(i);
                 }
                 break;

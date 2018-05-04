@@ -46,6 +46,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     android:label="@string/appDrone"
     android:roundIcon="@mipmap/ic_drone2"
     android:supportsRtl="true"
+    android:name=".STdroneApplication"
     android:theme="@style/AppTheme">
     <activity
         android:name="com.st.STDrone.Joystick"

@@ -76,7 +76,7 @@ public class NodeContainerFragment extends Fragment {
     /**
      * progress dialog to show when we wait that the node connection
      */
-    private ProgressDialog mConnectionWait;
+    //private ProgressDialog mConnectionWait;
     /**
      * node handle by this class
      */
@@ -96,7 +96,8 @@ public class NodeContainerFragment extends Fragment {
                     @Override
                     public void run() {
                         //close the progress dialog
-                        mConnectionWait.dismiss();
+                        //mConnectionWait.dismiss();
+                        //mConnectionWait = null;
                     }
                 });
             //error state -> show a toast message and start a new connection
@@ -124,11 +125,15 @@ public class NodeContainerFragment extends Fragment {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-//                        if (!mConnectionWait.isShowing())
+//                        if(mConnectionWait == null) {
+//                            setUpProgressDialog(node.getName());
+//                            //mConnectionWait.show();
+//                        }
+//                        else if (!mConnectionWait.isShowing())
 //                            mConnectionWait.show();
                         Toast.makeText(activity, msg, Toast.LENGTH_LONG).show();
                         Log.d("nodeContainer","connect");
-                        mNode.connect(getActivity());
+                        mNode.connect(getActivity().getApplicationContext());
                     }
                 });
             }
@@ -147,18 +152,18 @@ public class NodeContainerFragment extends Fragment {
         return args;
     }
 
-    /**
-     * Prepare the progress dialog tho be shown setting the title and the message
-     *
-     * @param nodeName name of the node that we will use
-     */
-    private void setUpProgressDialog(String nodeName) {
-        mConnectionWait = new ProgressDialog(getActivity(), ProgressDialog.STYLE_SPINNER);
-        mConnectionWait.setTitle(R.string.progressDialogConnTitle);
-        mConnectionWait.setMessage(String.format(getResources().getString(R.string
-                        .progressDialogConnMsg),
-                nodeName));
-    }//setUpProgressDialog
+//    /**
+//     * Prepare the progress dialog tho be shown setting the title and the message
+//     *
+//     * @param nodeName name of the node that we will use
+//     */
+//    private void setUpProgressDialog(String nodeName) {
+//        mConnectionWait = new ProgressDialog(getActivity(), ProgressDialog.STYLE_SPINNER);
+//        mConnectionWait.setTitle(R.string.progressDialogConnTitle);
+//        mConnectionWait.setMessage(String.format(getResources().getString(R.string
+//                        .progressDialogConnMsg),
+//                nodeName));
+//    }//setUpProgressDialog
 
     /**
      * return the node handle by this fragment
@@ -180,8 +185,8 @@ public class NodeContainerFragment extends Fragment {
         setRetainInstance(true);
         String nodeTag = getArguments().getString(NODE_TAG);
         mNode = Manager.getSharedInstance().getNodeWithTag(nodeTag);
-        if (mNode != null)
-            setUpProgressDialog(mNode.getName());
+//        if (mNode != null)
+//            setUpProgressDialog(mNode.getName());
     }//onCreate
 
     /**
@@ -191,9 +196,17 @@ public class NodeContainerFragment extends Fragment {
     public void onResume() {
         super.onResume();
         if (mNode != null && !mNode.isConnected()) {
-            //mConnectionWait.show(); //show the dialog and set the listener for hide it
+//            if(mConnectionWait == null) {
+//                setUpProgressDialog(mNode.getName());
+//                //mConnectionWait.show();
+//            }
+//            else if (!mConnectionWait.isShowing())
+//                mConnectionWait.show();
+
+            mNode.connect(getActivity().getApplicationContext());
+        }
+        if (mNode != null) {
             mNode.addNodeStateListener(mNodeStateListener);
-            mNode.connect(getActivity());
         }//if
     }//onResume
 
@@ -203,11 +216,14 @@ public class NodeContainerFragment extends Fragment {
      */
     @Override
     public void onPause() {
-
-        //dismiss the dialog if we are showing it
-        if (mConnectionWait.isShowing()) {
-            mConnectionWait.dismiss();
+        if (mNode != null) {
+            mNode.removeNodeStateListener(mNodeStateListener);
         }//if
+//        //dismiss the dialog if we are showing it
+//        if (mConnectionWait.isShowing()) {
+//            mConnectionWait.dismiss();
+//            mConnectionWait = null;
+//        }//if
 
         super.onPause();
     }//onPause
@@ -223,7 +239,6 @@ public class NodeContainerFragment extends Fragment {
     //@Override
     public void onDisconnection() {
         if (mNode != null) {
-                mNode.removeNodeStateListener(mNodeStateListener);
                 mNode.disconnect();
         }//if
     }
@@ -233,9 +248,13 @@ public class NodeContainerFragment extends Fragment {
      */
     @Override
     public void onDestroy() {
+
         if (mNode != null && mNode.isConnected()) {
-            if (!userAskToKeepConnection) {
-                mNode.removeNodeStateListener(mNodeStateListener);
+            if (!userAskToKeepConnection)
+            {
+                Log.d("notification", "onDestroy "+mNode.getState()); // for debug
+
+//                mNode.removeNodeStateListener(mNodeStateListener);
                 mNode.disconnect();
             }
         }//if

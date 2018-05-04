@@ -36,42 +36,25 @@
  *
  */
 
-apply plugin: 'com.android.application'
+package com.st.STDrone;
 
-android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    defaultConfig {
-        applicationId "com.st.STDrone"
-        //minSdkVersion 21
-        minSdkVersion 19
-        targetSdkVersion rootProject.ext.targetSdkVersion
-       // targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+import android.app.Application;
+
+import com.squareup.leakcanary.LeakCanary;
+
+
+public class STdroneApplication extends Application {
+
+    @Override public void onCreate() {
+        super.onCreate();
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
         }
+        LeakCanary.install(this);
+
     }
 
-    sourceSets {
-        all {
-            res.srcDirs += ['st_images']
-        }
-    }
-}
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':BlueSTSDK:BlueSTSDK')
-
-    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-
-    // for mem leak
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }
