@@ -103,7 +103,7 @@ import static java.lang.StrictMath.sqrt;
 
 public class Joystick extends AppCompatActivity {
 
-    private int mVersion = 33;
+    private int mVersion = 34;
 
     private final static boolean graphicsEnable = true;
     private final static boolean lastFeatureEnable = false;
@@ -171,6 +171,7 @@ public class Joystick extends AppCompatActivity {
                     mAnalogBLEQuequeTask.cancel();
 
                     mAnalogBLEQuequeTask = new myAnalogBLEQuequeTask();
+
                     mScrollTimer.scheduleAtFixedRate(mAnalogBLEQuequeTask,0, mTimerAnalogBLEQueque); // msec
 
                     TextView textViewDataSensors = findViewById(R.id.textViewData);
@@ -993,6 +994,9 @@ public class Joystick extends AppCompatActivity {
 //        else
 //            mFirstTime = false;
         Log.d("notification", this+" onResume"); // for debug
+
+        if(mScrollTimer == null)
+            mScrollTimer = new Timer();
         StatusConnectionVisualization();
         if(!mFirstTime)
             mNode.addNodeStateListener(mNodeStatusListener);
@@ -1011,8 +1015,6 @@ public class Joystick extends AppCompatActivity {
                 // todo: check if it is yet useful
                 if(mGenericUpdate !=null)
                 {
-                    activeBatteryRSSIlistener();
-
                     Feature featureSelected = mNode.getFeature(MyFeatureAcceleration.class);
                     if ((featureSelected != null) && featureSelected.isEnabled()) {
                         featureSelected.removeFeatureListener(mGenericUpdate);
@@ -1033,6 +1035,7 @@ public class Joystick extends AppCompatActivity {
                         featureSelected.removeFeatureListener(mGenericUpdate);
                         mNode.disableNotification(featureSelected);
                     }
+                    activeBatteryRSSIlistener(); // pressure must be before else disable also temperature and humidity
                 }
             }
         }
@@ -1042,6 +1045,10 @@ public class Joystick extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+
+        mScrollTimer.cancel();
+        mScrollTimer.purge();
+        mScrollTimer = null;
 
         Log.d("notification", this+" onPause "); // for debug
         //if((mNode != null)&&(!mButton_Setting_status)&&(!mButton_Help_status))
@@ -1063,8 +1070,6 @@ public class Joystick extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        mScrollTimer.cancel();
-        mScrollTimer.purge();
         Log.d("notification", this+" onStop "); // for debug
         if((mNodeContainer!=null)&&(!mButton_Setting_status)&&(!mButton_Help_status)) {
             Log.d("notification", "mButton_Setting_status "+mButton_Setting_status); // for debug
@@ -1236,7 +1241,7 @@ public class Joystick extends AppCompatActivity {
             }
             if (f instanceof FeatureTemperature) { // RSSI % instead
                 int RSSIdrone = samplef.data[0].intValue();
-                //Log.d("notification", "drawRSSI: "+String.valueOf(RSSIdrone)); // for debug
+                Log.d("notification", "drawRSSI: "+String.valueOf(RSSIdrone)); // for debug
                 StatusRSSIdroneVisualization(RSSIdrone);
             }
             if(mDataDroneVisible) {
@@ -1294,7 +1299,7 @@ public class Joystick extends AppCompatActivity {
 
              selectedFeature.addFeatureListener(mGenericUpdate);
 
-            if (!mNode.isEnableNotification(selectedFeature))
+            //if (!mNode.isEnableNotification(selectedFeature))
                 mNode.enableNotification(selectedFeature);
     }
 
