@@ -320,7 +320,7 @@
                     android:textSize="12sp"
                     android:background="@android:color/holo_blue_dark"
                     android:textColor="@color/White"
-                    android:text="Data Drone Visisble" />
+                    android:text="Data Drone Visible" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
