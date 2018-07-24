@@ -42,6 +42,9 @@ import android.app.Application;
 
 import com.squareup.leakcanary.LeakCanary;
 
+/**
+ * Created by massimiliano barone on 4/17/2018.
+ */
 
 public class STdroneApplication extends Application {
 

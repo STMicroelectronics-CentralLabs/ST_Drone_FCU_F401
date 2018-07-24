@@ -46,254 +46,145 @@
     tools:context=".Sensitivity">
 
     <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
-        <LinearLayout
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="80dp"
+            style="@style/MyButton_blue_dark"
+            android:elegantTextHeight="false"
+            android:minWidth="100dp"
+            android:text=" Home "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Setting"
+            android:layout_width="@dimen/maxSizeButton"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="80dp"
+            style="@style/MyButton_blue_dark"
+            android:drawableTop="@drawable/software_drone_setting"
+            android:textSize="0sp"
+            />
+
+        <Button
+            android:id="@+id/Help"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="600dp"
+            android:layout_marginTop="80dp"
+            style="@style/MyButton_blue_dark"
+            android:elegantTextHeight="false"
+            android:minWidth="100dp"
+            android:text=" Help "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarYaw"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="160dp"
+            android:minWidth="150dp"
+            style="@style/MySeek" />
+        <TextView
+            android:id="@+id/textSeekBarYaw"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="160dp"
+            android:textSize="12sp"
+            android:text="         Yaw non linear start slope         " />
+
+        <SeekBar
+            android:id="@+id/seekBarPitchRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="240dp"
+            android:minWidth="150dp"
+            style="@style/MySeek"
+            />
+        <TextView
+            android:id="@+id/textSeekBarPitchRoll"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="240dp"
+            android:textSize="12sp"
+            android:text="Pitch and Roll non linear start slope" />
+
+        <SeekBar
+            android:id="@+id/seekBarThrottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="320dp"
+            android:minWidth="150dp"
+            style="@style/MySeek"
+            />
+        <TextView
+            android:id="@+id/textSeekBarThrottle"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="320dp"
+            android:textSize="12sp"
+            android:text="     Throttle non linear start slope      " />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonSlope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="400dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/LinearLayout_MainButtons"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textRadioButtonSlope"
+                android:gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:text="Start slope rate/Start slope rate Max" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/Home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    android:layout_marginRight="60dp"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Home "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/Setting"
-                    android:layout_width="@dimen/maxSizeButton"
-                    android:layout_height="@dimen/maxSizeButton"
-                    android:layout_marginRight="60dp"
-                    android:layout_gravity="center_vertical"
-                    style="@style/MyButton_blue_dark"
-                    android:drawableTop="@drawable/software_drone_setting"
-                    android:textSize="0sp"
-                    />
-
-                <!--
-                <Button
-                    android:id="@+id/Setting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    android:layout_marginRight="60dp"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Setting "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-                -->
-
-                <Button
-                    android:id="@+id/Help"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Help "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_SeekBarFullYaw"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_SeekBarYaw"
+                <RadioButton
+                    android:id="@+id/RadioButtonSlope_OFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:textSize="12sp"
+                    android:text="Start slope rate"
+                    android:onClick="onRadioButtonSlope"/>
 
-                    <SeekBar
-                        android:id="@+id/seekBarYaw"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:minWidth="150dp"
-                        style="@style/MySeek"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_text_SeekBarYaw"
+                <RadioButton
+                    android:id="@+id/RadioButtonSlope_ON"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textSeekBarYaw"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="12sp"
-                        android:text="         Yaw non linear start slope         " />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_SeekBarFullPitchRoll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_SeekBarPitchRoll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <SeekBar
-                        android:id="@+id/seekBarPitchRoll"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:minWidth="150dp"
-                        style="@style/MySeek"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_text_SeekBarPitchRoll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textSeekBarPitchRoll"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="12sp"
-                        android:text="Pitch and Roll non linear start slope" />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/LinearLayout_SeekBarFullThrottle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_SeekBarThrottle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <SeekBar
-                        android:id="@+id/seekBarThrottle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:minWidth="150dp"
-                        style="@style/MySeek"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_text_SeekBarThrottle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textSeekBarThrottle"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="12sp"
-                        android:text="     Throttle non linear start slope      " />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_RadioButtonSlopeHorizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_RadioButtonSlope"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textRadioButtonSlope"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:background="@android:color/holo_blue_dark"
-                        android:textColor="@color/White"
-                        android:text="Start slope rate/Start slope rate Max" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonSlope_OFF"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="Start slope rate"
-                            android:onClick="onRadioButtonSlope"/>
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonSlope_ON"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="Start slope rate Max"
-                            android:onClick="onRadioButtonSlope"/>
-                    </RadioGroup>
-                </LinearLayout>
-
-             </LinearLayout>
-
+                    android:textSize="12sp"
+                    android:text="Start slope rate Max"
+                    android:onClick="onRadioButtonSlope"/>
+            </RadioGroup>
         </LinearLayout>
 </FrameLayout>
 

@@ -103,7 +103,7 @@ import static java.lang.StrictMath.sqrt;
 
 public class Joystick extends AppCompatActivity {
 
-    private int mVersion = 34;
+    private int mVersion = 37;
 
     private final static boolean graphicsEnable = true;
     private final static boolean lastFeatureEnable = false;
@@ -212,7 +212,7 @@ public class Joystick extends AppCompatActivity {
                 @Override
                 public void run() {
                     Button textViewConnect = findViewById(R.id.Button_Connection);
-                    textViewConnect.setText(" Press me to search Drone ");
+                    textViewConnect.setText(" Start Connection ");
                     mySetColorButton(textViewConnect,argb(255,0,255,255));
                 }//run
             });
@@ -387,6 +387,8 @@ public class Joystick extends AppCompatActivity {
     private double mAltitude = 0;
     private static double mPressureRef = 1013.25f; // 1 atm in mBar
 
+    private static boolean mArmedStatus = false;
+
     private boolean mAnalogOnGoing = false;
 
     private int mNumTouchOld = 0;
@@ -413,15 +415,15 @@ public class Joystick extends AppCompatActivity {
 
     AllAnalogDrawable mAllAnalogDrawable;
 
-    private int fromDp_to_px(int dp) {
-        int px = (int)(dp * (mDensityDpi / 160));
-        return px;
-    }
-
-    private int fromPx_to_dp(int px) {
-        int dp = (int)(px*160/mDensityDpi);
-        return dp;
-    }
+//    private int fromDp_to_px(int dp) {
+//        int px = (int)(dp * (mDensityDpi / 160));
+//        return px;
+//    }
+//
+//    private int fromPx_to_dp(int px) {
+//        int dp = (int)(px*160/mDensityDpi);
+//        return dp;
+//    }
 
     private void drawAnalogActivatorL() {
             mAllAnalogDrawable.setBoundColorL(mStartXDirectionL,mStartYDirectionL,mHeightDirectionL,mWidthDirectionL,argb(255,0,221,255));
@@ -485,16 +487,16 @@ public class Joystick extends AppCompatActivity {
 
         int heightMenu = mHeightPixels - mHeightAvailable;
         mBottom -= heightMenu;
-        mBottom += fromDp_to_px(8); // coming from initial margin of activity_joystick
-        mTop += fromDp_to_px(8); // coming from initial margin of activity_joystick
-        int marginCursorY = fromDp_to_px(10); // to have free space between buttons
+        mBottom += CoordConverter.fromDp_to_px(8); // coming from initial margin of activity_joystick
+        mTop += CoordConverter.fromDp_to_px(8); // coming from initial margin of activity_joystick
+        int marginCursorY = CoordConverter.fromDp_to_px(10); // to have free space between buttons
         int availableSpace = (mBottom-mTop)-marginCursorY;
         if(availableSpace > (mRightL-mLeftL))
             availableSpace = (mRightL-mLeftL);
         mWidthDirectionL = availableSpace/2; // horizontal half lenght of big analog left cursor
-        int lenghtdp = fromPx_to_dp(mWidthDirectionL);
+        int lenghtdp = CoordConverter.fromPx_to_dp(mWidthDirectionL);
         if (lenghtdp > 200) {
-            mWidthDirectionL = fromDp_to_px(200); // horizontal half lenght of big analog left cursor 200dp as maximum
+            mWidthDirectionL = CoordConverter.fromDp_to_px(200); // horizontal half lenght of big analog left cursor 200dp as maximum
         }
         mHeightDirectionL = mWidthDirectionL; // vertical half lenght of big analog left cursor
         mStartXDirectionL = mLeftL+mWidthDirectionL; // center x of big analog left cursor
@@ -521,10 +523,10 @@ public class Joystick extends AppCompatActivity {
 
         // todo: fix uncorrect buttonw or mStartXDirectionL values
         Button selectedButton2 = findViewById(R.id.Button_L);
-        int buttonw = fromPx_to_dp(selectedButton2.getWidth());
+        int buttonw = CoordConverter.fromPx_to_dp(selectedButton2.getWidth());
         LinearLayout layout = findViewById(R.id.tableLayout_DirectionL);
         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)layout.getLayoutParams();
-        int centerLdp = fromPx_to_dp(mStartXDirectionL);
+        int centerLdp = CoordConverter.fromPx_to_dp(mStartXDirectionL);
         //int centerLdp = (mStartXDirectionL);
         //int margin = centerLdp-(params.width/2);
         int margin = centerLdp-(buttonw/2+buttonw);
@@ -575,7 +577,7 @@ public class Joystick extends AppCompatActivity {
             {
                 // small Button_Connection, small Buttons for analog/digital and seekBar with small height
                 Button selectedButton = findViewById(R.id.Button_Connection);
-                int  pixelHeight = fromDp_to_px(35);
+                int  pixelHeight = CoordConverter.fromDp_to_px(35);
                 ViewGroup.LayoutParams LayoutParamButton = selectedButton.getLayoutParams();
                 if(LayoutParamButton.height > pixelHeight)
                     LayoutParamButton.height = pixelHeight;
@@ -587,7 +589,7 @@ public class Joystick extends AppCompatActivity {
                 LayoutParamButton = selectedButton.getLayoutParams();
                 if(LayoutParamButton.height > pixelHeight)
                     LayoutParamButton.height = pixelHeight;
-                pixelHeight = fromDp_to_px(25);
+                pixelHeight = CoordConverter.fromDp_to_px(25);
                 ViewGroup.LayoutParams LayoutParamSeek = mSeekBar.getLayoutParams();
                 if(LayoutParamSeek.height > pixelHeight)
                     LayoutParamSeek.height = pixelHeight;
@@ -671,8 +673,9 @@ public class Joystick extends AppCompatActivity {
 
         mProgressSeekBar = 100;
 
-        if(mBuildParameter)
+        if(mBuildParameter) {
             DefaultParameters.BuildDefaultParameters();
+         }
         mBuildParameter = false;
 
         mSeekBar = findViewById(R.id.seekBar);
@@ -728,7 +731,10 @@ public class Joystick extends AppCompatActivity {
         mWidthPixels  = metrics.widthPixels;
         mHeightPixels = metrics.heightPixels;
         mDensityDpi = metrics.densityDpi;
-        mWidth_dp  = fromPx_to_dp(mWidthPixels);
+        mWidth_dp  = CoordConverter.fromPx_to_dp(mWidthPixels);
+
+        CoordConverter.init(mWidthPixels,mHeightPixels,mDensityDpi);
+
 
         if(cursorDrawEnable)
         {
@@ -804,6 +810,8 @@ public class Joystick extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
 
+        StatusArmedVisualization(mArmedStatus);
+
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         getParameters(pref);
         if(cursorDrawEnable)
@@ -840,7 +848,7 @@ public class Joystick extends AppCompatActivity {
                     LinearLayout selectedLinearLayout = findViewById(R.id.LinearLayout_MainButtons);
                     mTop = selectedLinearLayout.getBottom();
                     selectedLinearLayout = findViewById(R.id.tableLayout_DirectionL);
-                    mLeftL = fromDp_to_px(50); // margin to put the finger out cursor
+                    mLeftL = CoordConverter.fromDp_to_px(50); // margin to put the finger out cursor
                     mLenghtL = selectedLinearLayout.getRight() - mLeftL;
                     if((mTop>0)&&(mRightL>0)&&(mBottom>0)&&(mHeightAvailable>0))
                         initAnalogBounds();
@@ -904,7 +912,7 @@ public class Joystick extends AppCompatActivity {
                     //mRightL = selectedLinearLayout.getLeft(); // outLocation is better because it includes also initial margin of activity_joystick
                     int[] outLocation = new int[2];
                     selectedLinearLayout.getLocationOnScreen (outLocation); // y doesn't work , because it starts from previous LinearLayout
-                    mRightL = outLocation[0]-fromDp_to_px(5);
+                    mRightL = outLocation[0]-CoordConverter.fromDp_to_px(5);
                     if((mTop>0)&&(mRightL>0)&&(mBottom>0)&&(mHeightAvailable>0))
                         initAnalogBounds();
                 }
@@ -941,6 +949,10 @@ public class Joystick extends AppCompatActivity {
             public void run() {
                 TextView textViewConnect = findViewById(R.id.textViewBattery);
                 textViewConnect.setText(" Battery "+String.valueOf(batteryVoltagePercentage)+"% ");
+                if(batteryVoltagePercentage >= 85)
+                    textViewConnect.setBackgroundColor(argb(255,0x99,0xcc,0));
+                else
+                    textViewConnect.setBackgroundColor(argb(255,255,0xbb,0x33));
             }//run
         });
     }
@@ -1192,8 +1204,8 @@ public class Joystick extends AppCompatActivity {
             Joystick.this.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    boolean armedStatus = (samplef.data[0].byteValue()!=0); // true = ON
-                    StatusArmedVisualization(armedStatus);
+                    mArmedStatus= (samplef.data[0].byteValue()!=0); // true = ON
+                    StatusArmedVisualization(mArmedStatus);
                 }
             });
         }//onUpdate

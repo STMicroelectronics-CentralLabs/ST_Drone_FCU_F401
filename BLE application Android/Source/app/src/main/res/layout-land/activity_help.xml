@@ -103,7 +103,6 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/White"
                     android:textSize="16sp" />
-                -->
 
                 <TextView
                     android:id="@+id/text"
@@ -113,6 +112,7 @@
                     android:textColor="@color/ErrorMsg"
                     android:text="@string/HelpDescription"
                     android:textSize="24sp" />
+                -->
 
             </LinearLayout>
 

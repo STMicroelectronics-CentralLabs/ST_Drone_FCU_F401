@@ -46,348 +46,307 @@
     tools:context=".Setting">
 
     <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
-        <LinearLayout
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <Button
+            android:id="@+id/Home"
+            style="@style/MyButton_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="80dp"
+            android:elegantTextHeight="false"
+            android:minWidth="100dp"
+            android:text=" Home "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
 
-            <LinearLayout
-                android:id="@+id/LinearLayout_MainButtons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/Home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    android:layout_marginRight="60dp"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Home "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/Help"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Help "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-
-             </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_RadioButtons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/Setting_marginTop"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_RadioButtonMobile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textRadioButtonMobile"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_blue_dark"
-                        android:textColor="@color/White"
-                        android:textSize="12sp"
-                        android:text="Followers Cursors" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonMobile_OFF"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="OFF"
-                            android:onClick="onRadioButtonMobile"/>
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonMobile_ON"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="ON"
-                            android:onClick="onRadioButtonMobile"/>
-                    </RadioGroup>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_RadioButtonYawDisable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textRadioButtonYawDisable"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:background="@android:color/holo_blue_dark"
-                        android:textColor="@color/White"
-                        android:text="Yaw Disable" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonYawDisable_OFF"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="OFF"
-                            android:onClick="onRadioButtonYawDisable"/>
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonYawDisable_ON"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="ON"
-                            android:onClick="onRadioButtonYawDisable"/>
-                    </RadioGroup>
-                </LinearLayout>
-
-             </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_RadioButtons2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/Setting_marginTop"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout_RadioButtonSwapPlanes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textRadioButtonSwapPlanes"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:background="@android:color/holo_blue_dark"
-                        android:textColor="@color/White"
-                        android:text="Swap Commands" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonSwapPlanes_Down"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="YZX"
-                            android:onClick="onRadioButtonSwapPlanes"/>
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonSwapPlanes_zero"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="ZYX"
-                            android:onClick="onRadioButtonSwapPlanes"/>
-                        <RadioButton
-                            android:id="@+id/RadioButtonSwapPlanes_UP"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="XYZ"
-                            android:onClick="onRadioButtonSwapPlanes"/>
-                    </RadioGroup>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/LinearLayout_RadioButtonShape"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textRadioButtonShape"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_blue_dark"
-                        android:textColor="@color/White"
-                        android:textSize="12sp"
-                        android:text="Shape Cursors" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonShape_OFF"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="Circle"
-                            android:onClick="onRadioButtonShape"/>
-
-                        <RadioButton
-                            android:id="@+id/RadioButtonShape_ON"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="12sp"
-                            android:text="Square"
-                            android:onClick="onRadioButtonShape"/>
-                    </RadioGroup>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_Sensitivity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/Setting_Sensitivity_marginTop"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/Sensitivity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/maxSizeButton"
-                    style="@style/MyButton_blue_dark"
-                    android:elegantTextHeight="false"
-                    android:minWidth="100dp"
-                    android:text=" Sensitivity "
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
+        <Button
+            android:id="@+id/Help"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="80dp"
+            style="@style/MyButton_blue_dark"
+            android:elegantTextHeight="false"
+            android:minWidth="100dp"
+            android:text=" Help "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
 
         <LinearLayout
-            android:id="@+id/LinearLayout_RadioButtonSensor"
+            android:id="@+id/LinearLayout_RadioButtonMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/Setting_marginTop"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="160dp"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/LinearLayout_RadioButtonDataDrone"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textRadioButtonMobile"
+                android:gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:orientation="vertical">
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="Followers Cursors" />
 
-                <TextView
-                    android:id="@+id/textRadioButtonDataDrone"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonMobile_OFF"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:background="@android:color/holo_blue_dark"
-                    android:textColor="@color/White"
-                    android:text="Data Drone Visible" />
+                    android:text="OFF"
+                    android:onClick="onRadioButtonMobile"/>
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/RadioButtonDataDrone_OFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:text="OFF"
-                        android:onClick="onRadioButtonDataDrone"/>
-
-                    <RadioButton
-                        android:id="@+id/RadioButtonDataDrone_ON"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:text="ON"
-                        android:onClick="onRadioButtonDataDrone"/>
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_RadioButtonLogFile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textRadioButtonLogFile"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:id="@+id/RadioButtonMobile_ON"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:background="@android:color/holo_blue_dark"
-                    android:textColor="@color/White"
-                    android:text="Log File" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/RadioButtonLogFile_OFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:text="OFF"
-                        android:onClick="onRadioButtonLogFile"/>
-
-                    <RadioButton
-                        android:id="@+id/RadioButtonLogFile_ON"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:text="ON"
-                        android:onClick="onRadioButtonLogFile"/>
-                </RadioGroup>
-            </LinearLayout>
+                    android:text="ON"
+                    android:onClick="onRadioButtonMobile"/>
+            </RadioGroup>
         </LinearLayout>
 
-    </LinearLayout>
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonYawDisable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="160dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRadioButtonYawDisable"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:text="Yaw Disable" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonYawDisable_OFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="OFF"
+                    android:onClick="onRadioButtonYawDisable"/>
+
+                <RadioButton
+                    android:id="@+id/RadioButtonYawDisable_ON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="ON"
+                    android:onClick="onRadioButtonYawDisable"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonSwapPlanes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRadioButtonSwapPlanes"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:text="Swap Commands" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonSwapPlanes_Down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="YZX"
+                    android:onClick="onRadioButtonSwapPlanes"/>
+
+                <RadioButton
+                    android:id="@+id/RadioButtonSwapPlanes_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="ZYX"
+                    android:onClick="onRadioButtonSwapPlanes"/>
+                <RadioButton
+                    android:id="@+id/RadioButtonSwapPlanes_UP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="XYZ"
+                    android:onClick="onRadioButtonSwapPlanes"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRadioButtonShape"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:text="Shape Cursors" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonShape_OFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Circle"
+                    android:onClick="onRadioButtonShape"/>
+
+                <RadioButton
+                    android:id="@+id/RadioButtonShape_ON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Square"
+                    android:onClick="onRadioButtonShape"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Sensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/maxSizeButton"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="320dp"
+            style="@style/MyButton_blue_dark"
+            android:elegantTextHeight="false"
+            android:minWidth="100dp"
+            android:text=" Sensitivity "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonDataDrone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="400dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRadioButtonDataDrone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:text="Data Drone Visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonDataDrone_OFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="OFF"
+                    android:onClick="onRadioButtonDataDrone"/>
+
+                <RadioButton
+                    android:id="@+id/RadioButtonDataDrone_ON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="ON"
+                    android:onClick="onRadioButtonDataDrone"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_RadioButtonLogFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="400dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRadioButtonLogFile"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/White"
+                android:text="Log File" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonLogFile_OFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="OFF"
+                    android:onClick="onRadioButtonLogFile"/>
+
+                <RadioButton
+                    android:id="@+id/RadioButtonLogFile_ON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="ON"
+                    android:onClick="onRadioButtonLogFile"/>
+            </RadioGroup>
+        </LinearLayout>
+
+     </FrameLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
