@@ -251,7 +251,8 @@ void FlightControlPID_innerLoop(EulerAngleTypeDef *euler_rc, Gyro_Rad *gyro_rad,
   
 #ifdef MOTOR_DC
 
-  motor_thr = ((int16_t) (0.33333f*(float)gTHR + 633.333f));           //Remocon Devo7E >> 630 to 1700
+  motor_thr = ((int16_t) (0.05f*(float)gTHR + 633.333f));           //Official MiniDrone Kit >> 630 to 1700
+  //motor_thr =((int16_t) (0.333f*(float)gTHR + 633.33f));           //Remocon Devo7E >> 630 to 1700
   
 #endif
   

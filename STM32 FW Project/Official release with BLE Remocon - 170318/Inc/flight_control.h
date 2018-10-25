@@ -28,11 +28,13 @@
 #define ROLL_PID_KP1         3
 #define ROLL_PID_KI1         0
 //#define ROLL_PID_KP2         800      /* default */
-#define ROLL_PID_KP2         100        /* test minidrone */
+//#define ROLL_PID_KP2         100        /* test minidrone */
+#define ROLL_PID_KP2         80        /* minidrone official Frame Kit*/
 //#define ROLL_PID_KP2         200        /* test FPV250 with STEVAL-ESC001V1 */
 //#define ROLL_PID_KP2         40        /* test FPV250 with Afro ESC12A */
 //#define ROLL_PID_KI2         400        /* default */
-#define ROLL_PID_KI2         100        /* test minidrone */
+//#define ROLL_PID_KI2         100        /* test minidrone */
+#define ROLL_PID_KI2         80        /* minidrone official Frame Kit */
 //#define ROLL_PID_KI2         200        /* test FPV250 with STEVAL-ESC001V1 */
 //#define ROLL_PID_KI2         40        /* test FPV250 with Afro ESC12A */
 #define ROLL_PID_KD2         10           //(x/PID_SAMPLING_TIME)
@@ -60,9 +62,13 @@
 //#define YAW_PID_I2_LIMIT     0.1    //6 degree/s
 #define YAW_PID_KP1         4
 #define YAW_PID_KI1         0
-#define YAW_PID_KP2         1000
-#define YAW_PID_KI2         0
-#define YAW_PID_KD2         0            //(x/PID_SAMPLING_TIME)
+// #define YAW_PID_KP2         1000
+//#define YAW_PID_KI2         0
+//#define YAW_PID_KD2         0            //(x/PID_SAMPLING_TIME)
+
+#define YAW_PID_KP2         900     // Minidrone Official Frame Kit
+#define YAW_PID_KI2         3           // Minidrone Official Frame Kit
+#define YAW_PID_KD2         3            // Minidrone Official Frame Kit
 #define YAW_PID_I1_LIMIT    2.0         //5 degree
 //#define YAW_PID_I2_LIMIT    (100.0/YAW_PID_KI2)
 #define YAW_PID_I2_LIMIT    2
