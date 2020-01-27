@@ -1,0 +1,2081 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  12/Nov/2018  12:01:04
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Exe\ToyDrone Configuration.out
+#    Map file     =  
+#        C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\List\ToyDrone Configuration.map
+#    Command line =  
+#        -f C:\Users\ADRIAN~1\AppData\Local\Temp\EW7572.tmp
+#        ("C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\ahrs.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\basic_math.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\ble_list.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_gap_aci.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_gatt_aci.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_hal_aci.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_itf_template.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_l2cap_aci.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\bluenrg_utils.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\console.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\debug.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\flight_control.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\gp_timer.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\hci.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LIS2MDL_MAG_driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LIS3MDL_MAG_driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LPS22HB_Driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_ACC_driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM303AGR_MAG_driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\LSM6DSL_ACC_GYRO_driver_HL.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\main.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\motor.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\osal.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\quaternion.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\rc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\sensor_data.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\sensor_service.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\SPBTLE_RF.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\startup_stm32f401xc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_accelero.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_gyro.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_magneto.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_pressure.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\steval_fcu001_v1_temperature.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_adc_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_cortex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_dma_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_flash_ramfunc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_gpio.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_msp.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pcd_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_pwr_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_rcc_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_spi.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_tim_ex.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_hal_uart.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_it.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\stm32f4xx_ll_usb.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\system_stm32f4xx.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\timer.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usb_device.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_cdc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_cdc_if.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_conf.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_core.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_ctlreq.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_desc.o"
+#        "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official
+#        release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Obj\usbd_ioreq.o"
+#        --no_out_extension -o "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32
+#        FW Project\Official release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\Exe\ToyDrone Configuration.out"
+#        --map "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW
+#        Project\Official release with BLE Remocon -
+#        170318\EWARM\ToyDrone_Configuration\List\ToyDrone Configuration.map"
+#        --config "C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW
+#        Project\Official release with BLE Remocon -
+#        170318\EWARM\stm32f401xc_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 16K, alignment = 8 { };
+define block HEAP with size = 16K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address     Size  Object
+  -------            ----         -------     ----  ------
+"A0":                                        0x194
+  .intvec            ro code   0x800'0000    0x194  startup_stm32f401xc.o [1]
+                             - 0x800'0194    0x194
+
+"P1":                                      0x124d8
+  .text              ro code   0x800'0194   0x1e3a  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+  .text              ro code   0x800'1fce     0x7a  lz77_init_single.o [4]
+  .text              ro code   0x800'2048   0x1464  LSM6DSL_ACC_GYRO_driver.o [1]
+  .text              ro code   0x800'34ac    0x71e  steval_fcu001_v1.o [1]
+  .text              ro code   0x800'3bca     0x3a  zero_init3.o [4]
+  .text              ro code   0x800'3c04    0x27c  stm32f4xx_hal_gpio.o [1]
+  .text              ro code   0x800'3e80    0x4b0  stm32f4xx_hal_spi.o [1]
+  .text              ro code   0x800'4330    0x344  SPBTLE_RF.o [1]
+  .text              ro code   0x800'4674    0x2d0  stm32f4xx_hal_msp.o [1]
+  .text              ro code   0x800'4944      0xc  stm32f4xx_hal.o [1]
+  .text              ro code   0x800'4950     0x28  stm32f4xx_hal_dma.o [1]
+  .text              ro code   0x800'4978      0x2  stm32f4xx_hal_spi.o [1]
+  .text              ro code   0x800'497a     0x1a  xsnprout.o [2]
+  .text              ro code   0x800'4994    0x510  hci.o [1]
+  .text              ro code   0x800'4ea4     0x2e  gp_timer.o [1]
+  .text              ro code   0x800'4ed2     0x18  stm32f4xx_hal.o [1]
+  .text              ro code   0x800'4eea      0xa  xsprout.o [2]
+  .text              ro code   0x800'4ef4    0x198  stm32f4xx_hal_cortex.o [1]
+  .text              ro code   0x800'508c     0xd6  ble_list.o [1]
+  .text              ro code   0x800'5164   0x12aa  sensor_service.o [1]
+  .text              ro code   0x800'640e     0x40  osal.o [1]
+  .text              ro code   0x800'6450    0x2bc  rc.o [1]
+  .text              ro code   0x800'670c    0x31a  bluenrg_gatt_aci.o [1]
+  .text              ro code   0x800'6a28     0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'6ad0     0x4c  debug.o [1]
+  .text              ro code   0x800'6b1c     0x40  sprintf.o [2]
+  .text              ro code   0x800'6b5c    0x2cc  bluenrg_gap_aci.o [1]
+  .text              ro code   0x800'6e28     0x6a  bluenrg_l2cap_aci.o [1]
+  .text              ro code   0x800'6e92     0x28  strncmp.o [2]
+  .text              ro code   0x800'6ebc     0x3c  stm32f4xx_hal.o [1]
+  .text              ro code   0x800'6ef8     0x78  bluenrg_utils.o [1]
+  .text              ro code   0x800'6f70     0x66  ABImemset.o [4]
+  .text              ro code   0x800'6fd8     0x64  timer.o [1]
+  .text              ro code   0x800'703c     0x3c  vsnprint.o [2]
+  .text              ro code   0x800'7078    0x768  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x800'77e0    0xdf2  xprintffull_nomb.o [2]
+  .text              ro code   0x800'85d4     0x28  stm32f4xx_hal.o [1]
+  .text              ro code   0x800'85fc      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x800'85fe      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x800'8600      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x800'8604    0x28c  stm32f4xx_hal_rcc.o [1]
+  .text              ro code   0x800'8890     0x16  strchr.o [4]
+  .text              ro code   0x800'88a8     0x40  xfail_s.o [2]
+  .text              ro code   0x800'88e8     0x36  strlen.o [4]
+  .text              ro code   0x800'8920     0x58  memchr.o [4]
+  .text              ro code   0x800'8978    0x274  I64DivMod.o [4]
+  .text              ro code   0x800'8bec    0x1a2  DblMul.o [3]
+  .text              ro code   0x800'8d90     0x70  frexp.o [3]
+  .text              ro code   0x800'8e00     0x2e  DblCmpLe.o [3]
+  .text              ro code   0x800'8e30     0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'8e60    0x13a  ldexp.o [3]
+  .text              ro code   0x800'8f9c     0x3a  DblToS32.o [3]
+  .text              ro code   0x800'8fd8     0x22  S32ToDbl.o [3]
+  .text              ro code   0x800'8ffc     0xe2  DblSub.o [3]
+  .text              ro code   0x800'90e0    0x246  DblDiv.o [3]
+  .text              ro code   0x800'9328     0x28  DblToU32.o [3]
+  .text              ro code   0x800'9350     0x1a  U32ToDbl.o [3]
+  .text              ro code   0x800'936a      0x6  abort.o [2]
+  .text              ro code   0x800'9370      0x2  I64DivZer.o [4]
+  .text              ro code   0x800'9374    0x17a  DblAdd.o [3]
+  .text              ro code   0x800'94f0     0x14  exit.o [5]
+  .text              ro code   0x800'9504   0x16a0  main.o [1]
+  .text              ro code   0x800'aba4    0x360  steval_fcu001_v1_accelero.o [1]
+  .text              ro code   0x800'af04    0x1d4  steval_fcu001_v1_gyro.o [1]
+  .text              ro code   0x800'b0d8    0x188  steval_fcu001_v1_magneto.o [1]
+  .text              ro code   0x800'b260    0x9e6  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'bc48    0x5c8  flight_control.o [1]
+  .text              ro code   0x800'c210    0x12a  motor.o [1]
+  .text              ro code   0x800'c33c    0x1dc  steval_fcu001_v1_pressure.o [1]
+  .text              ro code   0x800'c518    0x194  steval_fcu001_v1_temperature.o [1]
+  .text              ro code   0x800'c6ac     0x48  FltToDbl.o [3]
+  .text              ro code   0x800'c6f4     0x68  DblToFlt.o [3]
+  .text              ro code   0x800'c75c    0x2f4  ahrs.o [1]
+  .text              ro code   0x800'ca50     0xe0  quaternion.o [1]
+  .text              ro code   0x800'cb30    0x384  stm32f4xx_hal_rcc.o [1]
+  .text              ro code   0x800'ceb4    0x538  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x800'd3ec     0x5a  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'd446     0xa8  sensor_data.o [1]
+  .text              ro code   0x800'd4ee     0xd0  bluenrg_hal_aci.o [1]
+  .text              ro code   0x800'd5be      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'd5c0      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'd5c2      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'd5c4      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'd5c6      0x2  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'd5c8      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x800'd5ca      0x2  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'd5cc    0x45c  LPS22HB_Driver.o [1]
+  .text              ro code   0x800'da28     0x38  basic_math.o [1]
+  .text              ro code   0x800'da60     0x22  math_wrappers64.o [3]
+  .text              ro code   0x800'da84     0xec  asin64.o [3]
+  .text              ro code   0x800'db70    0x13c  atan2_64.o [3]
+  .text              ro code   0x800'dcac     0xf2  sqrt.o [3]
+  .text              ro code   0x800'dda0    0x1d0  iar_Atan64.o [3]
+  .text              ro code   0x800'df70     0x20  DblCmpEq.o [3]
+  .text              ro code   0x800'df90    0x9aa  stm32f4xx_hal_pcd.o [1]
+  .text              ro code   0x800'e93c    0x968  stm32f4xx_ll_usb.o [1]
+  .text              ro code   0x800'f2a4    0x1fa  usbd_conf.o [1]
+  .text              ro code   0x800'f49e    0x2ea  usbd_core.o [1]
+  .text              ro code   0x800'f788    0x5f4  usbd_ctlreq.o [1]
+  .text              ro code   0x800'fd7c     0x94  usbd_ioreq.o [1]
+  .text              ro code   0x800'fe10    0x900  LSM303AGR_ACC_driver_HL.o [1]
+  .text              ro code   0x801'0710    0x57e  LSM303AGR_ACC_driver.o [1]
+  .text              ro code   0x801'0c90    0x766  LPS22HB_Driver_HL.o [1]
+  .text              ro code   0x801'13f8    0x3ae  LIS2MDL_MAG_driver_HL.o [1]
+  .text              ro code   0x801'17a6    0x234  LIS2MDL_MAG_driver.o [1]
+  .rodata            const     0x801'19dc     0x6c  sensor_service.o [1]
+  .text              ro code   0x801'1a48     0x6a  stm32f4xx_it.o [1]
+  .text              ro code   0x801'1ab4     0x10  stm32f4xx_hal.o [1]
+  .rodata            const     0x801'1ac8     0x60  LSM303AGR_ACC_driver.o [1]
+  .rodata            const     0x801'1b28     0x60  main.o [1]
+  .text              ro code   0x801'1b88     0x60  system_stm32f4xx.o [1]
+  .rodata            const     0x801'1be8     0x40  iar_Atan64.o [3]
+  .rodata            const     0x801'1c28     0x3c  sensor_service.o [1]
+  .rodata            const     0x801'1c64     0x34  main.o [1]
+  .rodata            const     0x801'1c98     0x34  main.o [1]
+  .rodata            const     0x801'1ccc     0x34  main.o [1]
+  .rodata            const     0x801'1d00     0x30  main.o [1]
+  .rodata            const     0x801'1d30     0x30  main.o [1]
+  .rodata            const     0x801'1d60     0x30  main.o [1]
+  .rodata            const     0x801'1d90     0x30  sensor_service.o [1]
+  .rodata            const     0x801'1dc0     0x30  sensor_service.o [1]
+  .rodata            const     0x801'1df0     0x2c  main.o [1]
+  .rodata            const     0x801'1e1c     0x2c  main.o [1]
+  .rodata            const     0x801'1e48     0x2c  main.o [1]
+  .rodata            const     0x801'1e74     0x2c  main.o [1]
+  .rodata            const     0x801'1ea0     0x2c  main.o [1]
+  .rodata            const     0x801'1ecc     0x2c  main.o [1]
+  .rodata            const     0x801'1ef8     0x28  main.o [1]
+  .rodata            const     0x801'1f20     0x28  main.o [1]
+  .rodata            const     0x801'1f48     0x28  main.o [1]
+  .text              ro code   0x801'1f70     0x28  data_init.o [4]
+  .rodata            const     0x801'1f98     0x24  main.o [1]
+  .rodata            const     0x801'1fbc     0x24  main.o [1]
+  .rodata            const     0x801'1fe0     0x24  sensor_service.o [1]
+  .rodata            const     0x801'2004     0x24  sensor_service.o [1]
+  .rodata            const     0x801'2028     0x24  sensor_service.o [1]
+  .text              ro code   0x801'204c     0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x801'2070     0x20  - Linker created -
+  .rodata            const     0x801'2090     0x20  main.o [1]
+  .rodata            const     0x801'20b0     0x20  main.o [1]
+  .rodata            const     0x801'20d0     0x20  main.o [1]
+  .rodata            const     0x801'20f0     0x20  main.o [1]
+  .rodata            const     0x801'2110     0x20  sensor_service.o [1]
+  .rodata            const     0x801'2130     0x20  sensor_service.o [1]
+  .rodata            const     0x801'2150     0x20  sensor_service.o [1]
+  .text              ro code   0x801'2170     0x1e  cmain.o [4]
+  .text              ro code   0x801'218e      0x4  low_level_init.o [2]
+  .text              ro code   0x801'2192      0x4  exit.o [2]
+  .text              ro code   0x801'2198      0xa  cexit.o [4]
+  .rodata            const     0x801'21a4     0x1c  main.o [1]
+  .rodata            const     0x801'21c0     0x1c  main.o [1]
+  .rodata            const     0x801'21dc     0x1c  sensor_service.o [1]
+  .rodata            const     0x801'21f8     0x1c  sensor_service.o [1]
+  .rodata            const     0x801'2214     0x18  main.o [1]
+  .rodata            const     0x801'222c     0x18  sensor_service.o [1]
+  .rodata            const     0x801'2244     0x14  main.o [1]
+  .rodata            const     0x801'2258     0x14  sensor_service.o [1]
+  .rodata            const     0x801'226c     0x10  sensor_service.o [1]
+  .rodata            const     0x801'227c     0x10  sensor_service.o [1]
+  .rodata            const     0x801'228c     0x10  stm32f4xx_hal_rcc.o [1]
+  .text              ro code   0x801'229c     0x10  startup_stm32f401xc.o [1]
+  .rodata            const     0x801'22ac      0xc  sensor_service.o [1]
+  .rodata            const     0x801'22b8      0xc  sensor_service.o [1]
+  .rodata            const     0x801'22c4      0xc  sensor_service.o [1]
+  .rodata            const     0x801'22d0      0xc  sensor_service.o [1]
+  .rodata            const     0x801'22dc      0xc  sensor_service.o [1]
+  .text              ro code   0x801'22e8      0xc  cstartup_M.o [4]
+  .rodata            const     0x801'22f4      0x8  main.o [1]
+  .rodata            const     0x801'22fc      0x8  sensor_service.o [1]
+  .rodata            const     0x801'2304      0x8  sensor_service.o [1]
+  .rodata            const     0x801'230c      0x8  sensor_service.o [1]
+  .rodata            const     0x801'2314      0x8  sensor_service.o [1]
+  .rodata            const     0x801'231c      0x8  sensor_service.o [1]
+  .rodata            const     0x801'2324      0x8  SPBTLE_RF.o [1]
+  .rodata            const     0x801'232c      0x8  SPBTLE_RF.o [1]
+  .rodata            const     0x801'2334      0x8  SPBTLE_RF.o [1]
+  .rodata            const     0x801'233c      0x8  steval_fcu001_v1.o [1]
+  .rodata            const     0x801'2344      0x4  LSM303AGR_ACC_driver_HL.o [1]
+  .rodata            const     0x801'2348      0x4  rc.o [1]
+  .rodata            const     0x801'234c      0x4  rc.o [1]
+  .rodata            const     0x801'2350      0x4  rc.o [1]
+  .text              ro code   0x801'2354      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2358      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'235c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2360      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2364      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2368      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'236c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2370      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2374      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2378      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'237c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2380      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2384      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2388      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'238c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2390      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2394      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2398      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'239c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23a0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23a4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23a8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23ac      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23b0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23b4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23b8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23bc      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23c0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23c4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23c8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23cc      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23d0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23d4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23d8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23dc      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23e0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23e4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23e8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23ec      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23f0      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23f4      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23f8      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'23fc      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2400      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2404      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2408      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'240c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2410      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2414      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2418      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'241c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2420      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2424      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2428      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'242c      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2430      0x4  startup_stm32f401xc.o [1]
+  .text              ro code   0x801'2434      0x4  startup_stm32f401xc.o [1]
+  .rodata            const     0x801'2438      0x0  zero_init3.o [4]
+  .rodata            const     0x801'2438      0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x801'2438    0x234  <for P2-1>
+                             - 0x801'266c  0x124d8
+
+"P2", part 1 of 3:                           0x29a
+  P2-1                        0x2000'0000    0x29a  <Init block>
+    .data            inited   0x2000'0000      0x4  ahrs.o [1]
+    .data            inited   0x2000'0004     0x48  LIS2MDL_MAG_driver_HL.o [1]
+    .data            inited   0x2000'004c     0x34  LPS22HB_Driver_HL.o [1]
+    .data            inited   0x2000'0080     0x34  LPS22HB_Driver_HL.o [1]
+    .data            inited   0x2000'00b4     0x50  LSM303AGR_ACC_driver_HL.o [1]
+    .data            inited   0x2000'0104     0xd0  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+    .data            inited   0x2000'01d4     0x50  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+    .data            inited   0x2000'0224     0x50  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+    .data            inited   0x2000'0274     0x14  main.o [1]
+    .data            inited   0x2000'0288      0x4  rc.o [1]
+    .data            inited   0x2000'028c      0x8  steval_fcu001_v1.o [1]
+    .data            inited   0x2000'0294      0x4  system_stm32f4xx.o [1]
+    .data            inited   0x2000'0298      0x1  sensor_service.o [1]
+    .data            inited   0x2000'0299      0x1  sensor_service.o [1]
+                            - 0x2000'029a    0x29a
+
+"P2", part 2 of 3:                          0x10cc
+  .bss               zero     0x2000'029c    0x3f0  usbd_conf.o [1]
+  .bss               zero     0x2000'068c    0x2bc  hci.o [1]
+  .bss               zero     0x2000'0948    0x100  main.o [1]
+  .bss               zero     0x2000'0a48     0x70  main.o [1]
+  .bss               zero     0x2000'0ab8     0x58  main.o [1]
+  .bss               zero     0x2000'0b10     0x58  main.o [1]
+  .bss               zero     0x2000'0b68     0x58  SPBTLE_RF.o [1]
+  .bss               zero     0x2000'0bc0     0x58  steval_fcu001_v1.o [1]
+  .bss               zero     0x2000'0c18     0x4c  rc.o [1]
+  .bss               zero     0x2000'0c64     0x48  main.o [1]
+  .bss               zero     0x2000'0cac     0x40  main.o [1]
+  .bss               zero     0x2000'0cec     0x3c  main.o [1]
+  .bss               zero     0x2000'0d28     0x3c  main.o [1]
+  .bss               zero     0x2000'0d64     0x3c  main.o [1]
+  .bss               zero     0x2000'0da0     0x3c  main.o [1]
+  .bss               zero     0x2000'0ddc     0x3c  main.o [1]
+  .bss               zero     0x2000'0e18     0x3c  main.o [1]
+  .bss               zero     0x2000'0e54     0x3c  main.o [1]
+  .bss               zero     0x2000'0e90     0x30  main.o [1]
+  .bss               zero     0x2000'0ec0     0x30  main.o [1]
+  .bss               zero     0x2000'0ef0     0x30  main.o [1]
+  .bss               zero     0x2000'0f20     0x30  main.o [1]
+  .bss               zero     0x2000'0f50     0x30  main.o [1]
+  .bss               zero     0x2000'0f80     0x30  main.o [1]
+  .bss               zero     0x2000'0fb0     0x2c  sensor_service.o [1]
+  .bss               zero     0x2000'0fdc     0x28  steval_fcu001_v1_accelero.o [1]
+  .bss               zero     0x2000'1004     0x28  steval_fcu001_v1_temperature.o [1]
+  .bss               zero     0x2000'102c     0x1c  main.o [1]
+  .bss               zero     0x2000'1048     0x14  sensor_service.o [1]
+  .bss               zero     0x2000'105c     0x14  sensor_service.o [1]
+  .bss               zero     0x2000'1070     0x14  steval_fcu001_v1_gyro.o [1]
+  .bss               zero     0x2000'1084     0x14  steval_fcu001_v1_magneto.o [1]
+  .bss               zero     0x2000'1098     0x14  steval_fcu001_v1_pressure.o [1]
+  .bss               zero     0x2000'10ac     0x14  timer.o [1]
+  .bss               zero     0x2000'10c0     0x10  main.o [1]
+  .bss               zero     0x2000'10d0     0x10  rc.o [1]
+  .bss               zero     0x2000'10e0     0x10  rc.o [1]
+  .bss               zero     0x2000'10f0     0x10  rc.o [1]
+  .bss               zero     0x2000'1100     0x10  steval_fcu001_v1_accelero.o [1]
+  .bss               zero     0x2000'1110     0x10  steval_fcu001_v1_temperature.o [1]
+  .bss               zero     0x2000'1120      0xc  main.o [1]
+  .bss               zero     0x2000'112c      0xc  main.o [1]
+  .bss               zero     0x2000'1138      0xc  main.o [1]
+  .bss               zero     0x2000'1144      0xc  main.o [1]
+  .bss               zero     0x2000'1150      0xc  main.o [1]
+  .bss               zero     0x2000'115c      0xc  main.o [1]
+  .bss               zero     0x2000'1168      0xc  main.o [1]
+  .bss               zero     0x2000'1174      0xc  main.o [1]
+  .bss               zero     0x2000'1180      0xc  main.o [1]
+  .bss               zero     0x2000'118c      0xc  main.o [1]
+  .bss               zero     0x2000'1198      0xc  main.o [1]
+  .bss               zero     0x2000'11a4      0xc  main.o [1]
+  .bss               zero     0x2000'11b0      0xc  main.o [1]
+  .bss               zero     0x2000'11bc      0xc  main.o [1]
+  .bss               zero     0x2000'11c8      0xc  main.o [1]
+  .bss               zero     0x2000'11d4      0xc  main.o [1]
+  .bss               zero     0x2000'11e0      0xc  main.o [1]
+  .bss               zero     0x2000'11ec      0xc  main.o [1]
+  .bss               zero     0x2000'11f8      0xc  main.o [1]
+  .bss               zero     0x2000'1204      0x8  hci.o [1]
+  .bss               zero     0x2000'120c      0x8  hci.o [1]
+  .bss               zero     0x2000'1214      0x8  LPS22HB_Driver_HL.o [1]
+  .bss               zero     0x2000'121c      0x8  main.o [1]
+  .bss               zero     0x2000'1224      0x8  main.o [1]
+  .bss               zero     0x2000'122c      0x8  main.o [1]
+  .bss               zero     0x2000'1234      0x8  steval_fcu001_v1_accelero.o [1]
+  .bss               zero     0x2000'123c      0x8  steval_fcu001_v1_gyro.o [1]
+  .bss               zero     0x2000'1244      0x8  steval_fcu001_v1_gyro.o [1]
+  .bss               zero     0x2000'124c      0x8  steval_fcu001_v1_magneto.o [1]
+  .bss               zero     0x2000'1254      0x8  steval_fcu001_v1_pressure.o [1]
+  .bss               zero     0x2000'125c      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1260      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1264      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1268      0x4  ahrs.o [1]
+  .bss               zero     0x2000'126c      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1270      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1274      0x4  ahrs.o [1]
+  .bss               zero     0x2000'1278      0x4  flight_control.o [1]
+  .bss               zero     0x2000'127c      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1280      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1284      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1288      0x4  flight_control.o [1]
+  .bss               zero     0x2000'128c      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1290      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1294      0x4  flight_control.o [1]
+  .bss               zero     0x2000'1298      0x4  flight_control.o [1]
+  .bss               zero     0x2000'129c      0x4  flight_control.o [1]
+  .bss               zero     0x2000'12a0      0x4  flight_control.o [1]
+  .bss               zero     0x2000'12a4      0x4  flight_control.o [1]
+  .bss               zero     0x2000'12a8      0x4  main.o [1]
+  .bss               zero     0x2000'12ac      0x4  main.o [1]
+  .bss               zero     0x2000'12b0      0x4  main.o [1]
+  .bss               zero     0x2000'12b4      0x4  main.o [1]
+  .bss               zero     0x2000'12b8      0x4  main.o [1]
+  .bss               zero     0x2000'12bc      0x4  main.o [1]
+  .bss               zero     0x2000'12c0      0x4  main.o [1]
+  .bss               zero     0x2000'12c4      0x4  main.o [1]
+  .bss               zero     0x2000'12c8      0x4  main.o [1]
+  .bss               zero     0x2000'12cc      0x4  main.o [1]
+  .bss               zero     0x2000'12d0      0x4  main.o [1]
+  .bss               zero     0x2000'12d4      0x4  main.o [1]
+  .bss               zero     0x2000'12d8      0x4  main.o [1]
+  .bss               zero     0x2000'12dc      0x4  main.o [1]
+  .bss               zero     0x2000'12e0      0x4  main.o [1]
+  .bss               zero     0x2000'12e4      0x4  main.o [1]
+  .bss               zero     0x2000'12e8      0x4  main.o [1]
+  .bss               zero     0x2000'12ec      0x4  main.o [1]
+  .bss               zero     0x2000'12f0      0x4  main.o [1]
+  .bss               zero     0x2000'12f4      0x4  main.o [1]
+  .bss               zero     0x2000'12f8      0x4  main.o [1]
+  .bss               zero     0x2000'12fc      0x4  main.o [1]
+  .bss               zero     0x2000'1300      0x4  main.o [1]
+  .bss               zero     0x2000'1304      0x4  main.o [1]
+  .bss               zero     0x2000'1308      0x4  rc.o [1]
+  .bss               zero     0x2000'130c      0x4  rc.o [1]
+  .bss               zero     0x2000'1310      0x4  rc.o [1]
+  .bss               zero     0x2000'1314      0x4  rc.o [1]
+  .bss               zero     0x2000'1318      0x4  sensor_service.o [1]
+  .bss               zero     0x2000'131c      0x4  sensor_service.o [1]
+  .bss               zero     0x2000'1320      0x4  steval_fcu001_v1_accelero.o [1]
+  .bss               zero     0x2000'1324      0x4  steval_fcu001_v1_pressure.o [1]
+  .bss               zero     0x2000'1328      0x4  steval_fcu001_v1_temperature.o [1]
+  .bss               zero     0x2000'132c      0x4  stm32f4xx_hal.o [1]
+  .bss               zero     0x2000'1330      0x4  xfail_s.o [2]
+  .bss               zero     0x2000'1334      0x2  flight_control.o [1]
+  .bss               zero     0x2000'1336      0x2  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+  .bss               zero     0x2000'1338      0x2  main.o [1]
+  .bss               zero     0x2000'133a      0x2  main.o [1]
+  .bss               zero     0x2000'133c      0x2  main.o [1]
+  .bss               zero     0x2000'133e      0x2  main.o [1]
+  .bss               zero     0x2000'1340      0x2  rc.o [1]
+  .bss               zero     0x2000'1342      0x2  rc.o [1]
+  .bss               zero     0x2000'1344      0x2  rc.o [1]
+  .bss               zero     0x2000'1346      0x2  rc.o [1]
+  .bss               zero     0x2000'1348      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'134a      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'134c      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'134e      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1350      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1352      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1354      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1356      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1358      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'135a      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'135c      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'135e      0x2  sensor_service.o [1]
+  .bss               zero     0x2000'1360      0x1  main.o [1]
+  .bss               zero     0x2000'1361      0x1  main.o [1]
+  .bss               zero     0x2000'1362      0x1  main.o [1]
+  .bss               zero     0x2000'1363      0x1  rc.o [1]
+  .bss               zero     0x2000'1364      0x1  sensor_service.o [1]
+  .bss               zero     0x2000'1365      0x1  sensor_service.o [1]
+  .bss               zero     0x2000'1366      0x1  steval_fcu001_v1_magneto.o [1]
+  .bss               zero     0x2000'1367      0x1  usbd_ctlreq.o [1]
+                            - 0x2000'1368   0x10cc
+
+"P2", part 3 of 3:                          0x4000
+  CSTACK                      0x2000'1368   0x4000  <Block>
+    CSTACK           uninit   0x2000'1368   0x4000  <Block tail>
+                            - 0x2000'5368   0x4000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x801'266c   0x803'ffff  0x2'd994
+  0x2000'029a  0x2000'029b       0x2
+  0x2000'5368  0x2000'ffff    0xac98
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x10cc:
+          0x2000'029c  0x10cc
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x234 (84% of destination):
+           0x801'2438   0x234
+    1 destination range, total size 0x29a:
+          0x2000'0000   0x29a
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                          ro code  ro data  rw data
+    ------                          -------  -------  -------
+command line/config:
+    ---------------------------------------------------------
+    Total:
+
+C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official release with BLE Remocon - 170318\EWARM\ToyDrone_Configuration\Obj: [1]
+    LIS2MDL_MAG_driver.o                564
+    LIS2MDL_MAG_driver_HL.o             942       61       72
+    LPS22HB_Driver.o                  1 116
+    LPS22HB_Driver_HL.o               1 894       88      112
+    LSM303AGR_ACC_driver.o            1 406       96
+    LSM303AGR_ACC_driver_HL.o         2 304       72       80
+    LSM6DSL_ACC_GYRO_driver.o         5 220
+    LSM6DSL_ACC_GYRO_driver_HL.o      7 738      311      370
+    SPBTLE_RF.o                         836       24       88
+    ahrs.o                              756        3       32
+    basic_math.o                         56
+    ble_list.o                          214
+    bluenrg_gap_aci.o                   716
+    bluenrg_gatt_aci.o                  794
+    bluenrg_hal_aci.o                   208
+    bluenrg_l2cap_aci.o                 106
+    bluenrg_utils.o                     120
+    debug.o                              76
+    flight_control.o                  1 480                50
+    gp_timer.o                           46
+    hci.o                             1 296               716
+    main.o                            5 792    1 105    1 811
+    motor.o                             298
+    osal.o                               64
+    quaternion.o                        224
+    rc.o                                700       16      153
+    sensor_data.o                       168
+    sensor_service.o                  4 778      702      120
+    startup_stm32f401xc.o               648
+    steval_fcu001_v1.o                1 822       14       96
+    steval_fcu001_v1_accelero.o         864                68
+    steval_fcu001_v1_gyro.o             468                36
+    steval_fcu001_v1_magneto.o          392                29
+    steval_fcu001_v1_pressure.o         476                32
+    steval_fcu001_v1_temperature.o      404                60
+    stm32f4xx_hal.o                     152                 4
+    stm32f4xx_hal_adc.o               1 336
+    stm32f4xx_hal_cortex.o              408
+    stm32f4xx_hal_dma.o                  40
+    stm32f4xx_hal_gpio.o                636
+    stm32f4xx_hal_msp.o                 720
+    stm32f4xx_hal_pcd.o               2 474
+    stm32f4xx_hal_rcc.o               1 552       16
+    stm32f4xx_hal_spi.o               1 202
+    stm32f4xx_hal_tim.o               2 544
+    stm32f4xx_hal_tim_ex.o               94
+    stm32f4xx_hal_uart.o              1 902
+    stm32f4xx_it.o                      106
+    stm32f4xx_ll_usb.o                2 408
+    system_stm32f4xx.o                   96        4        4
+    timer.o                             100                20
+    usbd_conf.o                         506             1 008
+    usbd_core.o                         746
+    usbd_ctlreq.o                     1 524                 1
+    usbd_ioreq.o                        148
+    ---------------------------------------------------------
+    Total:                           63 680    2 512    4 962
+
+dl7M_tln.a: [2]
+    abort.o                               6
+    exit.o                                4
+    low_level_init.o                      4
+    sprintf.o                            64
+    strncmp.o                            40
+    vsnprint.o                           60
+    xfail_s.o                            64                 4
+    xprintffull_nomb.o                3 570
+    xsnprout.o                           26
+    xsprout.o                            10
+    ---------------------------------------------------------
+    Total:                            3 848                 4
+
+m7M_tls.a: [3]
+    DblAdd.o                            378
+    DblCmpEq.o                           32
+    DblCmpGe.o                           46
+    DblCmpLe.o                           46
+    DblDiv.o                            582
+    DblMul.o                            418
+    DblSub.o                            226
+    DblToFlt.o                          104
+    DblToS32.o                           58
+    DblToU32.o                           40
+    FltToDbl.o                           72
+    S32ToDbl.o                           34
+    U32ToDbl.o                           26
+    asin64.o                            236
+    atan2_64.o                          316
+    fpinit_M.o                           34
+    frexp.o                             112
+    iar_Atan64.o                        464       64
+    ldexp.o                             314
+    math_wrappers64.o                    34
+    sqrt.o                              242
+    ---------------------------------------------------------
+    Total:                            3 814       64
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                         166
+    ABImemset.o                         102
+    I64DivMod.o                         628
+    I64DivZer.o                           2
+    cexit.o                              10
+    cmain.o                              30
+    cstartup_M.o                         12
+    data_init.o                          40
+    lz77_init_single.o                  122
+    memchr.o                             88
+    strchr.o                             22
+    strlen.o                             54
+    zero_init3.o                         58
+    ---------------------------------------------------------
+    Total:                            1 334
+
+shb_l.a: [5]
+    exit.o                               20
+    ---------------------------------------------------------
+    Total:                               20
+
+    Gaps                                 58       10
+    Linker created                                32   16 384
+-------------------------------------------------------------
+    Grand Total:                     72 754    2 618   21 350
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x801'2070          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x801'2090          --   Gb  - Linker created -
+?main                    0x801'2171         Code  Gb  cmain.o [4]
+ACCELERO_Data           0x2000'1100   0x10  Data  Lc  steval_fcu001_v1_accelero.o [1]
+ACCELERO_SensorHandle   0x2000'0fdc   0x28  Data  Lc  steval_fcu001_v1_accelero.o [1]
+ADC_Init                 0x800'd26d  0x164  Code  Lc  stm32f4xx_hal_adc.o [1]
+APBAHBPrescTable         0x801'228c   0x10  Data  Gb  stm32f4xx_hal_rcc.o [1]
+ARMING_Update            0x800'5abb   0x7a  Code  Gb  sensor_service.o [1]
+AccEventCharHandle      0x2000'134e    0x2  Data  Lc  sensor_service.o [1]
+AccGyroMagCharHandle    0x2000'134c    0x2  Data  Lc  sensor_service.o [1]
+AccGyroMag_Update        0x800'588f  0x11c  Code  Gb  sensor_service.o [1]
+Add_ConfigW2ST_Service   0x800'51c1   0xe0  Code  Gb  sensor_service.o [1]
+Add_ConsoleW2ST_Service
+                         0x800'52a1  0x152  Code  Gb  sensor_service.o [1]
+Add_HWServW2ST_Service   0x800'55a7  0x2e8  Code  Gb  sensor_service.o [1]
+ArmingCharHandle        0x2000'1350    0x2  Data  Lc  sensor_service.o [1]
+Attribute_Modified_CB    0x800'5da9  0x1be  Code  Gb  sensor_service.o [1]
+BNRG_SPI_Init            0x800'4381   0x3e  Code  Gb  SPBTLE_RF.o [1]
+BSP_ACCELERO_Get_Axes    0x800'adcb   0x3a  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Init        0x800'aba5   0x52  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Read_Reg    0x800'ae77   0x4a  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Sensor_Enable
+                         0x800'ad9d   0x2e  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Set_FS      0x800'ae43   0x34  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Set_ODR_Value
+                         0x800'ae05   0x3e  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_ACCELERO_Write_Reg   0x800'aec1   0x44  Code  Gb  steval_fcu001_v1_accelero.o [1]
+BSP_GYRO_Get_Axes        0x800'b05b   0x3a  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Init            0x800'af05   0x34  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Sensor_Enable   0x800'b02d   0x2e  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_GYRO_Write_Reg       0x800'b095   0x44  Code  Gb  steval_fcu001_v1_gyro.o [1]
+BSP_LED_Init             0x800'34ad   0x7a  Code  Gb  steval_fcu001_v1.o [1]
+BSP_LED_Off              0x800'354d   0x26  Code  Gb  steval_fcu001_v1.o [1]
+BSP_LED_On               0x800'3527   0x26  Code  Gb  steval_fcu001_v1.o [1]
+BSP_LED_Toggle           0x800'3573   0x24  Code  Gb  steval_fcu001_v1.o [1]
+BSP_LIS2MDL_MAGNETO_Init
+                         0x800'b10d   0x98  Code  Lc  steval_fcu001_v1_magneto.o [1]
+BSP_LPS22HB_PRESSURE_Init
+                         0x800'c371  0x10e  Code  Lc  steval_fcu001_v1_pressure.o [1]
+BSP_LPS22HB_TEMPERATURE_Init
+                         0x800'c535   0xfc  Code  Lc  steval_fcu001_v1_temperature.o [1]
+BSP_LSM303AGR_ACCELERO_Init
+                         0x800'acd9   0xa4  Code  Lc  steval_fcu001_v1_accelero.o [1]
+BSP_LSM6DSL_ACCELERO_Init
+                         0x800'abf7   0xe2  Code  Lc  steval_fcu001_v1_accelero.o [1]
+BSP_LSM6DSL_GYRO_Init    0x800'af39   0xde  Code  Lc  steval_fcu001_v1_gyro.o [1]
+BSP_MAGNETO_Get_Axes     0x800'b1e3   0x3a  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_MAGNETO_Init         0x800'b0d9   0x34  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_MAGNETO_Sensor_Enable
+                         0x800'b1b5   0x2e  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_MAGNETO_Write_Reg    0x800'b21d   0x44  Code  Gb  steval_fcu001_v1_magneto.o [1]
+BSP_PRESSURE_Get_Press   0x800'c4df   0x3a  Code  Gb  steval_fcu001_v1_pressure.o [1]
+BSP_PRESSURE_Init        0x800'c33d   0x34  Code  Gb  steval_fcu001_v1_pressure.o [1]
+BSP_PRESSURE_IsInitialized
+                         0x800'c4c3   0x1c  Code  Gb  steval_fcu001_v1_pressure.o [1]
+BSP_PRESSURE_Sensor_Enable
+                         0x800'c495   0x2e  Code  Gb  steval_fcu001_v1_pressure.o [1]
+BSP_TEMPERATURE_Get_Temp
+                         0x800'c673   0x3a  Code  Gb  steval_fcu001_v1_temperature.o [1]
+BSP_TEMPERATURE_Init     0x800'c519   0x1c  Code  Gb  steval_fcu001_v1_temperature.o [1]
+BSP_TEMPERATURE_Sensor_Enable
+                         0x800'c645   0x2e  Code  Gb  steval_fcu001_v1_temperature.o [1]
+Batt_Env_RSSI_Update     0x800'59ab  0x110  Code  Gb  sensor_service.o [1]
+BlueNRG_DataPresent      0x800'43e5   0x16  Code  Gb  SPBTLE_RF.o [1]
+BlueNRG_Init             0x800'a679  0x1d4  Code  Gb  main.o [1]
+BlueNRG_RST              0x800'43bf   0x26  Code  Gb  SPBTLE_RF.o [1]
+BlueNRG_SPI_Read_All     0x800'43fb   0xd4  Code  Gb  SPBTLE_RF.o [1]
+BlueNRG_SPI_Write        0x800'44cf   0xe6  Code  Gb  SPBTLE_RF.o [1]
+BufferToWrite           0x2000'0948  0x100  Data  Gb  main.o [1]
+BytesToWrite            0x2000'1304    0x4  Data  Gb  main.o [1]
+CSTACK$$Base            0x2000'1368          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'5368          --   Gb  - Linker created -
+ClearTimer               0x800'6ffd    0x6  Code  Gb  timer.o [1]
+Clear_SPI_EXTI_Flag      0x800'4643    0x8  Code  Gb  SPBTLE_RF.o [1]
+ConfigCharHandle        0x2000'1356    0x2  Data  Lc  sensor_service.o [1]
+ConfigCommandParsing     0x800'62cd    0x6  Code  Lc  sensor_service.o [1]
+ConfigServW2STHandle    0x2000'1354    0x2  Data  Lc  sensor_service.o [1]
+ConnectionBleStatus     0x2000'1300    0x4  Data  Gb  main.o [1]
+ConsoleW2STHandle       0x2000'1358    0x2  Data  Lc  sensor_service.o [1]
+DebugConsoleCommandParsing
+                         0x800'5f9d  0x32a  Code  Lc  sensor_service.o [1]
+DisableHWFeatures        0x800'640d    0x2  Code  Lc  sensor_service.o [1]
+Disable_SPI_IRQ          0x800'4639    0xa  Code  Gb  SPBTLE_RF.o [1]
+EXTI4_IRQHandler         0x801'1aa9    0xa  Code  Gb  stm32f4xx_it.o [1]
+Enable_SPI_IRQ           0x800'462f    0xa  Code  Gb  SPBTLE_RF.o [1]
+EnvironmentalCharHandle
+                        0x2000'134a    0x2  Data  Lc  sensor_service.o [1]
+EnvironmentalCharSize   0x2000'0299    0x1  Data  Lc  sensor_service.o [1]
+FlightControlPID_OuterLoop
+                         0x800'bcd9  0x180  Code  Gb  flight_control.o [1]
+FlightControlPID_innerLoop
+                         0x800'be59  0x35e  Code  Gb  flight_control.o [1]
+Fly_origin              0x2000'122c    0x8  Data  Gb  main.o [1]
+GAP_ConnectionComplete_CB
+                         0x800'5be1   0x58  Code  Lc  sensor_service.o [1]
+GAP_DisconnectionComplete_CB
+                         0x800'5c39   0x30  Code  Lc  sensor_service.o [1]
+GPIO_PIN                 0x801'233c    0x8  Data  Gb  steval_fcu001_v1.o [1]
+GPIO_PORT               0x2000'028c    0x8  Data  Gb  steval_fcu001_v1.o [1]
+GYRO_Data               0x2000'123c    0x8  Data  Lc  steval_fcu001_v1_gyro.o [1]
+GYRO_SensorHandle       0x2000'1070   0x14  Data  Lc  steval_fcu001_v1_gyro.o [1]
+GetTargetEulerAngle      0x800'6575  0x106  Code  Gb  rc.o [1]
+HAL_ADC_ConfigChannel    0x800'd0ef  0x17e  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_GetValue         0x800'd0e9    0x6  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Init             0x800'ceb5   0x66  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_MspInit          0x800'468b   0x42  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_ADC_PollForConversion
+                         0x800'd03f   0xaa  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Start            0x800'cf1b   0xe6  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Stop             0x800'd001   0x3e  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_DMA_Abort_IT         0x800'4951   0x28  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_Delay                0x800'4ed3   0x18  Code  Wk  stm32f4xx_hal.o [1]
+HAL_GPIO_EXTI_Callback   0x800'4331   0x18  Code  Gb  SPBTLE_RF.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'3e31   0x20  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'3c05  0x1f0  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin         0x800'3df5   0x16  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin       0x800'3e25    0xc  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'3e0b   0x1a  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GetHalVersion        0x800'6eed    0x6  Code  Gb  stm32f4xx_hal.o [1]
+HAL_GetTick              0x800'4945    0xc  Code  Wk  stm32f4xx_hal.o [1]
+HAL_IncTick              0x801'1ab5   0x10  Code  Wk  stm32f4xx_hal.o [1]
+HAL_Init                 0x800'6ebd   0x30  Code  Gb  stm32f4xx_hal.o [1]
+HAL_InitTick             0x800'85d5   0x28  Code  Wk  stm32f4xx_hal.o [1]
+HAL_MspInit              0x800'4675   0x16  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_NVIC_DisableIRQ      0x800'5029    0xe  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_EnableIRQ       0x800'501b    0xe  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'4ff1   0x2a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'4fe5    0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_PCD_ConnectCallback
+                         0x800'f3a5    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataInStageCallback
+                         0x800'f2db   0x22  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataOutStageCallback
+                         0x800'f2b7   0x24  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DisconnectCallback
+                         0x800'f3b3    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_EP_ClrStall      0x800'e801   0x6a  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Open          0x800'e5d5   0xa6  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Receive       0x800'e67b   0x84  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_SetStall      0x800'e783   0x7e  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Transmit      0x800'e6ff   0x84  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_IRQHandler       0x800'df91  0x5ec  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_ISOINIncompleteCallback
+                         0x800'f391   0x14  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ISOOUTIncompleteCallback
+                         0x800'f37d   0x14  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResetCallback    0x800'f30b   0x32  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResumeCallback   0x800'f36f    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SOFCallback      0x800'f2fd    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SetAddress       0x800'e5a9   0x2c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_SetupStageCallback
+                         0x800'f2a5   0x12  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SuspendCallback
+                         0x800'f33d   0x32  Code  Gb  usbd_conf.o [1]
+HAL_RCC_ClockConfig      0x800'8605  0x188  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'878d    0x6  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'8793   0x20  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'87b3   0x20  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'cb31  0x384  Code  Wk  stm32f4xx_hal_rcc.o [1]
+HAL_SPI_GetState         0x800'4245    0x6  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_IRQHandler       0x800'4135  0x110  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_Init             0x800'3e81   0x8e  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_MspInit          0x800'46cd  0x12c  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_SPI_TransmitReceive
+                         0x800'3f0f  0x226  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                         0x800'5043   0x1c  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_SYSTICK_Callback     0x800'64c7   0x28  Code  Gb  rc.o [1]
+HAL_SYSTICK_Config       0x800'5037    0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler   0x800'5085    0x8  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_TIMEx_BreakCallback
+                         0x800'd5c7    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutationCallback
+                         0x800'd5cb    0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x800'd3ed   0x5a  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init        0x800'b261   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit     0x800'47f9   0xc8  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_TIM_Base_Start_IT    0x800'b299   0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_ConfigClockSource
+                         0x800'b719  0x11c  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_CaptureCallback
+                         0x800'64bb    0xc  Code  Gb  rc.o [1]
+HAL_TIM_IC_ConfigChannel
+                         0x800'b543   0xd6  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_Init          0x800'b325   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_Start_IT      0x800'b35d   0x6c  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IRQHandler       0x800'b3cd  0x176  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_ConfigChannel
+                         0x800'b619  0x100  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Init         0x800'b2b7   0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Start        0x800'b2ef   0x36  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                         0x800'9f51  0x624  Code  Gb  main.o [1]
+HAL_UART_IRQHandler      0x800'71cf  0x14a  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_Init            0x800'7079   0x76  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'48c1   0x58  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_UART_Transmit        0x800'70ef   0xe0  Code  Gb  stm32f4xx_hal_uart.o [1]
+HCI_Event_CB             0x800'62d3   0x96  Code  Gb  sensor_service.o [1]
+HCI_Init                 0x800'4995   0x38  Code  Gb  hci.o [1]
+HCI_Isr                  0x800'4a4b   0x78  Code  Gb  hci.o [1]
+HCI_Process              0x800'49f1   0x50  Code  Gb  hci.o [1]
+HCI_ProcessEvent        0x2000'12a8    0x4  Data  Gb  main.o [1]
+HCI_Queue_Empty          0x800'4a41    0xa  Code  Gb  hci.o [1]
+HCI_verify               0x800'49cd   0x24  Code  Gb  hci.o [1]
+HWServW2STHandle        0x2000'1348    0x2  Data  Lc  sensor_service.o [1]
+Hal_Write_Serial         0x800'4349   0x38  Code  Gb  SPBTLE_RF.o [1]
+Init_BlueNRG_Custom_Services
+                         0x800'a855   0x4c  Code  Lc  main.o [1]
+LIS2MDLDrv              0x2000'0004   0x48  Data  Gb  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Check_WhoAmI     0x801'14f1   0x2c  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_DeInit           0x801'1463   0x28  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_Axes         0x801'151d   0x82  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_AxesRaw      0x801'159f   0x2a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_Axes_Raw     0x801'1775   0x32  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_DRDY_Status
+                         0x801'1747   0x2e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_FS           0x801'16cf    0xa  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_ODR          0x801'15d5   0x50  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_Sensitivity
+                         0x801'15c9    0xc  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Get_WhoAmI       0x801'14d7   0x1a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Init             0x801'13f9   0x6a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_MAG_Get_MagneticOutputs
+                         0x801'1981   0x5a  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_R_DataRate   0x801'18a9   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_R_STATUS_bits
+                         0x801'195f   0x22  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_R_WhoAmI_Bits
+                         0x801'17f3   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_ReadReg      0x801'17cd   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_BlockDataUpdate
+                         0x801'1917   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_DataRate   0x801'1861   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_Operating_Mode
+                         0x801'1819   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_W_SelfTest   0x801'18cf   0x48  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_MAG_WriteReg     0x801'17a7   0x26  Code  Gb  LIS2MDL_MAG_driver.o [1]
+LIS2MDL_M_0_Data        0x2000'1366    0x1  Data  Lc  steval_fcu001_v1_magneto.o [1]
+LIS2MDL_M_0_handle      0x2000'12b4    0x4  Data  Lc  main.o [1]
+LIS2MDL_Read_Reg         0x801'1705   0x22  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Sensor_Disable   0x801'14b1   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Sensor_Enable    0x801'148b   0x26  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_FS           0x801'16f9    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_FS_Value     0x801'16ff    0x6  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_ODR          0x801'1625   0x4a  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Set_ODR_Value    0x801'1671   0x5e  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LIS2MDL_Write_Reg        0x801'1727   0x20  Code  Lc  LIS2MDL_MAG_driver_HL.o [1]
+LPS22HB_Check_WhoAmI     0x801'1111   0x2c  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Combo_Data      0x2000'1214    0x8  Data  Gb  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_DataStatus   0x800'd917   0x46  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_DeviceID     0x800'd64d   0x1e  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_ODR          0x801'11a7   0x66  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_Odr          0x800'd6fb   0x28  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_Press        0x801'113d   0x32  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_Pressure     0x800'd9a5   0x2a  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_RawPressure
+                         0x800'd95d   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_RawTemperature
+                         0x800'd9cf   0x2e  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_Temp         0x801'116f   0x38  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Get_Temperature
+                         0x800'd9fd   0x2c  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Get_WhoAmI       0x801'10f7   0x1a  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Initialize       0x801'1059   0x9e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_0_Data        0x2000'1324    0x4  Data  Lc  steval_fcu001_v1_pressure.o [1]
+LPS22HB_P_0_handle      0x2000'12b8    0x4  Data  Lc  main.o [1]
+LPS22HB_P_Check_WhoAmI   0x801'0d61    0xc  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_DeInit         0x801'0cbd   0x2a  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Drv           0x2000'004c   0x34  Data  Gb  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_DRDY_Status
+                         0x801'0e55   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_ODR        0x801'0d7d   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_Press      0x801'0d6d   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Get_WhoAmI     0x801'0d51   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Init           0x801'0c91   0x2c  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Read_Reg       0x801'0e13   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Sensor_Disable
+                         0x801'0d1b   0x36  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Sensor_Enable
+                         0x801'0ce7   0x34  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Set_ODR        0x801'0d8d   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Set_ODR_Value
+                         0x801'0dcb   0x48  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_P_Write_Reg      0x801'0e33   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_ReadReg          0x800'd5cd   0x40  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Read_Reg         0x801'13b5   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_AutomaticIncrementRegAddress
+                         0x800'd881   0x4a  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_Bdu          0x800'd7b5   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_I2C          0x800'd8cb   0x4c  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_LowPassFilter
+                         0x800'd723   0x4a  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_LowPassFilterCutoff
+                         0x800'd76d   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_ODR_Value_When_Disabled
+                         0x801'132d   0x5e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_Value_When_Enabled
+                         0x801'12a9   0x82  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_When_Disabled
+                         0x801'1269   0x40  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_ODR_When_Enabled
+                         0x801'120d   0x5c  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_Set_Odr          0x800'd6b3   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_PowerMode    0x800'd66b   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Set_SpiInterface
+                         0x800'd7fd   0x48  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_SwResetAndMemoryBoot
+                         0x800'd845   0x3c  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_T_0_Data        0x2000'1328    0x4  Data  Lc  steval_fcu001_v1_temperature.o [1]
+LPS22HB_T_0_handle      0x2000'12bc    0x4  Data  Lc  main.o [1]
+LPS22HB_T_Check_WhoAmI   0x801'0f45    0xc  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_DeInit         0x801'0ea1   0x2a  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Drv           0x2000'0080   0x34  Data  Gb  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Get_DRDY_Status
+                         0x801'1039   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Get_ODR        0x801'0f61   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Get_Temp       0x801'0f51   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Get_WhoAmI     0x801'0f35   0x10  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Init           0x801'0e75   0x2c  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Read_Reg       0x801'0ff7   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Sensor_Disable
+                         0x801'0eff   0x36  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Sensor_Enable
+                         0x801'0ecb   0x34  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Set_ODR        0x801'0f71   0x3e  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Set_ODR_Value
+                         0x801'0faf   0x48  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_T_Write_Reg      0x801'1017   0x22  Code  Lc  LPS22HB_Driver_HL.o [1]
+LPS22HB_WriteReg         0x800'd60d   0x40  Code  Gb  LPS22HB_Driver.o [1]
+LPS22HB_Write_Reg        0x801'13d7   0x20  Code  Lc  LPS22HB_Driver_HL.o [1]
+LSM303AGR_ACC_Get_Acceleration
+                         0x801'08ab  0x16c  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_Get_Raw_Acceleration
+                         0x801'0851   0x5a  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_FullScale
+                         0x801'082b   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_HiRes    0x801'0bfb   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_LOWPWR_EN
+                         0x801'0bd5   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_ODR      0x801'0a65   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_WHO_AM_I
+                         0x801'0775   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_XDataAvail
+                         0x801'0c21   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_XEN      0x801'0ad3   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_YEN      0x801'0b41   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_R_ZEN      0x801'0baf   0x26  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_ReadReg    0x801'0743   0x32  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_Sensitivity_List
+                         0x801'1ac8   0x60  Data  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_BlockDataUpdate
+                         0x801'079b   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_FifoMode
+                         0x801'0c47   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_FullScale
+                         0x801'07e3   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_ODR      0x801'0a1d   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_XEN      0x801'0a8b   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_YEN      0x801'0af9   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_W_ZEN      0x801'0b67   0x48  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_ACC_WriteReg   0x801'0711   0x32  Code  Gb  LSM303AGR_ACC_driver.o [1]
+LSM303AGR_X_0_Data      0x2000'1320    0x4  Data  Lc  steval_fcu001_v1_accelero.o [1]
+LSM303AGR_X_Check_WhoAmI
+                         0x800'ff3f   0x2c  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_DeInit       0x800'fe8f   0x30  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Drv         0x2000'00b4   0x50  Data  Gb  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Axes     0x800'ff6b   0x28  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_AxesRaw
+                         0x800'ff93   0x2a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Axes_Raw
+                         0x801'0371   0x96  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Axes_Status
+                         0x801'022d   0x6e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_DRDY_Status
+                         0x801'033b   0x36  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_FS       0x801'0131   0x5a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_ODR      0x801'0037   0x88  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Sensitivity
+                         0x800'ffbd   0x7a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Sensitivity_HR_Mode
+                         0x801'065f   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Sensitivity_LP_Mode
+                         0x801'060f   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_Sensitivity_Normal_Mode
+                         0x801'05bf   0x50  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Get_WhoAmI   0x800'ff25   0x1a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Init         0x800'fe11   0x7e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Read_Reg     0x801'02f9   0x22  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Sensor_Disable
+                         0x800'feeb   0x3a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Sensor_Enable
+                         0x800'febf   0x2c  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_Axes_Status
+                         0x801'029b   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_FS       0x801'018b   0x3e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_FS_Value
+                         0x801'01c9   0x5e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR      0x801'00bf   0x34  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR_Value
+                         0x801'00f3   0x3e  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR_Value_When_Disabled
+                         0x801'0535   0x8a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR_Value_When_Enabled
+                         0x801'04a1   0x94  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR_When_Disabled
+                         0x801'0451   0x48  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Set_ODR_When_Enabled
+                         0x801'0407   0x4a  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM303AGR_X_Write_Reg    0x801'031b   0x20  Code  Lc  LSM303AGR_ACC_driver_HL.o [1]
+LSM6DSL_ACC_GYRO_GetRawAccData
+                         0x800'2171   0x5a  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_GetRawGyroData
+                         0x800'22a7   0x5a  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_Get_GetFIFOData
+                         0x800'33ad   0x5a  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_Get_GetStepCounter
+                         0x800'3407   0x5a  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_D6D_EV_STATUS
+                         0x800'2af5   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DOUBLE_TAP_EV_STATUS
+                         0x800'29c5   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_XH
+                         0x800'2a37   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_XL
+                         0x800'2a11   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_YH
+                         0x800'2a83   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_YL
+                         0x800'2a5d   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_ZH
+                         0x800'2acf   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_DSD_ZL
+                         0x800'2aa9   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FF_EV_STATUS
+                         0x800'299f   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FIFOEmpty
+                         0x800'2bb5   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FIFOFull
+                         0x800'2bdb   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FIFONumOfEntries
+                         0x800'2b67   0x4e  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FIFOPattern
+                         0x800'2c27   0x4e  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FS_125
+                         0x800'23b7   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FS_G
+                         0x800'2281   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_FS_XL
+                         0x800'214b   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_GDA   0x800'2b41   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_ODR_G
+                         0x800'2349   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_ODR_XL
+                         0x800'2213   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_OVERRUN
+                         0x800'2c01   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_PEDO_EV_STATUS
+                         0x800'2c75   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_SINGLE_TAP_EV_STATUS
+                         0x800'29eb   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_TILT_EV_STATUS
+                         0x800'2c9b   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_WHO_AM_I
+                         0x800'2095   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_WU_EV_STATUS
+                         0x800'2979   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_R_XLDA
+                         0x800'2b1b   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_ReadReg
+                         0x800'2049   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_6DEvOnInt1
+                         0x800'3245   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_BASIC_INT
+                         0x800'2de1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_BDU   0x800'20bb   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_DEC_FIFO_XL
+                         0x800'24b1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_DUR   0x800'2f57   0x4e  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_EmbeddedAccess
+                         0x800'23dd   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FFEvOnInt1
+                         0x800'32d5   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FF_Duration
+                         0x800'3163   0x9a  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FF_THS
+                         0x800'311b   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FIFO_MODE
+                         0x800'2541   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FIFO_Watermark
+                         0x800'2425   0x8c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FS_125
+                         0x800'236f   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FS_G
+                         0x800'2239   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FS_XL
+                         0x800'2103   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FULL_FLAG_on_INT1
+                         0x800'25d1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_FUNC_EN
+                         0x800'2931   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_HPCF_XL
+                         0x800'27c9   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_I2C_DISABLE
+                         0x800'26a9   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_IF_Addr_Incr
+                         0x800'2661   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_InComposit
+                         0x800'2781   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_LIR   0x800'2cc1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_LP_BW_G
+                         0x800'2739   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_LowPassFiltSel_XL
+                         0x800'2811   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_ODR_FIFO
+                         0x800'2589   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_ODR_G
+                         0x800'2301   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_ODR_XL
+                         0x800'21cb   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_PEDO
+                         0x800'28e9   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_PedoStepReset
+                         0x800'2859   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_PedoThreshold
+                         0x800'3461   0x4c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_QUIET_Duration
+                         0x800'2f09   0x4e  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SHOCK_Duration
+                         0x800'2ebd   0x4c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SINGLE_DOUBLE_TAP_EV
+                         0x800'2ff1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SIXD_THS
+                         0x800'2e75   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SLEEP_DUR
+                         0x800'3039   0x4c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_STEP_DET_on_INT1
+                         0x800'2619   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_STOP_ON_FTH
+                         0x800'24f9   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SelfTest_XL
+                         0x800'26f1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_SingleTapOnInt1
+                         0x800'3365   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TAP_THS
+                         0x800'2e29   0x4c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TAP_X_EN
+                         0x800'2d99   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TAP_Y_EN
+                         0x800'2d51   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TAP_Z_EN
+                         0x800'2d09   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TILT
+                         0x800'28a1   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TIMER_HR
+                         0x800'3085   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TapEvOnInt1
+                         0x800'328d   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_TiltEvOnInt1
+                         0x800'31fd   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_WAKE_DUR
+                         0x800'30cd   0x4e  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_WK_THS
+                         0x800'2fa5   0x4c  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_W_WUEvOnInt1
+                         0x800'331d   0x48  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_ACC_GYRO_WriteReg
+                         0x800'206f   0x26  Code  Gb  LSM6DSL_ACC_GYRO_driver.o [1]
+LSM6DSL_Check_WhoAmI     0x800'0c1b   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_Combo_Data      0x2000'1336    0x2  Data  Gb  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Data    0x800'1e2b   0x1a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Empty_Status
+                         0x800'1da1   0x38  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Full_Status
+                         0x800'1d69   0x38  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Num_Of_Samples
+                         0x800'1e45   0x1a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Overrun_Status
+                         0x800'1dd9   0x38  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Get_Pattern
+                         0x800'1e11   0x1a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Set_INT1_FIFO_Full
+                         0x800'1f19   0x2e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Set_Mode    0x800'1ee3   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Set_ODR_Value
+                         0x800'1c79   0xca  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Set_Stop_On_Fth
+                         0x800'1f63   0x2e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_Set_Watermark_Level
+                         0x800'1f47   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_X_Get_Axis
+                         0x800'1e8b   0x58  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_FIFO_X_Set_Decimation
+                         0x800'1e5f   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_0_Data        0x2000'1244    0x8  Data  Lc  steval_fcu001_v1_gyro.o [1]
+LSM6DSL_G_0_handle      0x2000'12b0    0x4  Data  Lc  main.o [1]
+LSM6DSL_G_Check_WhoAmI   0x800'07ed    0xc  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_DeInit         0x800'0741   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Drv           0x2000'0224   0x50  Data  Gb  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_Axes       0x800'07f9   0x82  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_AxesRaw    0x800'087b   0x2a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_Axes_Raw   0x800'0f81   0x4c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_DRDY_Status
+                         0x800'0bcb   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_FS         0x800'0a3d   0x7c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_ODR        0x800'0921   0xaa  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_Sensitivity
+                         0x800'08a5   0x7c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Get_WhoAmI     0x800'07dd   0x10  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Init           0x800'06bb   0x7a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Read_Reg       0x800'0b89   0x20  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Sensor_Disable
+                         0x800'07a3   0x3a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Sensor_Enable
+                         0x800'0777   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_FS         0x800'0ab9   0x3e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_FS_Value   0x800'0af9   0x8c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR        0x800'09cb   0x34  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR_Value
+                         0x800'09ff   0x3e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR_Value_When_Disabled
+                         0x800'1151   0xc6  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR_Value_When_Enabled
+                         0x800'1079   0xca  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR_When_Disabled
+                         0x800'1017   0x4c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Set_ODR_When_Enabled
+                         0x800'0fcd   0x4a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_G_Write_Reg      0x800'0ba9   0x22  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_Get_WhoAmI       0x800'0c01   0x1a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_Read_Reg         0x800'0c47   0x22  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_Sensor_IO_ITConfig
+                         0x800'3a09    0x4  Code  Gb  steval_fcu001_v1.o [1]
+LSM6DSL_Set_Interrupt_Latch
+                         0x800'0c89   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_Write_Reg        0x800'0c69   0x20  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_0_Data        0x2000'1234    0x8  Data  Lc  steval_fcu001_v1_accelero.o [1]
+LSM6DSL_X_0_handle      0x2000'12ac    0x4  Data  Lc  main.o [1]
+LSM6DSL_X_Check_WhoAmI   0x800'031d    0xc  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_DeInit         0x800'020f   0x98  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_6D_Orientation
+                         0x800'1ac5   0x38  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Double_Tap_Detection
+                         0x800'190f   0xa8  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Free_Fall_Detection
+                         0x800'1321   0x48  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Pedometer
+                         0x800'1425   0x48  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Single_Tap_Detection
+                         0x800'1785   0x88  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Step_Counter_Reset
+                         0x800'14d5   0x18  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Tilt_Detection
+                         0x800'1563   0x38  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Disable_Wake_Up_Detection
+                         0x800'163b   0x48  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Drv           0x2000'01d4   0x50  Data  Gb  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_6D_Orientation
+                         0x800'1a5d   0x5a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Double_Tap_Detection
+                         0x800'1845   0xca  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Free_Fall_Detection
+                         0x800'1219   0x9a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Pedometer
+                         0x800'13bb   0x6a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Single_Tap_Detection
+                         0x800'16d5   0xaa  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Step_Counter_Reset
+                         0x800'14bd   0x18  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Tilt_Detection
+                         0x800'1509   0x5a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Enable_Wake_Up_Detection
+                         0x800'15d1   0x6a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_ExtDrv        0x2000'0104   0xd0  Data  Gb  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_Status
+                         0x800'1afd   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_XH
+                         0x800'1b69   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_XL
+                         0x800'1b33   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_YH
+                         0x800'1bd5   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_YL
+                         0x800'1b9f   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_ZH
+                         0x800'1c41   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_6D_Orientation_ZL
+                         0x800'1c0b   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Axes       0x800'0329   0x82  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_AxesRaw    0x800'03ab   0x2a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Axes_Raw   0x800'0cb5   0x4c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_DRDY_Status
+                         0x800'0685   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Double_Tap_Detection_Status
+                         0x800'19b7   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_FS         0x800'054d   0x5a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Free_Fall_Detection_Status
+                         0x800'1369   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_ODR        0x800'042f   0xac  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Pedometer_Status
+                         0x800'146d   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Sensitivity
+                         0x800'03d5   0x5a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Single_Tap_Detection_Status
+                         0x800'180d   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Step_Count
+                         0x800'14a3   0x1a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Tilt_Detection_Status
+                         0x800'159b   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_Wake_Up_Detection_Status
+                         0x800'1683   0x36  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Get_WhoAmI     0x800'030d   0x10  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Init           0x800'0195   0x7a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Read_Reg       0x800'0643   0x20  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Sensor_Disable
+                         0x800'02d3   0x3a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Sensor_Enable
+                         0x800'02a7   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_FS         0x800'05a7   0x3e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_FS_Value   0x800'05e5   0x5e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Free_Fall_Threshold
+                         0x800'139f   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Interrupt_Latch
+                         0x800'1f91   0x12  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR        0x800'04db   0x34  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR_Value
+                         0x800'050f   0x3e  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR_Value_When_Disabled
+                         0x800'0e91   0xc6  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR_Value_When_Enabled
+                         0x800'0da5   0xca  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR_When_Disabled
+                         0x800'0d4b   0x48  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_ODR_When_Enabled
+                         0x800'0d01   0x4a  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Pedometer_Threshold
+                         0x800'14ed   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_SelfTest   0x800'1fa3   0x2c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Tap_Duration_Time
+                         0x800'1a41   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Tap_Quiet_Time
+                         0x800'1a25   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Tap_Shock_Time
+                         0x800'1a09   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Tap_Threshold
+                         0x800'19ed   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Set_Wake_Up_Threshold
+                         0x800'16b9   0x1c  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LSM6DSL_X_Write_Reg      0x800'0663   0x22  Code  Lc  LSM6DSL_ACC_GYRO_driver_HL.o [1]
+LastStderrBuffer        0x2000'1048   0x14  Data  Lc  sensor_service.o [1]
+LastStderrLen           0x2000'1364    0x1  Data  Lc  sensor_service.o [1]
+LastTermBuffer          0x2000'105c   0x14  Data  Lc  sensor_service.o [1]
+LastTermLen             0x2000'1365    0x1  Data  Lc  sensor_service.o [1]
+LoadInt                  0x800'798f   0x7a  Code  Lc  xprintffull_nomb.o [2]
+MAGNETO_Data            0x2000'124c    0x8  Data  Lc  steval_fcu001_v1_magneto.o [1]
+MAGNETO_SensorHandle    0x2000'1084   0x14  Data  Lc  steval_fcu001_v1_magneto.o [1]
+MX_ADC1_Init             0x800'9c81   0x52  Code  Lc  main.o [1]
+MX_GPIO_Init             0x800'9e43   0x68  Code  Lc  main.o [1]
+MX_TIM2_Init             0x800'9cd3   0x86  Code  Lc  main.o [1]
+MX_TIM4_Init             0x800'9d59   0x84  Code  Lc  main.o [1]
+MX_TIM9_Init             0x800'9de1   0x32  Code  Lc  main.o [1]
+MX_USART1_UART_Init      0x800'9e13   0x30  Code  Lc  main.o [1]
+MaxCharHandle           0x2000'1352    0x2  Data  Lc  sensor_service.o [1]
+NVIC_DisableIRQ          0x800'4f33   0x16  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_EnableIRQ           0x800'4f1d   0x16  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_EncodePriority      0x800'4f75   0x40  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_GetPriorityGrouping
+                         0x800'4f13    0xa  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_SetPriority         0x800'4f49   0x2c  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_SetPriorityGrouping
+                         0x800'4ef5   0x1e  Code  Lc  stm32f4xx_hal_cortex.o [1]
+OTG_FS_IRQHandler        0x801'1a87    0xa  Code  Gb  stm32f4xx_it.o [1]
+Osal_MemCpy              0x800'640f   0x20  Code  Gb  osal.o [1]
+Osal_MemSet              0x800'642f   0x20  Code  Gb  osal.o [1]
+PCD_WriteEmptyTxFifo     0x800'e86b   0xd0  Code  Lc  stm32f4xx_hal_pcd.o [1]
+PIDControlInit           0x800'bc49   0x8c  Code  Gb  flight_control.o [1]
+PRESSURE_Data           0x2000'1254    0x8  Data  Lc  steval_fcu001_v1_pressure.o [1]
+PRESSURE_SensorHandle   0x2000'1098   0x14  Data  Lc  steval_fcu001_v1_pressure.o [1]
+QuaternionToEuler        0x800'ca51   0xe0  Code  Gb  quaternion.o [1]
+ReadSensorRawData        0x800'd447   0xa8  Code  Gb  sensor_data.o [1]
+Read_Request_CB          0x800'5c71  0x114  Code  Gb  sensor_service.o [1]
+Region$$Table$$Base      0x801'2070          --   Gb  - Linker created -
+Region$$Table$$Limit     0x801'2090          --   Gb  - Linker created -
+SPI1_IRQHandler          0x801'1a69    0xa  Code  Gb  stm32f4xx_it.o [1]
+SPI2_IRQHandler          0x801'1a73    0xa  Code  Gb  stm32f4xx_it.o [1]
+SPI_CheckFlag_BSY        0x800'4307   0x2a  Code  Lc  stm32f4xx_hal_spi.o [1]
+SPI_DMAAbortOnError      0x800'424d   0x16  Code  Lc  stm32f4xx_hal_spi.o [1]
+SPI_Read                 0x800'3a0d  0x140  Code  Gb  steval_fcu001_v1.o [1]
+SPI_Read_nBytes          0x800'3b4d   0x5c  Code  Gb  steval_fcu001_v1.o [1]
+SPI_Sensor_Handle       0x2000'0bc0   0x58  Data  Lc  steval_fcu001_v1.o [1]
+SPI_WaitFlagStateUntilTimeout
+                         0x800'4265   0xa2  Code  Lc  stm32f4xx_hal_spi.o [1]
+SPI_Write                0x800'3ba9   0x1e  Code  Gb  steval_fcu001_v1.o [1]
+SendArmingData           0x800'aa55    0xe  Code  Lc  main.o [1]
+SendBattEnvData          0x800'a8e9  0x166  Code  Lc  main.o [1]
+SendMotionData           0x800'a8a1   0x3c  Code  Lc  main.o [1]
+Sensor_IO_Init           0x800'3bc7    0x4  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_Read           0x800'382b   0x5e  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_CS_Disable
+                         0x800'39a5   0x40  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_CS_Enable
+                         0x800'3965   0x40  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_CS_Init    0x800'3741   0xce  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_CS_Init_All
+                         0x800'3669   0xd8  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_Init       0x800'3597   0xd2  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_Read       0x800'38d9   0x8c  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_SPI_Write      0x800'3889   0x50  Code  Gb  steval_fcu001_v1.o [1]
+Sensor_IO_Write          0x800'380f   0x1c  Code  Gb  steval_fcu001_v1.o [1]
+SetupTimer               0x800'6fd9   0x10  Code  Gb  timer.o [1]
+SpiHandle               0x2000'0b68   0x58  Data  Gb  SPBTLE_RF.o [1]
+StartTimer               0x800'6fe9   0x14  Code  Gb  timer.o [1]
+StdErrCharHandle        0x2000'135c    0x2  Data  Lc  sensor_service.o [1]
+Stderr_Update            0x800'53f3   0x8a  Code  Gb  sensor_service.o [1]
+Stderr_Update_AfterRead
+                         0x800'550f   0x32  Code  Lc  sensor_service.o [1]
+SysTick_Config           0x800'4fb5   0x30  Code  Lc  stm32f4xx_hal_cortex.o [1]
+SysTick_Handler          0x801'1a49    0xc  Code  Gb  stm32f4xx_it.o [1]
+SystemClock_Config       0x800'9bd5   0xac  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0294    0x4  Data  Gb  system_stm32f4xx.o [1]
+SystemInit               0x801'1b89   0x40  Code  Gb  system_stm32f4xx.o [1]
+TEMPERATURE_Data        0x2000'1110   0x10  Data  Lc  steval_fcu001_v1_temperature.o [1]
+TEMPERATURE_SensorHandle
+                        0x2000'1004   0x28  Data  Lc  steval_fcu001_v1_temperature.o [1]
+TIM1_BRK_TIM9_IRQHandler
+                         0x801'1a55    0xa  Code  Gb  stm32f4xx_it.o [1]
+TIM2_IRQHandler          0x801'1a5f    0xa  Code  Gb  stm32f4xx_it.o [1]
+TIM_Base_SetConfig       0x800'b835   0x9c  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_CCxChannelCmd        0x800'b9ad   0x1c  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_ETR_SetConfig        0x800'bc2d   0x1a  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_ITRx_SetConfig       0x800'bc13   0x1a  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC1_SetConfig        0x800'b9cb   0x5c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC2_SetConfig        0x800'b943   0x6a  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_OC3_SetConfig        0x800'ba27   0x64  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC4_SetConfig        0x800'ba8b   0x52  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI1_ConfigInputStage
+                         0x800'bafd   0x28  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI1_SetConfig        0x800'b8d1   0x72  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_TI2_ConfigInputStage
+                         0x800'bb67   0x2a  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI2_SetConfig        0x800'bb25   0x42  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI3_SetConfig        0x800'bb91   0x40  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI4_SetConfig        0x800'bbd1   0x42  Code  Lc  stm32f4xx_hal_tim.o [1]
+TargetBoardFeatures     0x2000'0fb0   0x2c  Data  Gb  sensor_service.o [1]
+TermCharHandle          0x2000'135a    0x2  Data  Lc  sensor_service.o [1]
+Term_Update              0x800'547d   0x92  Code  Gb  sensor_service.o [1]
+Term_Update_AfterRead    0x800'5541   0x66  Code  Lc  sensor_service.o [1]
+TimerProcess             0x800'7003   0x26  Code  Gb  timer.o [1]
+Timer_Expired            0x800'4eb5   0x1e  Code  Gb  gp_timer.o [1]
+Timer_Set                0x800'4ea5   0x10  Code  Gb  gp_timer.o [1]
+UART_DMAAbortOnError     0x800'73a9   0x16  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndRxTransfer       0x800'7387   0x20  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndTransmit_IT      0x800'742f   0x20  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Receive_IT          0x800'744f   0xa2  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_SetConfig           0x800'74f1  0x2e4  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Transmit_IT         0x800'73c1   0x6e  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x800'7319   0x6e  Code  Lc  stm32f4xx_hal_uart.o [1]
+USART1_IRQHandler        0x801'1a7d    0xa  Code  Gb  stm32f4xx_it.o [1]
+USBD_ClrClassConfig      0x800'f4d1   0x18  Code  Gb  usbd_core.o [1]
+USBD_ClrFeature          0x800'fd03   0x3a  Code  Lc  usbd_ctlreq.o [1]
+USBD_CtlContinueRx       0x800'fdc3   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlContinueSendData
+                         0x800'fda9   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlError            0x800'fd65   0x18  Code  Gb  usbd_ctlreq.o [1]
+USBD_CtlReceiveStatus    0x800'fdf7   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendData         0x800'fd7d   0x2c  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendStatus       0x800'fddd   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_GetConfig           0x800'fc55   0x4c  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetDescriptor       0x800'f9d1  0x158  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetStatus           0x800'fca1   0x3c  Code  Lc  usbd_ctlreq.o [1]
+USBD_LL_ClearStallEP     0x800'f3fd   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_DataInStage      0x800'f5e3   0xe4  Code  Gb  usbd_core.o [1]
+USBD_LL_DataOutStage     0x800'f553   0x90  Code  Gb  usbd_core.o [1]
+USBD_LL_DevConnected     0x800'f767    0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_DevDisconnected
+                         0x800'f76d   0x1c  Code  Gb  usbd_core.o [1]
+USBD_LL_IsStallEP        0x800'f413   0x36  Code  Gb  usbd_conf.o [1]
+USBD_LL_IsoINIncomplete
+                         0x800'f75b    0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_IsoOUTIncomplete
+                         0x800'f761    0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_OpenEP           0x800'f3c5   0x22  Code  Gb  usbd_conf.o [1]
+USBD_LL_PrepareReceive   0x800'f47f   0x20  Code  Gb  usbd_conf.o [1]
+USBD_LL_Reset            0x800'f6c7   0x46  Code  Gb  usbd_core.o [1]
+USBD_LL_Resume           0x800'f729    0xe  Code  Gb  usbd_core.o [1]
+USBD_LL_SOF              0x800'f737   0x24  Code  Gb  usbd_core.o [1]
+USBD_LL_SetSpeed         0x800'f70d    0x8  Code  Gb  usbd_core.o [1]
+USBD_LL_SetUSBAddress    0x800'f449   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_SetupStage       0x800'f4e9   0x6a  Code  Gb  usbd_core.o [1]
+USBD_LL_StallEP          0x800'f3e7   0x16  Code  Gb  usbd_conf.o [1]
+USBD_LL_Suspend          0x800'f715   0x14  Code  Gb  usbd_core.o [1]
+USBD_LL_Transmit         0x800'f45f   0x20  Code  Gb  usbd_conf.o [1]
+USBD_ParseSetupRequest   0x800'fd3d   0x28  Code  Gb  usbd_ctlreq.o [1]
+USBD_RunTestMode         0x800'f49f    0x6  Code  Gb  usbd_core.o [1]
+USBD_SetAddress          0x800'fb29   0x62  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetClassConfig      0x800'f4a5   0x2c  Code  Gb  usbd_core.o [1]
+USBD_SetConfig           0x800'fb8b   0xc6  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetConfig::cfgidx  0x2000'1367    0x1  Data  Lc  usbd_ctlreq.o [1]
+USBD_SetFeature          0x800'fcdd   0x26  Code  Lc  usbd_ctlreq.o [1]
+USBD_StdDevReq           0x800'f789   0x7c  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdEPReq            0x800'f853  0x17e  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdItfReq           0x800'f805   0x4e  Code  Gb  usbd_ctlreq.o [1]
+USB_ActivateEndpoint     0x800'e9af   0xc0  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ActivateSetup        0x800'f1fd   0x44  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0StartXfer         0x800'edb7  0x1ee  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0_OutStart         0x800'f241   0x5a  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPClearStall         0x800'f0b3   0x96  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPSetStall           0x800'f015   0x9e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPStartXfer          0x800'ea6f  0x348  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_FlushTxFifo          0x800'e93d   0x24  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetDevSpeed          0x800'e961   0x4e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetMode              0x800'f1f5    0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllInEpInterrupt
+                         0x800'f197   0x14  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllOutEpInterrupt
+                         0x800'f183   0x14  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevInEPInterrupt
+                         0x800'f1c5   0x30  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevOutEPInterrupt
+                         0x800'f1ab   0x1a  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadInterrupts       0x800'f177    0xc  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadPacket           0x800'efed   0x28  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetDevAddress        0x800'f149   0x2e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_WritePacket          0x800'efa5   0x48  Code  Gb  stm32f4xx_ll_usb.o [1]
+User_Timer_Callback      0x800'702d    0xa  Code  Gb  timer.o [1]
+VBAT                    0x2000'12fc    0x4  Data  Gb  main.o [1]
+VBAT_Sense              0x2000'12f8    0x4  Data  Gb  main.o [1]
+_GenldFullNoMb           0x800'82d1  0x274  Code  Lc  xprintffull_nomb.o [2]
+_LdtobFullNoMb           0x800'7ecd  0x3d6  Code  Lc  xprintffull_nomb.o [2]
+_LitobFullNoMb           0x800'7d7d  0x10a  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb          0x800'77e1  0x19e  Code  Gb  xprintffull_nomb.o [2]
+_PutcharsFullNoMb        0x800'8545   0x2e  Code  Lc  xprintffull_nomb.o [2]
+_PutfldFullNoMb          0x800'7a09  0x268  Code  Lc  xprintffull_nomb.o [2]
+_PuttxtFullNoMb          0x800'7c71  0x10c  Code  Lc  xprintffull_nomb.o [2]
+_SNProut                 0x800'497b   0x1a  Code  Gb  xsnprout.o [2]
+_SProut                  0x800'4eeb    0xa  Code  Gb  xsprout.o [2]
+__aeabi_cdcmpeq          0x800'df71         Code  Gb  DblCmpEq.o [3]
+__aeabi_cdcmple          0x800'8e01         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'8e31         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2f              0x800'c6f5         Code  Gb  DblToFlt.o [3]
+__aeabi_d2iz             0x800'8f9d         Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'9329         Code  Gb  DblToU32.o [3]
+__aeabi_dadd             0x800'9375         Code  Gb  DblAdd.o [3]
+__aeabi_ddiv             0x800'90e1         Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'8bed         Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'8ffd         Code  Gb  DblSub.o [3]
+__aeabi_f2d              0x800'c6ad         Code  Gb  FltToDbl.o [3]
+__aeabi_i2d              0x800'8fd9         Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0            0x800'9371         Code  Gb  I64DivZer.o [4]
+__aeabi_ldivmod          0x800'8979         Code  Gb  I64DivMod.o [4]
+__aeabi_memcpy           0x800'6a29         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'6a49         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'6a49         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'6f71         Code  Gb  ABImemset.o [4]
+__aeabi_ui2d             0x800'9351         Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod         0x800'89bd         Code  Gb  I64DivMod.o [4]
+__cmain                  0x801'2171         Code  Gb  cmain.o [4]
+__exit                   0x800'94f1   0x14  Code  Gb  exit.o [5]
+__iar_Atan64             0x800'dda1  0x1d0  Code  Gb  iar_Atan64.o [3]
+__iar_Fail_s             0x800'88a9   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr             0x800'8921         Code  Gb  memchr.o [4]
+__iar_Memset             0x800'6f71         Code  Gb  ABImemset.o [4]
+__iar_Memset_word        0x800'6f79         Code  Gb  ABImemset.o [4]
+__iar_Strchr             0x800'8891         Code  Gb  strchr.o [4]
+__iar_asin64             0x800'da85   0xec  Code  Gb  asin64.o [3]
+__iar_atan2_64           0x800'db71  0x13c  Code  Gb  atan2_64.o [3]
+__iar_dadd               0x800'900d         Code  Gb  DblSub.o [3]
+__iar_data_init3         0x801'1f71   0x28  Code  Gb  data_init.o [4]
+__iar_dsub               0x800'9385         Code  Gb  DblAdd.o [3]
+__iar_dsubStart          0x800'9397         Code  Gb  DblAdd.o [3]
+__iar_frexp              0x800'8d9d         Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'8d9d         Code  Gb  frexp.o [3]
+__iar_init_vfp           0x801'204d         Code  Gb  fpinit_M.o [3]
+__iar_ldexp64            0x800'8e61         Code  Gb  ldexp.o [3]
+__iar_lz77_init_single3
+                         0x800'1fcf   0x7a  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x801'22e9         Code  Gb  cstartup_M.o [4]
+__iar_scalbln64          0x800'8e61         Code  Gb  ldexp.o [3]
+__iar_scalbn64           0x800'8e61         Code  Gb  ldexp.o [3]
+__iar_softfp___iar_frexp64
+                         0x800'8d91         Code  Gb  frexp.o [3]
+__iar_softfp_frexp       0x800'8d91         Code  Gb  frexp.o [3]
+__iar_softfp_frexpl      0x800'8d91         Code  Gb  frexp.o [3]
+__iar_sqrt64             0x800'dcad         Code  Gb  sqrt.o [3]
+__iar_vfp_asin           0x800'da67    0xc  Code  Gb  math_wrappers64.o [3]
+__iar_vfp_atan2          0x800'da73   0x10  Code  Gb  math_wrappers64.o [3]
+__iar_zero_init3         0x800'3bcb   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x801'218f    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f401xc.o [1]
+_call_main               0x801'217d         Code  Gb  cmain.o [4]
+_exit                    0x801'2199         Code  Gb  cexit.o [4]
+_main                    0x801'218b         Code  Gb  cmain.o [4]
+a                        0x801'1be8   0x40  Data  Lc  iar_Atan64.o [3]
+abort                    0x800'936b    0x6  Code  Gb  abort.o [2]
+acc                     0x2000'1144    0xc  Data  Gb  main.o [1]
+acc_FIFO                0x2000'0ddc   0x3c  Data  Gb  main.o [1]
+acc_ahrs                0x2000'118c    0xc  Data  Gb  main.o [1]
+acc_ahrs_FIFO           0x2000'0da0   0x3c  Data  Gb  main.o [1]
+acc_fil                 0x2000'1180    0xc  Data  Gb  main.o [1]
+acc_fil_int             0x2000'1168    0xc  Data  Gb  main.o [1]
+acc_off_calc            0x2000'11bc    0xc  Data  Gb  main.o [1]
+acc_offset              0x2000'11d4    0xc  Data  Gb  main.o [1]
+acc_x_pre               0x2000'0f20   0x30  Data  Gb  main.o [1]
+acc_y_pre               0x2000'0ef0   0x30  Data  Gb  main.o [1]
+aci_gap_init_IDB05A1     0x800'6b5d   0x8e  Code  Gb  bluenrg_gap_aci.o [1]
+aci_gap_set_auth_requirement
+                         0x800'6d25   0x90  Code  Gb  bluenrg_gap_aci.o [1]
+aci_gap_set_discoverable
+                         0x800'6beb  0x13a  Code  Gb  bluenrg_gap_aci.o [1]
+aci_gap_update_adv_data
+                         0x800'6db5   0x74  Code  Gb  bluenrg_gap_aci.o [1]
+aci_gatt_add_char        0x800'6811  0x118  Code  Gb  bluenrg_gatt_aci.o [1]
+aci_gatt_add_serv        0x800'6749   0xc8  Code  Gb  bluenrg_gatt_aci.o [1]
+aci_gatt_allow_read      0x800'69db   0x4c  Code  Gb  bluenrg_gatt_aci.o [1]
+aci_gatt_init            0x800'670d   0x3c  Code  Gb  bluenrg_gatt_aci.o [1]
+aci_gatt_update_char_value
+                         0x800'6929   0xb2  Code  Gb  bluenrg_gatt_aci.o [1]
+aci_hal_set_tx_power_level
+                         0x800'd56f   0x50  Code  Gb  bluenrg_hal_aci.o [1]
+aci_hal_write_config_data
+                         0x800'd4ef   0x80  Code  Gb  bluenrg_hal_aci.o [1]
+aci_l2cap_connection_parameter_update_request
+                         0x800'6e29   0x6a  Code  Gb  bluenrg_l2cap_aci.o [1]
+ahrs                    0x2000'102c   0x1c  Data  Gb  main.o [1]
+ahrs_fusion_ag           0x800'c75d  0x2f4  Code  Gb  ahrs.o [1]
+ahrs_kp                 0x2000'1274    0x4  Data  Gb  ahrs.o [1]
+appearance_char_handle  0x2000'133e    0x2  Data  Gb  main.o [1]
+asin                     0x800'da85   0xec  Code  Gb  asin64.o [3]
+asinl                    0x800'da85   0xec  Code  Gb  asin64.o [3]
+atan2                    0x800'db71  0x13c  Code  Gb  atan2_64.o [3]
+atan2l                   0x800'db71  0x13c  Code  Gb  atan2_64.o [3]
+bdaddr                  0x2000'1224    0x8  Data  Gb  main.o [1]
+breath                  0x2000'131c    0x4  Data  Lc  sensor_service.o [1]
+ch                      0x2000'1360    0x1  Data  Gb  main.o [1]
+ch_flag                 0x2000'1361    0x1  Data  Gb  main.o [1]
+cnt                     0x2000'1314    0x4  Data  Gb  rc.o [1]
+connected               0x2000'1318    0x4  Data  Gb  sensor_service.o [1]
+connection_handle       0x2000'135e    0x2  Data  Lc  sensor_service.o [1]
+count1                  0x2000'12e4    0x4  Data  Gb  main.o [1]
+count2                  0x2000'12e8    0x4  Data  Gb  main.o [1]
+dev_name_char_handle    0x2000'133c    0x2  Data  Gb  main.o [1]
+dt_recip                0x2000'12a4    0x4  Data  Gb  flight_control.o [1]
+enableAllSensors         0x800'a5e9   0x5e  Code  Gb  main.o [1]
+euler_ahrs              0x2000'112c    0xc  Data  Gb  main.o [1]
+euler_ahrs_offset       0x2000'11ec    0xc  Data  Gb  main.o [1]
+euler_rc                0x2000'1120    0xc  Data  Gb  main.o [1]
+euler_rc_fil            0x2000'1138    0xc  Data  Gb  main.o [1]
+euler_rc_x_pre          0x2000'0ec0   0x30  Data  Gb  main.o [1]
+euler_rc_y_pre          0x2000'0e90   0x30  Data  Gb  main.o [1]
+exInt                   0x2000'1268    0x4  Data  Gb  ahrs.o [1]
+exit                     0x801'2193    0x4  Code  Gb  exit.o [2]
+eyInt                   0x2000'126c    0x4  Data  Gb  ahrs.o [1]
+ezInt                   0x2000'1270    0x4  Data  Gb  ahrs.o [1]
+fly_ready               0x2000'12cc    0x4  Data  Gb  main.o [1]
+free_event_list          0x800'4b3f   0x2e  Code  Lc  hci.o [1]
+gAIL                    0x2000'1340    0x2  Data  Gb  rc.o [1]
+gELE                    0x2000'1342    0x2  Data  Gb  rc.o [1]
+gJoystick_status        0x2000'1338    0x2  Data  Gb  main.o [1]
+gRUD                    0x2000'1346    0x2  Data  Gb  rc.o [1]
+gTHR                    0x2000'1344    0x2  Data  Gb  rc.o [1]
+getBlueNRGVersion        0x800'6ef9   0x78  Code  Gb  bluenrg_utils.o [1]
+gyro                    0x2000'1150    0xc  Data  Gb  main.o [1]
+gyro_FIFO               0x2000'0e54   0x3c  Data  Gb  main.o [1]
+gyro_ahrs               0x2000'11a4    0xc  Data  Gb  main.o [1]
+gyro_ahrs_FIFO          0x2000'0e18   0x3c  Data  Gb  main.o [1]
+gyro_fil                0x2000'1198    0xc  Data  Gb  main.o [1]
+gyro_fil_coeff          0x2000'0274   0x14  Data  Gb  main.o [1]
+gyro_fil_int            0x2000'1174    0xc  Data  Gb  main.o [1]
+gyro_off_calc           0x2000'11c8    0xc  Data  Gb  main.o [1]
+gyro_offset             0x2000'11e0    0xc  Data  Gb  main.o [1]
+gyro_rad                0x2000'11f8    0xc  Data  Gb  main.o [1]
+gyro_x_pre              0x2000'0f80   0x30  Data  Gb  main.o [1]
+gyro_y_pre              0x2000'0f50   0x30  Data  Gb  main.o [1]
+hadc1                   0x2000'0c64   0x48  Data  Gb  main.o [1]
+hciReadPacketBuffer     0x2000'068c  0x2bc  Data  Lc  hci.o [1]
+hciReadPktPool          0x2000'1204    0x8  Data  Gb  hci.o [1]
+hciReadPktRxQueue       0x2000'120c    0x8  Data  Gb  hci.o [1]
+hci_le_read_local_version
+                         0x800'4d41   0x88  Code  Gb  hci.o [1]
+hci_le_set_scan_resp_data
+                         0x800'4dc9   0x6e  Code  Gb  hci.o [1]
+hci_read_rssi            0x800'4e37   0x6e  Code  Gb  hci.o [1]
+hci_send_cmd             0x800'4adf   0x3c  Code  Gb  hci.o [1]
+hci_send_req             0x800'4b6d  0x1c2  Code  Gb  hci.o [1]
+hci_write                0x800'4ac3   0x1c  Code  Gb  hci.o [1]
+hpcd_USB_OTG_FS         0x2000'029c  0x3f0  Data  Gb  usbd_conf.o [1]
+hspi1                   0x2000'0ab8   0x58  Data  Gb  main.o [1]
+hspi2                   0x2000'0b10   0x58  Data  Gb  main.o [1]
+htim2                   0x2000'0cec   0x3c  Data  Gb  main.o [1]
+htim4                   0x2000'0d28   0x3c  Data  Gb  main.o [1]
+htim9                   0x2000'0d64   0x3c  Data  Gb  main.o [1]
+huart1                  0x2000'0cac   0x40  Data  Gb  main.o [1]
+init_queue               0x800'667b   0x30  Code  Gb  rc.o [1]
+init_rc_variables        0x800'648b   0x30  Code  Gb  rc.o [1]
+init_remote_control      0x800'6451   0x3a  Code  Gb  rc.o [1]
+initializeAllSensors     0x800'a575   0x54  Code  Lc  main.o [1]
+invSqrt                  0x800'da29   0x34  Code  Gb  basic_math.o [1]
+isTimerEventExist        0x800'7029    0x4  Code  Gb  timer.o [1]
+joydata                 0x2000'121c    0x8  Data  Gb  main.o [1]
+ldexp                    0x800'8e61         Code  Gb  ldexp.o [3]
+ldexpl                   0x800'8e61         Code  Gb  ldexp.o [3]
+list_get_size            0x800'5147   0x1c  Code  Gb  ble_list.o [1]
+list_init_head           0x800'508d    0x6  Code  Gb  ble_list.o [1]
+list_insert_head         0x800'50af   0x18  Code  Gb  ble_list.o [1]
+list_insert_tail         0x800'50c7   0x18  Code  Gb  ble_list.o [1]
+list_is_empty            0x800'5093   0x1c  Code  Gb  ble_list.o [1]
+list_remove_head         0x800'50f7   0x28  Code  Gb  ble_list.o [1]
+list_remove_node         0x800'50df   0x18  Code  Gb  ble_list.o [1]
+list_remove_tail         0x800'511f   0x28  Code  Gb  ble_list.o [1]
+mag                     0x2000'115c    0xc  Data  Gb  main.o [1]
+mag_fil                 0x2000'11b0    0xc  Data  Gb  main.o [1]
+main                     0x800'9505  0x6c6  Code  Gb  main.o [1]
+max_pitch_rad            0x801'2348    0x4  Data  Gb  rc.o [1]
+max_roll_rad             0x801'234c    0x4  Data  Gb  rc.o [1]
+max_yaw_rad              0x801'2350    0x4  Data  Gb  rc.o [1]
+memchr                   0x800'8921         Code  Gb  memchr.o [4]
+motor_pwm               0x2000'10c0   0x10  Data  Gb  main.o [1]
+motor_thr               0x2000'1334    0x2  Data  Gb  flight_control.o [1]
+move_list                0x800'4b1b   0x24  Code  Lc  hci.o [1]
+myprintf                 0x800'6ad1   0x2a  Code  Gb  debug.o [1]
+pid                     0x2000'0a48   0x70  Data  Gb  main.o [1]
+pid_x_integ1            0x2000'1278    0x4  Data  Gb  flight_control.o [1]
+pid_x_integ2            0x2000'1284    0x4  Data  Gb  flight_control.o [1]
+pid_x_pre_deriv         0x2000'129c    0x4  Data  Gb  flight_control.o [1]
+pid_x_pre_error2        0x2000'1290    0x4  Data  Gb  flight_control.o [1]
+pid_y_integ1            0x2000'127c    0x4  Data  Gb  flight_control.o [1]
+pid_y_integ2            0x2000'1288    0x4  Data  Gb  flight_control.o [1]
+pid_y_pre_deriv         0x2000'12a0    0x4  Data  Gb  flight_control.o [1]
+pid_y_pre_error2        0x2000'1294    0x4  Data  Gb  flight_control.o [1]
+pid_z_integ1            0x2000'1280    0x4  Data  Gb  flight_control.o [1]
+pid_z_integ2            0x2000'128c    0x4  Data  Gb  flight_control.o [1]
+pid_z_pre_error2        0x2000'1298    0x4  Data  Gb  flight_control.o [1]
+press                   0x2000'12ec    0x4  Data  Gb  main.o [1]
+press_zero_level        0x2000'12f0    0x4  Data  Gb  main.o [1]
+q0                      0x2000'0000    0x4  Data  Gb  ahrs.o [1]
+q1                      0x2000'125c    0x4  Data  Gb  ahrs.o [1]
+q2                      0x2000'1260    0x4  Data  Gb  ahrs.o [1]
+q3                      0x2000'1264    0x4  Data  Gb  ahrs.o [1]
+que                     0x2000'0c18   0x4c  Data  Gb  rc.o [1]
+rc_cal_cnt              0x2000'12c8    0x4  Data  Gb  main.o [1]
+rc_cal_flag             0x2000'12c0    0x4  Data  Gb  main.o [1]
+rc_connection_flag      0x2000'1363    0x1  Data  Gb  rc.o [1]
+rc_enable_motor         0x2000'12c4    0x4  Data  Gb  main.o [1]
+rc_flag                 0x2000'1310    0x4  Data  Gb  rc.o [1]
+rc_t                    0x2000'10f0   0x10  Data  Gb  rc.o [1]
+rc_t_fall               0x2000'10e0   0x10  Data  Gb  rc.o [1]
+rc_t_rise               0x2000'10d0   0x10  Data  Gb  rc.o [1]
+rc_timeout              0x2000'130c    0x4  Data  Gb  rc.o [1]
+rc_z_control_flag       0x2000'0288    0x4  Data  Gb  rc.o [1]
+safe_aci_gatt_update_char_value
+                         0x800'5165   0x5c  Code  Gb  sensor_service.o [1]
+scalbln                  0x800'8e61         Code  Gb  ldexp.o [3]
+scalblnl                 0x800'8e61         Code  Gb  ldexp.o [3]
+scalbn                   0x800'8e61         Code  Gb  ldexp.o [3]
+scalbnl                  0x800'8e61         Code  Gb  ldexp.o [3]
+scale                    0x800'7e87   0x46  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2000'1330    0x4  Data  Lc  xfail_s.o [2]
+sensor_init_cali        0x2000'12dc    0x4  Data  Gb  main.o [1]
+sensor_init_cali_count  0x2000'12e0    0x4  Data  Gb  main.o [1]
+service_handle          0x2000'133a    0x2  Data  Gb  main.o [1]
+setConnectable           0x800'5b35   0xac  Code  Gb  sensor_service.o [1]
+set_connectable         0x2000'0298    0x1  Data  Gb  sensor_service.o [1]
+set_irq_as_input         0x800'45e1   0x32  Code  Gb  SPBTLE_RF.o [1]
+set_irq_as_output        0x800'45b5   0x2c  Code  Gb  SPBTLE_RF.o [1]
+set_motor_pwm            0x800'c211  0x10e  Code  Gb  motor.o [1]
+set_motor_pwm_zero       0x800'c329   0x12  Code  Gb  motor.o [1]
+sprintf                  0x800'6b1d   0x40  Code  Gb  sprintf.o [2]
+sqrt                     0x800'dcad         Code  Gb  sqrt.o [3]
+sqrtl                    0x800'dcad         Code  Gb  sqrt.o [3]
+strchr                   0x800'8891         Code  Gb  strchr.o [4]
+strlen                   0x800'88e9         Code  Gb  strlen.o [4]
+strncmp                  0x800'6e93   0x28  Code  Gb  strncmp.o [2]
+t1                      0x2000'1308    0x4  Data  Gb  rc.o [1]
+temperature             0x2000'12f4    0x4  Data  Gb  main.o [1]
+testStatus              0x2000'1362    0x1  Data  Gb  main.o [1]
+tim                     0x2000'10ac   0x14  Data  Gb  timer.o [1]
+tim9_cnt                0x2000'12d4    0x4  Data  Gb  main.o [1]
+tim9_cnt2               0x2000'12d8    0x4  Data  Gb  main.o [1]
+tim9_event_flag         0x2000'12d0    0x4  Data  Gb  main.o [1]
+update_rc_data           0x800'64ef   0x84  Code  Gb  rc.o [1]
+us150Delay               0x800'4613   0x1c  Code  Lc  SPBTLE_RF.o [1]
+usart_puts               0x800'6afb   0x1c  Code  Gb  debug.o [1]
+uwTick                  0x2000'132c    0x4  Data  Gb  stm32f4xx_hal.o [1]
+vsnprintf                0x800'703d   0x3c  Code  Gb  vsnprint.o [2]
+
+
+[1] = C:\Works\Projects\STEVAL_Boards\FCU001V1\STM32 FW Project\Official release with BLE Remocon - 170318\EWARM\ToyDrone_Configuration\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  72 754 bytes of readonly  code memory
+   2 618 bytes of readonly  data memory
+  21 350 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

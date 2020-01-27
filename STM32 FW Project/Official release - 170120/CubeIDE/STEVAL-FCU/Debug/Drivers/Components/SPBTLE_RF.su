@@ -1,0 +1,15 @@
+SPBTLE_RF.c:118:6:HAL_GPIO_EXTI_Callback	16	static
+SPBTLE_RF.c:240:6:Hal_Write_Serial	40	static
+SPBTLE_RF.c:272:6:BNRG_SPI_Init	8	static
+SPBTLE_RF.c:295:6:BlueNRG_RST	8	static
+SPBTLE_RF.c:309:9:BlueNRG_DataPresent	8	static
+SPBTLE_RF.c:322:6:BlueNRG_HW_Bootloader	8	static
+SPBTLE_RF.c:338:9:BlueNRG_SPI_Read_All	56	static,ignoring_inline_asm
+SPBTLE_RF.c:402:9:BlueNRG_SPI_Write	320	static,ignoring_inline_asm
+SPBTLE_RF.c:486:6:set_irq_as_output	32	static
+SPBTLE_RF.c:504:6:set_irq_as_input	32	static
+SPBTLE_RF.c:526:13:us150Delay	16	static,ignoring_inline_asm
+SPBTLE_RF.c:548:6:Enable_SPI_IRQ	8	static
+SPBTLE_RF.c:558:6:Disable_SPI_IRQ	8	static
+SPBTLE_RF.c:568:6:Clear_SPI_IRQ	8	static
+SPBTLE_RF.c:578:6:Clear_SPI_EXTI_Flag	4	static

@@ -1,0 +1,5 @@
+usbd_cdc_if.c:120:15:CDC_Init_FS	8	static
+usbd_cdc_if.c:137:15:CDC_DeInit_FS	4	static
+usbd_cdc_if.c:152:15:CDC_Control_FS	16	static
+usbd_cdc_if.c:233:15:CDC_Receive_FS	16	static
+usbd_cdc_if.c:251:9:CDC_Transmit_FS	24	static

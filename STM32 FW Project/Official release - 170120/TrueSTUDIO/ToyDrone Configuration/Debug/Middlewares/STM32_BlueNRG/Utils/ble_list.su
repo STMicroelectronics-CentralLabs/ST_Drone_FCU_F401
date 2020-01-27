@@ -1,0 +1,12 @@
+ble_list.c:27:6:list_init_head	16	static
+ble_list.c:33:9:list_is_empty	32	static
+ble_list.c:53:6:list_insert_head	32	static
+ble_list.c:68:6:list_insert_tail	32	static
+ble_list.c:83:6:list_remove_node	32	static
+ble_list.c:96:6:list_remove_head	32	static
+ble_list.c:111:6:list_remove_tail	32	static
+ble_list.c:126:6:list_insert_node_after	32	static
+ble_list.c:141:6:list_insert_node_before	32	static
+ble_list.c:156:5:list_get_size	40	static
+ble_list.c:176:6:list_get_next_node	32	static
+ble_list.c:188:6:list_get_prev_node	32	static

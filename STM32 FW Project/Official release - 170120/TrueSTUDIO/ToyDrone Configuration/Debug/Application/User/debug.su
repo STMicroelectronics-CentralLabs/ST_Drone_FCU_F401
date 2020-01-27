@@ -1,0 +1,2 @@
+debug.c:10:5:myprintf	272	static
+debug.c:22:5:usart_puts	16	static

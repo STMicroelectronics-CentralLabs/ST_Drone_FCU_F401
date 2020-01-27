@@ -1,0 +1,5 @@
+flight_control.c:21:6:PIDControlInit	16	static
+flight_control.c:56:6:FlightControlPID	40	static
+flight_control.c:153:6:FlightControlPID_OuterLoop	32	static
+flight_control.c:192:6:FlightControlPID_innerLoop	40	static
+flight_control.c:272:6:PIDOuterLoopFrameTrans	32	static
